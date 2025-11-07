@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- aos stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- owl crousal -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="nav-bar">
+        <div class="container">
+          <div
+            class="nav-wrapper d-flex align-items-center justify-content-between py-3"
+          >
+            <!-- Logo -->
+            <div class="logo d-flex align-items-center">
+              <figure class="mb-0 me-2">
+                <img src="./images/logo.png" alt="IT Wings WebTech Solutions" />
+              </figure>
+            </div>
+
+            <!-- Hamburger Icon (Mobile) -->
+            <div class="hamburger d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu d-none d-md-block">
+              <ul class="d-flex align-items-center gap-4 mb-0">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">E-Learning</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Button -->
+            <div class="contact-us d-none d-md-block">
+              <a
+                href="./contact.html"
+                target="_blank"
+                class="btn-primary-outline"
+              >
+                Start a Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- service banner -->
+    <section
+      class="service-banner d-flex align-items-center justify-content-center"
+      style="background-image: url('./images/service-banner.jpg')"
+    >
+      <div class="overlay"></div>
+      <div class="container text-center text-white position-relative">
+        <div class="service-banner-content">
+          <h1 class="fw-bold mb-3">
+            Transforming Ideas Into Powerful Digital Solutions
+          </h1>
+          <p class="lead text-light mb-4">
+            From stunning websites to scalable web applications — we design,
+            develop, and deliver technology that elevates your business presence
+            online.
+          </p>
+          <a href="#services" class="btn btn-primary px-4 py-2">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- main -->
+    <!-- Service Career / Stats Section -->
+    <section class="service-career py-5">
+      <div class="container">
+        <div class="service-career-wrapper text-center">
+          <ul
+            class="career-stats d-flex flex-wrap justify-content-center align-items-center gap-4 mb-0"
+          >
+            <li class="stat-box">
+              <h3>Years of Experience</h3>
+              <p>10+</p>
+            </li>
+            <li class="stat-box">
+              <h3>Total Services Provided</h3>
+              <p>50+</p>
+            </li>
+            <li class="stat-box">
+              <h3>Projects Delivered</h3>
+              <p>100+</p>
+            </li>
+            <li class="stat-box">
+              <h3>Trusted by Companies</h3>
+              <p>20+</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- service card section -->
+    <section class="service-provide py-2 overflow-y-hidden" id="services">
+      <div class="container">
+        <div class="provide-wrapper d-flex flex-column align-items-center">
+          <!-- service content -->
+          <div class="provide-content d-flex flex-column text-primary">
+            <div
+              class="provide-content d-flex flex-column text-primary text-center"
+            >
+              <h2 class="text-bold">Services That Drive Success</h2>
+              <p>
+                Explore what we do best — creating digital products that make an
+                impact.
+              </p>
+            </div>
+          </div>
+          <!-- Service Filter & Search -->
+          <div
+            class="show-service-list mt-4 mb-5 d-flex flex-wrap justify-content-between align-items-center w-100 overflow-y-hidden"
+          >
+            <ul
+              class="filter-list d-flex flex-wrap justify-content-center gap-3 mb-3 mb-md-0"
+            >
+              <li><a onclick="filterService('all')" class="active">All</a></li>
+              <li><a onclick="filterService('govt')">Govt.</a></li>
+              <li><a onclick="filterService('tech')">Tech</a></li>
+              <li>
+                <a onclick="filterService('socialMedia')">Social Media</a>
+              </li>
+              <li><a onclick="filterService('others')">Others</a></li>
+            </ul>
+            <input
+              type="search"
+              placeholder="Search services..."
+              class="form-control service-search"
+            />
+          </div>
+
+          <!-- Service Cards -->
+          <div class="show-all-service row g-4">
+            <!-- service card -->
+            <div class="col-md-4 col-sm-6 service govt">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 service govt">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 service others">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 service socialMedia">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 service socialMedia">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 service tech">
+              <div
+                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+              >
+                <figure class="mb-3 rounded-4 overflow-hidden">
+                  <img
+                    src="./images/service-banner.jpg"
+                    alt="Web Development"
+                    class="img-fluid service-img"
+                  />
+                </figure>
+                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
+                <p class="text-muted mb-3">
+                  Custom websites built with the latest technologies to grow
+                  your business online.
+                </p>
+                <div class="show-service mt-auto">
+                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <!-- bootstrape -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- owl crousal -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- aos js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+        mirror: true,
+      });
+    </script>
+    <!-- global js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
