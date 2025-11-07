@@ -104,226 +104,319 @@
 
     <!-- main -->
     <main>
-      <section class="service">
+      <!-- Service Career / Stats Section -->
+      <section class="service-career py-5">
         <div class="container">
-          <div class="service-wrapper"></div>
+          <div class="service-career-wrapper text-center">
+            <ul class="career-stats mb-0">
+              <li class="stat-box">
+                <h3>Years of Experience</h3>
+                <p>10+</p>
+              </li>
+              <li class="stat-box">
+                <h3>Total Services Provided</h3>
+                <p>50+</p>
+              </li>
+              <li class="stat-box">
+                <h3>Projects Delivered</h3>
+                <p>100+</p>
+              </li>
+              <li class="stat-box">
+                <h3>Trusted by Companies</h3>
+                <p>20+</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- service card section -->
+      <section class="service-provide py-4 overflow-y-hidden" id="services">
+        <div class="container">
+          <div class="provide-wrapper d-flex flex-column align-items-center">
+            <!-- service content -->
+            <div
+              class="provide-content d-flex flex-column text-primary text-center"
+            >
+              <h2 class="text-bold">Services That Drive Success</h2>
+              <p>
+                Explore what we do best — creating digital products that make an
+                impact.
+              </p>
+            </div>
+            <!-- Service Filter & Search -->
+            <div
+              class="show-service-list mt-4 mb-5 d-flex flex-wrap justify-content-between align-items-center w-100 overflow-y-hidden"
+            >
+              <ul
+                class="filter-list d-flex flex-wrap justify-content-center gap-3 mb-3 mb-md-0"
+              >
+                <li>
+                  <a onclick="filterService('all')" class="active">All</a>
+                </li>
+                <li><a onclick="filterService('govt')">Govt.</a></li>
+                <li><a onclick="filterService('tech')">Tech</a></li>
+                <li>
+                  <a onclick="filterService('socialMedia')">Social Media</a>
+                </li>
+                <li><a onclick="filterService('others')">Others</a></li>
+              </ul>
+              <input
+                type="search"
+                placeholder="Search services..."
+                class="form-control service-search"
+              />
+            </div>
+
+            <!-- Service Cards -->
+            <div class="show-all-service row g-4">
+              <!-- service card -->
+              <div class="col-md-4 col-sm-6 service govt">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 service govt">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 service others">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 service socialMedia">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 service socialMedia">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 service tech">
+                <div
+                  class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
+                >
+                  <figure class="mb-3 rounded-4 overflow-hidden">
+                    <img
+                      src="./images/service-banner.jpg"
+                      alt="Web Development"
+                      class="img-fluid service-img"
+                    />
+                  </figure>
+                  <h3 class="fw-semibold mb-2 text-gradient">
+                    Web Development
+                  </h3>
+                  <p class="text-muted mb-3">
+                    Custom websites built with the latest technologies to grow
+                    your business online.
+                  </p>
+                  <div class="show-service mt-auto">
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <!-- Service Career / Stats Section -->
-    <section class="service-career py-5">
-      <div class="container">
-        <div class="service-career-wrapper text-center">
-          <ul class="career-stats mb-0">
-            <li class="stat-box">
-              <h3>Years of Experience</h3>
-              <p>10+</p>
-            </li>
-            <li class="stat-box">
-              <h3>Total Services Provided</h3>
-              <p>50+</p>
-            </li>
-            <li class="stat-box">
-              <h3>Projects Delivered</h3>
-              <p>100+</p>
-            </li>
-            <li class="stat-box">
-              <h3>Trusted by Companies</h3>
-              <p>20+</p>
-            </li>
-          </ul>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-cta">
+        <div class="container">
+          <h2>Ready to work with us?</h2>
+          <p>
+            Join us to experience cutting-edge industrial solutions that drive
+            innovation and lasting success.
+          </p>
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
-    </section>
 
-    <!-- service card section -->
-    <section class="service-provide py-4 overflow-y-hidden" id="services">
-      <div class="container">
-        <div class="provide-wrapper d-flex flex-column align-items-center">
-          <!-- service content -->
-          <div
-            class="provide-content d-flex flex-column text-primary text-center"
-          >
-            <h2 class="text-bold">Services That Drive Success</h2>
-            <p>
-              Explore what we do best — creating digital products that make an
-              impact.
-            </p>
-          </div>
-          <!-- Service Filter & Search -->
-          <div
-            class="show-service-list mt-4 mb-5 d-flex flex-wrap justify-content-between align-items-center w-100 overflow-y-hidden"
-          >
-            <ul
-              class="filter-list d-flex flex-wrap justify-content-center gap-3 mb-3 mb-md-0"
-            >
-              <li><a onclick="filterService('all')" class="active">All</a></li>
-              <li><a onclick="filterService('govt')">Govt.</a></li>
-              <li><a onclick="filterService('tech')">Tech</a></li>
-              <li>
-                <a onclick="filterService('socialMedia')">Social Media</a>
-              </li>
-              <li><a onclick="filterService('others')">Others</a></li>
-            </ul>
-            <input
-              type="search"
-              placeholder="Search services..."
-              class="form-control service-search"
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Logo & About -->
+          <div class="footer-col about">
+            <img
+              src="images/service-banner.jpg"
+              alt="ProFactory Logo"
+              class="footer-logo"
             />
+            <p>
+              We are committed to providing personalized industrial solutions
+              that transform your business.
+            </p>
+            <div class="social-icons">
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
           </div>
 
-          <!-- Service Cards -->
-          <div class="show-all-service row g-4">
-            <!-- service card -->
-            <div class="col-md-4 col-sm-6 service govt">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-4 col-sm-6 service govt">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
+          <!-- Legal -->
+          <div class="footer-col">
+            <h4>Security</h4>
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-4 col-sm-6 service others">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 service socialMedia">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 service socialMedia">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 service tech">
-              <div
-                class="service-card text-center p-4 h-100 shadow-sm rounded-4 position-relative overflow-hidden"
-              >
-                <figure class="mb-3 rounded-4 overflow-hidden">
-                  <img
-                    src="./images/service-banner.jpg"
-                    alt="Web Development"
-                    class="img-fluid service-img"
-                  />
-                </figure>
-                <h3 class="fw-semibold mb-2 text-gradient">Web Development</h3>
-                <p class="text-muted mb-3">
-                  Custom websites built with the latest technologies to grow
-                  your business online.
-                </p>
-                <div class="show-service mt-auto">
-                  <a href="#" class="btn btn-primary btn-sm rounded-pill px-4"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
+          <!-- Contact Info -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li><a href="tel:+91123654789">+91 123654789</a></li>
+              <li>
+                <a href="mailto:info@domainname.com">info@domainname.com</a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/XYZ" target="_blank"
+                  >520, West Valley, Amin and Minim</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- footer -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <!-- bootstrape -->
     <script
