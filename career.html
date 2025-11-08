@@ -81,21 +81,29 @@
 
     <!-- career banner -->
     <section
-      class="career d-flex align-items-center"
+      class="career global-banner d-flex align-items-center"
       style="background-image: url(images/career-banner.jpg)"
     >
       <div class="overlay"></div>
       <div class="container text-center text-white position-relative">
-        <div class="career-banner-content mx-auto">
-          <h1 class="display-4 fw-bold" data-aos="fade-left">Join the Team</h1>
-          <p class="lead mt-3" data-aos="fade-right">
-            Ready to code your way to greatness? We’re not just another IT
-            company we’re a playground for tech enthusiasts, problem-solvers,
-            and dreamers who love turning coffee into code.
-          </p>
-          <a href="#" class="btn btn-primary btn-lg mt-4" data-aos="fade-up"
-            >View Open Positions</a
-          >
+        <div class="global-wrapper">
+          <div class="mx-auto global-content">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-left">
+              Join the Team
+            </h1>
+            <p class="lead mb-4 text-light" data-aos="fade-right">
+              Ready to code your way to greatness? We’re not just another IT
+              company we’re a playground for tech enthusiasts, problem-solvers,
+              and dreamers who love turning coffee into code.
+            </p>
+            <a
+              href="#career-position"
+              class="btn btn-primary px-4 py-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >View Open Positions</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -425,7 +433,7 @@
       </section>
 
       <!-- Career Open Positions -->
-      <section class="career-open-position py-5">
+      <section class="career-open-position py-5" id="career-position">
         <div class="container">
           <div class="career-open-wrapper">
             <!-- Section Header -->
