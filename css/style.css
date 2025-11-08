@@ -78,6 +78,80 @@ h5 {
   color: #ffffff99 !important;
 }
 
+/* global banner */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.6));
+  z-index: 1;
+}
+
+.global-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-content {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.global-content h1 {
+  font-size: 54px !important;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+.global-content p {
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.btn-primary {
+  background-color: #0d6efd !important;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 28px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004aad !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+}
+
 /* Navbar */
 .nav-bar {
   position: absolute;
@@ -154,66 +228,6 @@ h5 {
 
 .hamburger:hover {
   transform: scale(1.1);
-}
-
-/* ---------- Service Banner ---------- */
-.service-banner {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.6));
-  z-index: 1;
-}
-
-.service-banner .container {
-  position: relative;
-  z-index: 2;
-}
-
-.service-banner h1 {
-  font-size: 40px;
-  line-height: 52px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.service-banner p {
-  font-size: 18px;
-  color: #e3e3e3;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.service-banner .btn-primary {
-  background-color: #0d6efd;
-  border: none;
-  border-radius: 30px;
-  font-weight: 500;
-  padding: 12px 28px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.service-banner .btn-primary:hover {
-  background-color: #004aad;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
 }
 
 /* ---------- Career Stats ---------- */
@@ -367,43 +381,6 @@ h5 {
 /* =============================
              Career 
 ================================= */
-.career {
-  position: relative;
-  width: 100%;
-  min-height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text visibility */
-  z-index: 1;
-}
-
-.career-banner-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  padding: 20px;
-}
-
-.career-banner-content h1 {
-  font-size: 40px;
-}
-
-.career-banner-content p {
-  font-size: 1.25rem;
-  color: #f8f9fa;
-}
-
 .career-reason {
   padding: 50px 0;
 }
@@ -608,6 +585,119 @@ h5 {
 }
 
 /* =============================
+             contact us 
+================================= */
+.cnt-sec-one {
+  background-color: #f5f5f5;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  background-size: 659px 353px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.cnt-sec-one h2 {
+  color: #222222;
+}
+
+.cnt-sec-one .cnt-icon-part {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.cnt-sec-one .cnt-icon-part .fa-solid {
+  color: #fff;
+  padding: 22px 44px 18px 16px;
+  border-radius: 10px;
+  background-color: #0d6efd;
+  font-size: 20px;
+}
+
+.cnt-sec-one .last-icon-part {
+  border: 0;
+}
+
+.cnt-sec-one .cnt-icon-part h4 {
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.cnt-sec-one .cnt-icon-part p {
+  color: #81848a;
+}
+
+.cnt-sec-one .contact-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.cnt-sec-one .contact-container h2 {
+  margin-bottom: 20px;
+}
+
+.cnt-sec-one form input,
+.cnt-sec-one form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: #fafafa;
+  transition: 0.3s;
+  margin-bottom: 16px;
+}
+
+.cnt-sec-one form input:focus,
+.cnt-sec-one form textarea:focus {
+  border-color: #0d6efd;
+  background: #fff;
+}
+
+.cnt-sec-one form textarea {
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.cnt-sec-one form button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #0d6efd;
+  color: #000;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cnt-sec-one form button:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.cnt-sec-one form p {
+  color: red;
+  line-height: 0;
+  margin: 5px 0 18px 0;
+}
+
+.location-in-map {
+  height: 600px;
+  width: 100%;
+}
+
+.location-in-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* =============================
              Responsive 
 ================================= */
 
@@ -649,7 +739,7 @@ h5 {
 
   .nav-menu ul {
     display: none;
-    margin-top: 30px !important;
+    margin-top: 20px !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     background-color: #1e293b;
@@ -660,13 +750,17 @@ h5 {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 15px 0 !important;
+    border-radius: 8px;
+  }
+
+  .nav-menu.show-menu ul li a {
+    margin-bottom: 10px !important;
   }
 
   .hamburger {
     position: absolute !important;
-    top: 17px;
+    top: 12px;
     right: 20px;
     display: block !important;
   }
@@ -677,7 +771,7 @@ h5 {
 
   .contact-us a {
     position: absolute;
-    top: 17px;
+    top: 5px !important;
     right: 20px;
     display: block !important;
     margin-right: 50px !important;
@@ -701,9 +795,38 @@ h5 {
   .provide-content p {
     margin-top: 10px;
   }
+
+  .cnt-sec-one .right-part {
+    margin-top: 40px;
+  }
+
+  .cnt-sec-one {
+    padding-top: 75px;
+    padding-bottom: 65px;
+  }
+}
+
+/* just to make service card more responsive */
+@media screen and (max-width: 850px) {
+  .show-all-service {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* global content */
+  .global-content {
+    width: 100%;
+  }
+
+  .global-content h1 {
+    font-size: 36px !important;
+  }
+  .global-content p {
+    font-size: 16px !important;
+  }
+
   .service-banner {
     min-height: 600px;
     text-align: center;
@@ -791,6 +914,14 @@ h5 {
 
 /* ---------- 480px (Small Phones) ---------- */
 @media screen and (max-width: 480px) {
+  /* global content */
+  .global-content h1 {
+    font-size: 28px !important;
+  }
+  .global-content p {
+    font-size: 14px !important;
+  }
+
   /* navbar */
   .nav-bar .nav-wrapper {
     padding: 0;
