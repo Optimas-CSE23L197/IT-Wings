@@ -7,6 +7,29 @@
   --text-color-active: #ffffff99;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+[data-aos^="fade-left"],
+[data-aos^="fade-right"] {
+  overflow: hidden;
+}
+
+[data-aos] {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
 /* Fonts */
 .lato {
   font-family: "Lato", sans-serif;
@@ -22,19 +45,6 @@
 }
 
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-}
-
 a {
   text-decoration: none;
   color: #000;
