@@ -39,3 +39,29 @@ $(document).ready(function () {
     },
   });
 });
+
+// home work details carousel
+$(document).ready(function () {
+  $(".home-work-box-list").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    smartSpeed: 1000,
+    animateIn: "fadeIn",
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
+});
