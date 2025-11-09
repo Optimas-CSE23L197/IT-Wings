@@ -1,0 +1,370 @@
+/* ==========================================================
+   GLOBAL STYLE SHEET
+   Author: IT Wings Webtech Solutions
+   Purpose: Single consolidated stylesheet for all pages
+   ========================================================== */
+
+/* ===============================
+   1. ROOT VARIABLES
+   =============================== */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-color: #1a1a1a;
+  --light-color: #f8f9fa;
+  --white: #ffffff;
+  --border-color: #e6e6e6;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --radius: 8px;
+  --font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   2. GLOBAL RESET & BASE
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  background-color: var(--white);
+  color: var(--dark-color);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===============================
+   3. GLOBAL TYPOGRAPHY
+   =============================== */
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+p,
+li,
+a,
+span {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+}
+
+/* ===============================
+   4. GLOBAL LAYOUT UTILITIES
+   =============================== */
+.container {
+  max-width: 1500px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  position: relative;
+}
+
+.global-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 32px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-primary-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 28px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* ===============================
+   5. CAREER PAGE STYLES
+   =============================== */
+
+/* ---------- Career Banner ---------- */
+.career.global-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.career.global-banner .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.career.global-banner .global-content {
+  position: relative;
+  z-index: 2;
+}
+
+.career.global-banner .btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: var(--radius);
+}
+
+/* ---------- Career Reason Section ---------- */
+.career-reason {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.career-reason-content h2 {
+  color: var(--primary-color);
+}
+
+.career-reason-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.career-reason-card:hover {
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transform: translateY(-4px);
+}
+
+.career-reason-card h3 {
+  margin-bottom: 12px;
+}
+
+.career-reason-card p {
+  color: #666666;
+}
+
+/* ---------- Career Benefits ---------- */
+.career-benefits {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+.career-benefits .benefit-card {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  padding: 20px;
+}
+
+.career-benefits .benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.career-benefits img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ---------- Career Roadmap ---------- */
+.career-roadmap-apply {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.career-roadmap-apply .roadmap-img {
+  max-width: 900px;
+}
+
+/* ---------- Career Open Positions ---------- */
+.career-open-position {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+
+.career-open-body-left {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.career-open-body-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.career-open-body-left ul li {
+  padding: 8px 0;
+}
+
+.career-open-body-left ul li a {
+  color: #333333;
+}
+
+.career-open-body-left ul li a:hover {
+  color: var(--primary-color);
+}
+
+.job-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 15px var(--shadow-light);
+  transform: translateY(-3px);
+}
+
+.job-card .btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 24px;
+  color: var(--white);
+}
+
+/* ---------- Show More Button ---------- */
+.show-more .btn {
+  border: 2px solid var(--primary-color);
+  padding: 10px 24px;
+  color: var(--primary-color);
+  background: transparent;
+  transition: var(--transition);
+}
+
+.show-more .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* ===============================
+   6. RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .career.global-banner {
+    min-height: 400px;
+  }
+
+  .career-benefits img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p,
+  li,
+  span {
+    font-size: 14px;
+  }
+
+  .career.global-banner {
+    min-height: 300px;
+    padding: 40px 0;
+  }
+
+  .career-reason,
+  .career-benefits,
+  .career-roadmap-apply,
+  .career-open-position {
+    padding: 50px 0;
+  }
+
+  .career-benefits img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .career-open-body-left {
+    margin-bottom: 30px;
+  }
+}

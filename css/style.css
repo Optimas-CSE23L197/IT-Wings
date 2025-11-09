@@ -1,3 +1,30 @@
+/* ============================================
+Project Stylesheet Structure
+============================================
+1. Font Import -- 28
+2. Root Variables -- 31
+3. Global Selectors
+4. Utilities
+5. Navbar -- 192
+6. Footer -- 275
+7. Home Page
+8. About Page
+9. Services Page
+10. E-Learning
+11. Courses
+12. Career
+13. Contact Us
+14. Responsive Breakpoints
+  14.1 ≥ 1200px
+  14.2 ≤ 1199px
+  14.3 ≤ 992px
+  14.4 ≤ 850px
+  14.5 ≤ 768px
+  14.6 ≤ 575px
+  14.7 ≤ 480px
+  14.8 ≤ 360px
+============================================ */
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /* Root Variables */
@@ -161,7 +188,11 @@ h5 {
   box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
 }
 
-/* Navbar */
+/* 
+============================
+      navbar
+============================
+*/
 .nav-bar {
   position: absolute;
   top: 20px;
@@ -239,7 +270,125 @@ h5 {
   transform: scale(1.1);
 }
 
-/* ---------- Career Stats ---------- */
+/* =============================
+             footer 
+================================= */
+/* Footer Styles */
+.footer {
+  font-family: "Arial", sans-serif;
+  color: #f1f1f1;
+  background: #1b1b1b;
+}
+
+.footer a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #00aaff;
+}
+
+.footer-cta {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111;
+}
+
+.footer-cta h2 {
+  font-size: 2rem;
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.footer-cta p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0088cc;
+}
+
+/* Footer main section */
+.footer-main {
+  padding: 60px 20px;
+  background: #1b1b1b;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a:hover {
+  color: #00d4ff;
+}
+
+.footer-col.about img.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.footer-col.about p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.footer-col.about .social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.footer-col.about .social-icons a:hover {
+  color: #00aaff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+}
+
+/* =============================
+             service 
+================================ */
+/* ---------- service Stats ---------- */
 .service-career {
   background-color: #fff;
   color: #fff;
@@ -389,7 +538,7 @@ h5 {
 
 /* =============================
              Career 
-================================= */
+================================ */
 .career-reason {
   padding: 50px 0;
 }
@@ -476,121 +625,6 @@ h5 {
 
 .job-card .btn {
   padding: 0.5rem 1.2rem;
-}
-
-/* =============================
-             footer 
-================================= */
-/* Footer Styles */
-.footer {
-  font-family: "Arial", sans-serif;
-  color: #f1f1f1;
-  background: #1b1b1b;
-}
-
-.footer a {
-  color: #f1f1f1;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #00aaff;
-}
-
-.footer-cta {
-  text-align: center;
-  padding: 50px 20px;
-  background: #111;
-}
-
-.footer-cta h2 {
-  font-size: 2rem;
-  color: #00aaff;
-  margin-bottom: 10px;
-}
-
-.footer-cta p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #00aaff;
-  color: #fff;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: #0088cc;
-}
-
-/* Footer main section */
-.footer-main {
-  padding: 60px 20px;
-  background: #1b1b1b;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-col h4 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #00aaff;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 12px;
-}
-
-.footer-col ul li a:hover {
-  color: #00d4ff;
-}
-
-.footer-col.about img.footer-logo {
-  width: 120px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.footer-col.about p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.footer-col.about .social-icons a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 1.2rem;
-  color: #f1f1f1;
-  transition: 0.3s;
-}
-
-.footer-col.about .social-icons a:hover {
-  color: #00aaff;
-}
-
-/* Footer bottom */
-.footer-bottom {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  font-size: 0.9rem;
 }
 
 /* =============================

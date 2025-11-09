@@ -1,53 +1,53 @@
 // navbar toggle
-const humberger = document.querySelector(".hamburger i");
-let navMenu = document.querySelector(".nav-menu");
+// const humberger = document.querySelector(".hamburger i");
+// let navMenu = document.querySelector(".nav-menu");
 
-humberger.addEventListener("click", function () {
-  navMenu.classList.toggle("show-menu");
-  if (navMenu.classList.contains("show-menu")) {
-    humberger.classList.remove("fa-bars");
-    humberger.classList.add("fa-xmark");
-  } else {
-    humberger.classList.remove("fa-xmark");
-    humberger.classList.add("fa-bars");
-  }
-});
+// humberger.addEventListener("click", function () {
+//   navMenu.classList.toggle("show-menu");
+//   if (navMenu.classList.contains("show-menu")) {
+//     humberger.classList.remove("fa-bars");
+//     humberger.classList.add("fa-xmark");
+//   } else {
+//     humberger.classList.remove("fa-xmark");
+//     humberger.classList.add("fa-bars");
+//   }
+// });
 
-// service active navigation
-let serviceNavigation = document.querySelectorAll(".show-service-list ul li a");
+// // service active navigation
+// let serviceNavigation = document.querySelectorAll(".show-service-list ul li a");
 
-for (let i = 0; i < serviceNavigation.length; i++) {
-  serviceNavigation[i].addEventListener("click", function (e) {
-    e.preventDefault();
+// for (let i = 0; i < serviceNavigation.length; i++) {
+//   serviceNavigation[i].addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    // remove active from all
-    for (let j = 0; j < serviceNavigation.length; j++) {
-      serviceNavigation[j].classList.remove("active");
-    }
+//     // remove active from all
+//     for (let j = 0; j < serviceNavigation.length; j++) {
+//       serviceNavigation[j].classList.remove("active");
+//     }
 
-    // add active to the clicked one
-    this.classList.add("active");
-  });
-}
+//     // add active to the clicked one
+//     this.classList.add("active");
+//   });
+// }
 
-// service filter
-let services = document.querySelectorAll(".service");
-function filterService(category) {
-  if (category === "all") {
-    services.forEach(function (service) {
-      service.style.display = "block";
-    });
-  } else {
-    services.forEach(function (service) {
-      service.style.display = "none";
-    });
-  }
-  // to show paerticular service
-  let selectedServiceCategory = document.querySelectorAll("." + category);
-  selectedServiceCategory.forEach(function (service) {
-    service.style.display = "block";
-  });
-}
+// // service filter
+// let services = document.querySelectorAll(".service");
+// function filterService(category) {
+//   if (category === "all") {
+//     services.forEach(function (service) {
+//       service.style.display = "block";
+//     });
+//   } else {
+//     services.forEach(function (service) {
+//       service.style.display = "none";
+//     });
+//   }
+//   // to show paerticular service
+//   let selectedServiceCategory = document.querySelectorAll("." + category);
+//   selectedServiceCategory.forEach(function (service) {
+//     service.style.display = "block";
+//   });
+// }
 
 // // service search
 // let searchInput = document.querySelector(".service-search");
@@ -69,3 +69,50 @@ function filterService(category) {
 //     }
 //   });
 // });
+
+// login functionality
+const loginBtn = document.getElementById("loginBtn");
+const registerBtn = document.getElementById("registerBtn");
+const loginForm = document.getElementById("loginForm");
+const registerForm = document.getElementById("registerForm");
+
+// Switch between login/register
+loginBtn.addEventListener("click", () => {
+  console.log("Mia Khalifa");
+  loginForm.classList.add("active");
+  registerForm.classList.remove("active");
+  loginBtn.classList.add("active");
+  registerBtn.classList.remove("active");
+});
+
+registerBtn.addEventListener("click", () => {
+  registerForm.classList.add("active");
+  loginForm.classList.remove("active");
+  registerBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+});
+
+// Password eye toggle
+document.querySelectorAll(".toggle-password").forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    const input = e.target.previousElementSibling;
+    input.type = input.type === "password" ? "text" : "password";
+  });
+});
+
+// career banner slider
+$(document).ready(function () {
+  $(".career-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: false,
+    smartSpeed: 800,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    dots: true,
+    nav: false,
+  });
+});
