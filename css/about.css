@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
@@ -41,6 +42,8 @@ ul {
 li {
     list-style-type: none;
 =======
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 /* ============================================
 Project Stylesheet Structure
 ============================================
@@ -133,7 +136,10 @@ ul {
 
 li {
   list-style-type: none;
+<<<<<<< HEAD
 >>>>>>> 13b51534db30921c230bcbcc4685ddbaaac4185f
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 }
 
 h1,
@@ -141,6 +147,7 @@ h2,
 h3,
 h4,
 h5 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     color: #FFFF;
 }
@@ -3771,6 +3778,8 @@ footer .footer-badge {
 }
 
 =======
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
   color: #fff;
   margin: 0;
 }
@@ -3947,7 +3956,10 @@ footer .footer-badge {
 /* =============================
              footer 
 ================================= */
+<<<<<<< HEAD
 >>>>>>> 13b51534db30921c230bcbcc4685ddbaaac4185f
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 /* Footer Styles */
 .footer {
   font-family: "Arial", sans-serif;
@@ -4060,6 +4072,7 @@ footer .footer-badge {
   font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* =============================
              service 
@@ -4311,6 +4324,8 @@ footer .footer-badge {
   padding-top: 110px;
   padding-bottom: 80px;
 =======
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 /* home-sec-two */
 .home-sec-two {
   padding: 110px 0;
@@ -4318,12 +4333,16 @@ footer .footer-badge {
 
 .home-sec-two {
   background-image: url("../images/about-us-bg-img.svg.png");
+<<<<<<< HEAD
 >>>>>>> 13b51534db30921c230bcbcc4685ddbaaac4185f
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
   background-size: 659px 353px;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .cnt-sec-one h2 {
   color: #222222;
@@ -4427,6 +4446,8 @@ footer .footer-badge {
 }
 
 =======
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 .home-sec-two .left-wrapper {
   gap: 20px;
 }
@@ -5877,7 +5898,10 @@ footer .footer-badge {
   text-align: center;
 }
 
+<<<<<<< HEAD
 >>>>>>> 13b51534db30921c230bcbcc4685ddbaaac4185f
+=======
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
 /* =============================
              Responsive 
 ================================= */
@@ -6232,7 +6256,11 @@ footer .footer-badge {
     padding: 6px 12px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 13b51534db30921c230bcbcc4685ddbaaac4185f
+=======
+}
+>>>>>>> 377d0e2778720669469a25d3fdd2da06ac5ef7f9
