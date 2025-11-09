@@ -104,6 +104,16 @@ li {
 }
 
 /* =================
+container
+====================*/
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/* =================
 banner
 ====================*/
 .global-banner {
@@ -116,16 +126,6 @@ banner
 }
 
 /* =================
-container
-====================*/
-.container {
-  max-width: 1550px;
-  width: 100%;
-  padding: 0 25px;
-  margin: 0 auto;
-}
-
-/* =================
 global wrapper
 ====================*/
 .global-wrapper {
@@ -134,7 +134,7 @@ global wrapper
   align-items: center;
   justify-content: center;
   height: var(--banner-height);
-  background-color: red;
+  /* background-color: red; */
 }
 
 /* =================
