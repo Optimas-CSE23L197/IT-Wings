@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left image section -->
+      <div class="image-section">
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+          alt="Student"
+        />
+        <div class="overlay-text">
+          <h2>Learn.Grow.Earn</h2>
+          <p>Access courses, track progress, and unlock your potential.</p>
+        </div>
+      </div>
+
+      <!-- Right form section -->
+      <div class="form-section">
+        <div class="form-header">
+          <h3>Welcome to folk..!</h3>
+          <div class="button-group">
+            <button class="tab-btn active" id="loginBtn">Login</button>
+            <button class="tab-btn" id="registerBtn">Register</button>
+          </div>
+        </div>
+
+        <!-- Login form -->
+        <form id="loginForm" class="form active">
+          <label>User name</label>
+          <input type="text" placeholder="Enter your User name" required />
+
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" placeholder="Enter your Password" required />
+            <span class="toggle-password">👁️</span>
+          </div>
+
+          <div class="options">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <!-- Register form -->
+        <form id="registerForm" class="form">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your Full Name" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your Email" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="Enter your Password" required />
+
+          <button type="submit" class="login-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

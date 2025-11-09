@@ -1,0 +1,164 @@
+/* ============================================
+Project Stylesheet Structure
+============================================
+1. Font Import
+2. Root Variables
+3. Global Selectors
+4. Utilities
+5. Navbar
+6. Footer
+7. Home Page
+8. About Page
+9. Services Page
+10. E-Learning
+11. Courses
+12. Career
+13. Contact Us
+14. Responsive Breakpoints
+  14.1 ≥ 1200px
+  14.2 ≤ 1199px
+  14.3 ≤ 992px
+  14.4 ≤ 850px
+  14.5 ≤ 768px
+  14.6 ≤ 575px
+  14.7 ≤ 480px
+  14.8 ≤ 360px
+============================================ */
+
+/* ==============
+ google fonts
+ ================*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* ==============
+ global css 
+ ================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ==============
+root file
+=================*/
+:root {
+  /* ===== Blue Theme ===== */
+  --blue-dark: #0c2b4e;
+  --blue-medium: #1a3d64;
+  --blue-teal: #1d546c;
+  --blue-light: #f4f4f4;
+
+  /* ===== Purple Theme ===== */
+  --purple-dark: #540863;
+  --purple-medium: #92487a;
+  --purple-light: #e49ba6;
+  --purple-soft: #ffd3d5;
+
+  /* ===== banner height ===== */
+  --banner-height: 60vh;
+}
+
+/* =================
+ utilies 
+ ====================*/
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.al-start {
+  align-items: flex-start;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.al-end {
+  align-items: flex-end;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* =================
+container
+====================*/
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/* =================
+banner
+====================*/
+.global-banner {
+  position: relative;
+  height: var(--banner-height);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* =================
+global wrapper
+====================*/
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: var(--banner-height);
+  /* background-color: red; */
+}
+
+/* =================
+global content
+====================*/
+.global-content {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+
+.global-content p {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+}

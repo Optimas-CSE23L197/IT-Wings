@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #f0fdfa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 900px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Section */
+.image-section {
+  flex: 1.2;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+
+.image-section:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  color: white;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.overlay-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.overlay-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Right Section */
+.form-section {
+  flex: 1;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+}
+
+.form-header {
+  font-size: 32px;
+  text-align: center;
+}
+
+.form-header h3 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #e0f2fe;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  box-shadow: inset 0 0 0 0 #38bdf8;
+}
+
+.button-group button.active,
+.button-group button:hover {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.form-info {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin: 25px 0;
+}
+
+/* Forms */
+form {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 0.5s ease;
+}
+
+form.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px 18px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 30px;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  transition: all 0.3s;
+  background-color: #f9fafb;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  background-color: #fff;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .toggle-password {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+
+.password-wrapper .toggle-password:hover {
+  color: #3b82f6;
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.options a {
+  text-decoration: none;
+  color: #3b82f6;
+  transition: color 0.3s;
+}
+
+.options a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* Submit button */
+.login-btn {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #0891b2, #2563eb);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+
+/* Responsive */
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .image-section {
+    height: 250px;
+  }
+
+  .form-section {
+    padding: 30px;
+  }
+}
