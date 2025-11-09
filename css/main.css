@@ -278,6 +278,7 @@ Options Grid
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
 /* navbar active */
 .activee {
   color: var(--accent);
@@ -1090,10 +1091,120 @@ Responsive Design
   overflow: hidden;
   border-radius: 20px;
 }
+/* ============================================
+ Technologies Section
+============================================ */
+
+.technologies {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.tech-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.tech-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 10px;
+}
+
+.tech-header p {
+  font-size: 18px;
+  color: var(--blue-teal);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Technology Tabs */
+.tech-tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.tech-tabs ul li {
+  padding: 8px 18px;
+  border: 1px solid var(--blue-teal);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  color: var(--blue-teal);
+}
+
+.tech-tabs ul li.active,
+.tech-tabs ul li:hover {
+  background-color: var(--blue-teal);
+  color: #fff;
+}
+
+/* Technologies Grid */
+.tech-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+}
+
+.tech-box {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--blue-dark);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tech-box img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.tech-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--purple-medium);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ============================================
+ Hire Developer Contact Section
+============================================ */
+
+.hire-developers {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+.hire-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hire-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
 .hire-image img {
   width: 100%;
-  height: auto;      /* keeps image sharp */
+  height: auto;
   display: block;
   object-fit: cover;
 }
@@ -1684,6 +1795,7 @@ Responsive Adjustments
 
   .contact-form {
     padding: 25px 18px;
+  }
 /* home start */
 .home-start {
   background-color: var(--blue-dark);
@@ -1796,7 +1908,7 @@ Responsive Adjustments
   color: var(--blue-light);
   text-transform: uppercase;
 }
-
+}
 /* =================
 responsive
 ====================*/
@@ -2332,7 +2444,4 @@ responsive
   .home-start {
     margin-top: 240px;
   }
-}
-}
-}
 }
