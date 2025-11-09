@@ -12,49 +12,298 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- owl crousal -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- aos stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- header -->
+    <header>
+      <nav class="nav-bar">
+        <div class="container">
+          <div class="nav-wrapper d-flex al-center jc-between">
+            <div class="logo d-flex al-center jc-center">
+              <a href="#">
+                <figure>
+                  <img src="images/Baby.png" alt="logo" />
+                </figure>
+              </a>
+
+              <div class="humberger d-none" id="humberger">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <ul class="d-flex al-center">
+                <li><a href="index1.html" class="active">Home</a></li>
+                <li><a href="about1.html">About Us</a></li>
+                <li><a href="service1.html">Service</a></li>
+                <li><a href="career1.html">Career</a></li>
+                <li><a href="contact1.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="contact-btn">
+              <a href="#" target="_blank">Learn With Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- banner -->
-    <section
-      class="global-banner"
-      style="background-image: url(images/service-banner.jpg)"
-    >
-      <div class="container">
-        <div class="global-wrapper">
-          <div class="global-content">
-            <h1>Animesh Karan</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad
-              suscipit soluta incidunt quos provident, earum repellat voluptatum
-              voluptate inventore!
-            </p>
+    <section class="global-banner">
+      <div class="banner-container">
+        <div class="banner-wrapper">
+          <div class="banner-content">
+            <div class="content-box">
+              <h1>Empowering Businesses with Innovative IT Solutions</h1>
+              <p>
+                We provide end-to-end IT services, from web and mobile
+                development to cloud, automation, and digital transformation.
+                Our goal is to deliver reliable, scalable, and innovative
+                solutions that help businesses grow and succeed.
+              </p>
+
+              <a href="#" class="btn-primary">Build a team →</a>
+            </div>
+          </div>
+          <div class="banner-image">
+            <div class="overlay"></div>
+            <div class="owl-carousel banner-image-list">
+              <figure>
+                <img src="images/career-1.jpg" alt="banner image" />
+              </figure>
+              <figure>
+                <img src="images/career-2.jpg" alt="banner image" />
+              </figure>
+              <figure>
+                <img src="images/service-banner.jpg"banner image" />
+              </figure>
+              <figure>
+                <img src="images/career-4.jpg" alt="banner image" />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- main -->
+    <main>
+      <!-- home work details -->
+      <!-- <section class="home-work-section">
+        <div class="container">
+          <div class="global-wrapper">
+            <div class="home-work-box-list owl-carousel item">
+              <div class="box box-1" data-aos="fade-down">
+                <figure>
+                  <img
+                    src="images/home/cube 1.png"
+                    alt="Strategy & Architecture"
+                  />
+                </figure>
+                <div class="home-box-content">
+                  <h2>Architect Your Digital Future & Hard Work With Us</h2>
+                  <p>
+                    We analyze your business goals, processes, and systems to
+                    design a tailored IT architecture that ensures scalability,
+                    efficiency, and security—empowering sustainable digital
+                    transformation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box box-2" data-aos="fade-up">
+                <figure>
+                  <img
+                    src="images/home/software-application 1.png"
+                    alt="Software Development"
+                  />
+                </figure>
+                <div class="home-box-content">
+                  <h2>Engineer Custom Software Solutions</h2>
+                  <p>
+                    From concept to deployment, our expert developers build
+                    powerful, user-centric applications using cutting-edge
+                    technologies to accelerate your business growth and
+                    operational excellence.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box box-3" data-aos="fade-down">
+                <figure>
+                  <img
+                    src="images/home/technical-support 1.png"
+                    alt="IT Optimization"
+                  />
+                </figure>
+                <div class="home-box-content">
+                  <h2>Optimize & Reengineer Your Processes</h2>
+                  <p>
+                    We modernize legacy systems, automate workflows, and enhance
+                    IT infrastructure to drive innovation, performance, and
+                    agility across your organization.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- how to start-->
+      <!-- <section class="home-start">
+        <div class="container">
+          <div class="home-start-wrapper">
+            <div class="home-start-content">
+              <span>Our Process</span>
+              <h2>Simple Steps to Success</h2>
+              <p>
+                From your first idea to a fully delivered project, our team
+                ensures a smooth, transparent, and result-driven journey —
+                making IT collaboration effortless and effective.
+              </p>
+            </div>
+
+            <div class="home-start-card-list d-flex al-center">
+              <div class="home-start-card home-card-1">
+                <figure>
+                  <img src="images/home/ask.png" alt="Consult" />
+                </figure>
+                <div class="home-start-card-content">
+                  <h2>01</h2>
+                  <span>YOU CONSULT</span>
+                </div>
+              </div>
+              <div class="home-start-card home-card-2">
+                <figure>
+                  <img src="images/home/proced.png" alt="Plan" />
+                </figure>
+                <div class="home-start-card-content">
+                  <h2>02</h2>
+                  <span>WE PLAN</span>
+                </div>
+              </div>
+              <div class="home-start-card home-card-3">
+                <figure>
+                  <img src="images/home/handshake.png" alt="Develop" />
+                </figure>
+                <div class="home-start-card-content">
+                  <h2>03</h2>
+                  <span>WE DEVELOP</span>
+                </div>
+              </div>
+              <div class="home-start-card home-card-4">
+                <figure>
+                  <img src="images/home/medal.png" alt="Deliver" />
+                </figure>
+                <div class="home-start-card-content">
+                  <h2>04</h2>
+                  <span>YOU SUCCEED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
 
     <!-- footer -->
+    <footer class="footer">
+      <div class="footer-cta">
+        <div class="container">
+          <h2>Ready to work with us?</h2>
+          <p>
+            Join us to experience cutting-edge industrial solutions that drive
+            innovation and lasting success.
+          </p>
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Logo & About -->
+          <div class="footer-col about">
+            <img
+              src="images/service-banner.jpg"
+              alt="ProFactory Logo"
+              class="footer-logo"
+            />
+            <p>
+              We are committed to providing personalized industrial solutions
+              that transform your business.
+            </p>
+            <div class="social-icons">
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="footer-col">
+            <h4>Security</h4>
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li><a href="tel:+91123654789">+91 123654789</a></li>
+              <li>
+                <a href="mailto:info@domainname.com">info@domainname.com</a>
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/XYZ" target="_blank"
+                  >520, West Valley, Amin and Minim</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <!-- jquery -->
     <script
@@ -63,19 +312,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- owl crousal -->
+    <!-- Owl Carousel JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+        delay: 600,
+      });
+    </script>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
