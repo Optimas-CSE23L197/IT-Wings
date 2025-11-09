@@ -55,8 +55,26 @@ root file
   --purple-light: #e49ba6;
   --purple-soft: #ffd3d5;
 
-  /* ===== banner height ===== */
-  --banner-height: 60vh;
+  /* ===== Neutral Colors ===== */
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray-dark: #222222;
+
+  /* ===== Accent Colors ===== */
+  --accent: #ffb703; /* warm gold accent for hover or buttons */
+
+  /* ===== Banner Height ===== */
+  --banner-height: 70vh;
+
+  /* ===== font size ===== */
+  --heading-h1: 50px;
+  --subheading-p: 25px;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 /* =================
@@ -90,6 +108,10 @@ root file
   justify-content: center;
 }
 
+.jc-between {
+  justify-content: space-between;
+}
+
 .jc-end {
   justify-content: flex-end;
 }
@@ -109,7 +131,7 @@ container
 .container {
   max-width: 1500px;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -150,15 +172,187 @@ global content
 }
 
 .global-content h1 {
-  font-size: 60px;
+  font-size: var(--heading-h1);
   font-weight: 700;
   line-height: 1.2;
   color: #000;
 }
 
 .global-content p {
-  font-size: 30px;
+  font-size: var(--subheading-p);
   font-weight: 500;
   line-height: 1.2;
   color: #000;
+}
+
+/* navbar active */
+.activee {
+  color: var(--accent);
+}
+
+/* =================
+Navbar (Enhanced)
+====================*/
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: var(--white);
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-bar ul li a.active {
+  color: var(--accent) !important;
+  position: relative;
+}
+
+/* Optional underline or accent border for nice UI */
+.nav-bar ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.nav-wrapper {
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo a {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-logo a:hover {
+  color: var(--accent);
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-menu ul li a {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: capitalize;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.nav-menu ul li a.active {
+  color: var(--purple-light);
+  border-bottom: 2px solid var(--purple-light);
+}
+
+/* Optional sticky effect */
+/* .nav-bar.scrolled {
+  background-color: var(--blue-medium);
+  transition: background-color 0.4s ease;
+} */
+
+.contact-btn a {
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.contact-btn a:hover {
+  background-color: var(--accent);
+  color: var(--blue-dark);
+}
+
+/* =================
+responsive
+====================*/
+@media screen and (max-width: 992px) {
+  /* navbar */
+  .nav-bar {
+    background-color: var(--blue-dark);
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show-menu ul {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show-menu ul li {
+    margin-top: 30px;
+  }
+
+  .humberger {
+    position: absolute;
+    display: block;
+    color: var(--accent);
+    top: 25px;
+    right: 20px;
+  }
+
+  .humberger i {
+    font-size: 28px;
+    transform: rotate(180deg);
+  }
+
+  .contact-btn a {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* navbar */
+  .humberger {
+    top: 23px;
+    right: 10px;
+  }
+
+  .humberger i {
+    font-size: 22px;
+  }
+
+  .contact-btn a {
+    top: 14px;
+    font-size: 15px;
+    padding: 5px 10px;
+    right: 50px;
+  }
 }
