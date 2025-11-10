@@ -65,3 +65,12 @@ $(document).ready(function () {
     },
   });
 });
+
+
+
+/*.............New Career..........*/
+console.log("Hero section loaded successfully!");
+console.log("Cards loaded successfully!");
+console.log("Deloitte people section loaded successfully!");
+
+
