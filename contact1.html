@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Wings Webtech Solutions</title>
-    <!-- font awsome -->
+
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,14 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- owl crousal -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <!-- owl carousel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -27,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -42,7 +38,6 @@
                   <img src="images/Baby.png" alt="logo" />
                 </figure>
               </a>
-
               <div class="humberger d-none" id="humberger">
                 <i class="fa-solid fa-bars"></i>
               </div>
@@ -65,32 +60,18 @@
     </header>
 
     <!-- banner -->
-    <section class="global-banner">
-      <div class="">
+    <section
+      class="global-banner"
+      style="background-image: url(images/career/contact-banner.jpg)"
+    >
+      <div class="container">
         <div class="global-wrapper">
           <div class="global-content">
-            <div class="banner-item-list owl-carousel">
-              <div class="banner-1">
-                <figure>
-                  <img src="images/career/career-1.jpg" alt="" />
-                </figure>
-                <div class="banner-body-content">
-                  <h1></h1>
-                  <p></p>
-                  <div class="banner-body-btn"><a href=""></a></div>
-                </div>
-              </div>
-              <div class="banner-2">
-                <figure>
-                  <img src="images/career/career-2.jpg" alt="" />
-                </figure>
-                <div class="banner-body-content">
-                  <h1></h1>
-                  <p></p>
-                  <div class="banner-body-btn"><a href=""></a></div>
-                </div>
-              </div>
-            </div>
+            <h1>Contact Us</h1>
+            <p>
+              We're here to help your business grow with innovative digital
+              solutions. Let's build something great together!
+            </p>
           </div>
         </div>
       </div>
@@ -98,34 +79,120 @@
 
     <!-- main -->
     <main>
-      <!-- Contact Title Section -->
-      <section class="contact-header">
+      <!-- contact details like tamal da -->
+      <section class="contact-page-details">
         <div class="container">
-          <h2>Contact</h2>
-          <p>We specialize in helping you build a team of expert developers.</p>
+          <div class="contact-page-wrapper">
+            <div class="contact-page-card-list">
+              <!-- content -->
+              <div class="contact-page-content">
+                <h2>What’s on your mind?</h2>
+                <p>
+                  We’re here to help! Tell us what you’re looking for and we’ll
+                  connect you to the right experts from IT Wings Webtech
+                  Solutions.
+                </p>
+              </div>
+
+              <!-- card-list -->
+              <div class="contact-card">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div class="details">
+                  <h4>Call Us</h4>
+                  <b><a href="tel:+911234567890">+91 1234567890</a></b>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <div class="details">
+                  <h4>Email Us</h4>
+                  <b
+                    ><a href="mailto:info@itwingswebtech.com"
+                      >info@itwingswebtech.com</a
+                    ></b
+                  >
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="details">
+                  <h4>Visit Us</h4>
+                  <b>Stesalit Tower, Sector V, Kolkata, West Bengal, 700091</b>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Get In Touch Section -->
-      <section class="get-in-touch">
+      <!-- contact form for connection -->
+      <section class="contact-page-form">
         <div class="container">
-          <h3>Get in touch</h3>
-          <p>
-            Please feel free to get in touch with us via any convenient means
-            (phone, whatsapp, email, submit a contact form). We will be glad to
-            answer your questions as soon as possible.
-          </p>
-        </div>
-      </section>
+          <div class="contact-form-wrapper d-flex al-start jc-between">
+            <div class="contact-form-content">
+              <h2>Get In Touch</h2>
+              <p>
+                Fill out the form below and our team will get back to you within
+                24 hours.
+              </p>
+            </div>
 
-      <!-- Contact Layout Section -->
-      <section class="contact-form-section">
-        <div class="container">
-          <div class="contact-layout">
-            <div class="contact-map">
+            <div class="contact-form-body d-flex al-start jc-between">
+              <form action="#" method="post" class="contact-us-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Your Full Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company / Organization"
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <textarea
+                    name="message"
+                    placeholder="Write your message here..."
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" id="privacy" required />
+                  <label for="privacy">
+                    I agree to the
+                    <a href="#">Privacy Policy</a> and Terms of Use.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+              </form>
+
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.0706346017646!2d88.43318712475703!3d22.569078383100436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275abf4cadad9%3A0x617148c6351331b6!2sStesalit%20Tower%2C%20GP%20Block%2C%20Sector%20V%2C%20Bidhannagar%2C%20West%20Bengal%20700091!5e1!3m2!1sen!2sin!4v1762714772790!5m2!1sen!2sin"
-                width="600"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.0706346017646!2d88.43318712475703!3d22.569078383100436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275abf4cadad9%3A0x617148c6351331b6!2sStesalit%20Tower%2C%20GP%20Block%2C%20Sector%20V%2C%20Bidhannagar%2C%20West%20Bengal%20700091!5e1!3m2!1sen!2sin!4v1762749414894!5m2!1sen!2sin"
+                width="100%"
                 height="450"
                 style="border: 0"
                 allowfullscreen=""
@@ -133,51 +200,21 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-
-            <div class="contact-form">
-              <h3>Connect With Your Next Great Hire Today!</h3>
-
-              <form>
-                <div class="form-group">
-                  <input type="text" placeholder="Company" />
-                  <input type="text" placeholder="Your Name" />
-                </div>
-
-                <div class="form-group">
-                  <input type="text" placeholder="Phone Number" />
-                  <input type="email" placeholder="Email" />
-                </div>
-
-                <div class="form-group">
-                  <textarea placeholder="Project Detail"></textarea>
-                </div>
-
-                <div class="form-check">
-                  <input type="checkbox" />
-                  <label>
-                    By sending this form I confirm that I have read and accept
-                    the
-                    <a href="#">Privacy Policy</a>.
-                  </label>
-                </div>
-
-                <button class="btn">GET CONSULTATION</button>
-              </form>
-            </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="footer">
       <div class="footer-cta">
         <div class="container">
           <h2>Ready to work with us?</h2>
           <p>
-            Join us to experience cutting-edge industrial solutions that drive
-            innovation and lasting success.
+            Join us to experience cutting-edge digital solutions that drive
+            innovation and business transformation.
           </p>
-          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <a href="contact1.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
       <div class="footer-main">
@@ -186,12 +223,12 @@
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
-              alt="ProFactory Logo"
+              alt="IT Wings Logo"
               class="footer-logo"
             />
             <p>
-              We are committed to providing personalized industrial solutions
-              that transform your business.
+              IT Wings Webtech Solutions delivers digital innovation,
+              development, and transformation for global enterprises.
             </p>
             <div class="social-icons">
               <a href="#" target="_blank"
@@ -207,16 +244,18 @@
               ></a>
             </div>
           </div>
+
           <!-- Quick Links -->
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
+              <li><a href="index1.html">Home</a></li>
+              <li><a href="about1.html">About Us</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="service1.html">Services</a></li>
             </ul>
           </div>
+
           <!-- Legal -->
           <div class="footer-col">
             <h4>Security</h4>
@@ -224,30 +263,35 @@
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Help</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact1.html">Contact Us</a></li>
             </ul>
           </div>
+
           <!-- Contact Info -->
           <div class="footer-col">
             <h4>Contact</h4>
             <ul class="contact-info">
-              <li><a href="tel:+91123654789">+91 123654789</a></li>
+              <li><a href="tel:+911234567890">+91 1234567890</a></li>
               <li>
-                <a href="mailto:info@domainname.com">info@domainname.com</a>
+                <a href="mailto:info@itwingswebtech.com"
+                  >info@itwingswebtech.com</a
+                >
               </li>
               <li>
                 <a href="https://goo.gl/maps/XYZ" target="_blank"
-                  >520, West Valley, Amin and Minim</a
+                  >Stesalit Tower, Sector V, Kolkata</a
                 >
               </li>
             </ul>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
+        <p>&copy; 2025 IT Wings Webtech Solutions. All Rights Reserved.</p>
       </div>
     </footer>
+
     <!-- jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -255,21 +299,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- owl crousal -->
-    <script></script>
-    <!-- owl crousal -->
+
+    <!-- owl carousel -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
