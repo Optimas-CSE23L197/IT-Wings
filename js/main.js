@@ -40,6 +40,33 @@ $(document).ready(function () {
   });
 });
 
+//banner-item-list career
+$(document).ready(function () {
+  $(".banner-item-list").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    smartSpeed: 1000,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      992: {
+        items: 1,
+      },
+    },
+  });
+});
+
 // home work details carousel
 $(document).ready(function () {
   $(".home-work-box-list").owlCarousel({
