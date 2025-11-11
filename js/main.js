@@ -74,3 +74,11 @@ console.log("Cards loaded successfully!");
 console.log("Deloitte people section loaded successfully!");
 
 
+/*.............Job Description page..........*/
+document.querySelector(".apply").addEventListener("click", function () {
+  alert("Application submitted!");
+});
+
+document.querySelector(".recommend").addEventListener("click", function () {
+  alert("Share with your friend!");
+});
