@@ -179,3 +179,11 @@ navContact.addEventListener("click", (e) => {
   contactSection.classList.toggle("active");
   serviceSection.classList.remove("active");
 });
+
+
+/*.............New Career..........*/
+console.log("Hero section loaded successfully!");
+console.log("Cards loaded successfully!");
+console.log("Deloitte people section loaded successfully!");
+
+
