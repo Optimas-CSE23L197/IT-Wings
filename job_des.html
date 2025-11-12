@@ -1,87 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Description + Recommend</title>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <nav class="nav-bar">
+        <div class="container">
+          <div class="nav-wrapper d-flex al-center jc-between">
+            <div class="logo d-flex al-center jc-between">
+              <a href="#">
+                <figure>
+                  <img src="images/Baby.png" alt="logo" />
+                </figure>
+              </a>
 
-<body>
-
-<!-- Job Description Section -->
-<div class="job-container">
-
-    <h2 class="section-title">Job Description</h2>
-
-    <div class="job-details-grid">
-
-        <div class="job-item"><span class="label">Skill Set :</span> Azure DevOps</div>
-        <div class="job-item"><span class="label">Total Experience :</span> 5.00 to 8.00 Years</div>
-        <div class="job-item"><span class="label">Job Post Date :</span> 07/11/2025</div>
-        <div class="job-item"><span class="label">Job Expiry Date :</span> 31/12/2025</div>
-        <div class="job-item"><span class="label">Location :</span> Bengaluru [India]</div>
-        <div class="job-item"><span class="label">No of Openings :</span> 1</div>
-        <div class="job-item"><span class="label">Job Reference No :</span> 4002593</div>
-        <div class="job-item"><span class="label">Domain :</span> IT</div>
-
-    </div>
-
-    <div class="button-area">
-        <button class="btn apply">APPLY NOW</button>
-        <button class="btn recommend">RECOMMEND TO FRIEND</button>
-    </div>
-
-    <hr>
-
-    <h2 class="section-title">Job Summary</h2>
-
-    <p class="job-summary">
-        Design, implement, and manage infrastructure using Terraform and ARM templates for Azure cloud platforms.
-        Develop and maintain reusable Terraform modules.
-        Monitor and troubleshoot infra issues, ensuring proactive maintenance.
-        Implement CI/CD pipelines using Azure DevOps: Azure Pipelines, Azure Repos, Azure Artifacts.
-        Write YAML pipelines for IaC and deployment processes.
-        Manage container orchestration with Kubernetes.
-        Work with Azure Data Bricks, Data Lake, and Azure Storage.
-        Hands-on experience with APIM, Azure Functions, App Insights, Azure Monitoring, Event Grid, and Service Bus.
-    </p>
-
-</div>
-
-<!-- Recommend Section -->
-<div class="recommend-box">
-
-    <h2 class="Jobhead">Recommend to Friend</h2>
-
-    <div class="form-grid">
-        <div class="form-group">
-            <label>Your Name*</label>
-            <input type="text">
+              <div class="humberger d-none" id="humberger">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <ul class="d-flex al-center">
+                <li id="nav-home">
+                  <a href="index1.html" class="active">Home</a>
+                </li>
+                <li id="nav-about">
+                  <a href="about1.html">About Us</a>
+                </li>
+                <li id="nav-service">
+                  <a href="#">Service</a>
+                </li>
+                <li id="nav-career"><a href="career1.html">Career</a></li>
+                <li><a href="#" id="nav-contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="contact-btn">
+              <a href="contact1.html" target="_blank">Get in touch</a>
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="form-group">
-            <label>Your Email ID*</label>
-            <input type="email">
+    <!-- home section -->
+    <section class="home-menu-service-setion" id="home-menu-service-setion">
+      <div class="home-menu-service-container">
+        <div class="nav-service-wrapper">
+          <div class="nav-banner">
+            <div class="list">
+              <h2>All</h2>
+              <ul>
+                <li>Govt.</li>
+                <li>Tech</li>
+                <li>Promotional</li>
+                <li>Others</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Govt</h2>
+              <ul>
+                <li>Aadher</li>
+                <li>PAN</li>
+                <li>Voter</li>
+                <li>Home Loan</li>
+                <li>Business Loan</li>
+                <li>See More...</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Tech</h2>
+              <ul>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>API</li>
+                <li>Cloud</li>
+                <li>Course</li>
+                <li>See More...</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Promotional</h2>
+              <ul>
+                <li>Facebook</li>
+                <li>Youtube</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Threads</li>
+                <li>See More...</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Others</h2>
+              <ul>
+                <li>Graphics design</li>
+                <li>Logo design</li>
+                <li>UI/UX</li>
+                <li>Ads design</li>
+                <li>See More...</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="form-group">
-            <label>Your Friend Name*</label>    
-            <input type="text">
+    <!-- Contact Section -->
+    <section class="contact-nav-section" id="contact-nav-section">
+      <div class="home-menu-service-container">
+        <div class="nav-service-wrapper">
+          <div class="nav-contact-content">
+            <div class="text">
+              <h2>What’s on your mind?</h2>
+              <p>
+                We’re here to help! Tell us what you’re looking for and we’ll
+                get you connected to the right people.
+              </p>
+            </div>
+          </div>
+          <div class="contact-option">
+            <ul>
+              <li><a href="#">Request a Service</a></li>
+              <li><a href="#">Know About Us</a></li>
+              <li><a href="#">Join Us</a></li>
+              <li><a href="#">Learn With Us</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="form-group">
-            <label>Your Friend Email Id*</label>
-            <input type="email">
+    <section>
+      <div class="container">
+        <div class="job_des-wrapper">
+          <!-- Job Description Section -->
+          <div class="job-container">
+            <h2 class="section-title">Job Description</h2>
+
+            <div class="job-details-grid">
+              <div class="job-item">
+                <span class="label">Skill Set :</span> Azure DevOps
+              </div>
+              <div class="job-item">
+                <span class="label">Total Experience :</span> 5.00 to 8.00 Years
+              </div>
+              <div class="job-item">
+                <span class="label">Job Post Date :</span> 07/11/2025
+              </div>
+              <div class="job-item">
+                <span class="label">Job Expiry Date :</span> 31/12/2025
+              </div>
+              <div class="job-item">
+                <span class="label">Location :</span> Bengaluru [India]
+              </div>
+              <div class="job-item">
+                <span class="label">No of Openings :</span> 1
+              </div>
+              <div class="job-item">
+                <span class="label">Job Reference No :</span> 4002593
+              </div>
+              <div class="job-item"><span class="label">Domain :</span> IT</div>
+            </div>
+
+            <div class="button-area">
+              <button class="btn apply">APPLY NOW</button>
+              <button class="btn recommend">RECOMMEND TO FRIEND</button>
+            </div>
+
+            <hr />
+
+            <h2 class="section-title">Job Summary</h2>
+
+            <p class="job-summary">
+              Design, implement, and manage infrastructure using Terraform and
+              ARM templates for Azure cloud platforms. Develop and maintain
+              reusable Terraform modules. Monitor and troubleshoot infra issues,
+              ensuring proactive maintenance. Implement CI/CD pipelines using
+              Azure DevOps: Azure Pipelines, Azure Repos, Azure Artifacts. Write
+              YAML pipelines for IaC and deployment processes. Manage container
+              orchestration with Kubernetes. Work with Azure Data Bricks, Data
+              Lake, and Azure Storage. Hands-on experience with APIM, Azure
+              Functions, App Insights, Azure Monitoring, Event Grid, and Service
+              Bus.
+            </p>
+          </div>
+
+          <!-- Recommend Section -->
+          <div class="recommend-box">
+            <h2 class="Jobhead">Recommend to Friend</h2>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Your Name*</label>
+                <input type="text" />
+              </div>
+
+              <div class="form-group">
+                <label>Your Email ID*</label>
+                <input type="email" />
+              </div>
+
+              <div class="form-group">
+                <label>Your Friend Name*</label>
+                <input type="text" />
+              </div>
+
+              <div class="form-group">
+                <label>Your Friend Email Id*</label>
+                <input type="email" />
+              </div>
+            </div>
+
+            <button class="submit-btn">SUBMIT</button>
+          </div>
         </div>
-    </div>
-
-    <button class="submit-btn">SUBMIT</button>
-
-</div>
-
-<script src="script.js"></script>
-</body>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
