@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Wings Webtech Solutions</title>
-
-    <!-- font awesome -->
+    <!-- font awsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,8 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- owl carousel -->
+    <!-- owl crousal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -22,7 +27,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -46,20 +50,20 @@
             <div class="nav-menu">
               <ul class="d-flex al-center">
                 <li id="nav-home">
-                  <a href="index1.html" class="active">Home</a>
+                  <a href="index.html" class="active">Home</a>
                 </li>
                 <li id="nav-about">
-                  <a href="about1.html">About Us</a>
+                  <a href="about.html">About Us</a>
                 </li>
                 <li id="nav-service">
                   <a href="#">Service</a>
                 </li>
-                <li id="nav-career"><a href="career1.html">Career</a></li>
+                <li id="nav-career"><a href="career.html">Career</a></li>
                 <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="contact-btn">
-              <a href="contact1.html" target="_blank">Get in touch</a>
+              <a href="contact.html" target="_blank">Get in touch</a>
             </div>
           </div>
         </div>
@@ -156,129 +160,195 @@
     <!-- banner -->
     <section
       class="global-banner"
-      style="background-image: url(images/career/contact-banner.jpg)"
+      style="background-image: url(images/career-banner.jpg)"
     >
+      <div class="overlay"></div>
       <div class="container">
         <div class="global-wrapper">
-          <div class="global-content"></div>
+          <div class="global-content">
+            <!-- <h1>About Us</h1> -->
+          </div>
         </div>
       </div>
     </section>
 
     <!-- main -->
-    <main class="request-section">
-      <section class="request-container">
-        <div class="back-btn">
-          <a href="#"><i class="fa-solid fa-arrow-left"></i> BACK</a>
-        </div>
-
-        <div class="request-content">
-          <div class="form-left">
-            <h4><i class="fa-solid fa-building"></i> REQUEST FOR SERVICES</h4>
+    <main>
+      <!-- Technologies Section -->
+      <section class="technologies">
+        <div class="container">
+          <div class="tech-header">
+            <h2>Technologies</h2>
             <p>
-              We’ve driven growth and purposeful transformation across every
-              industry and we’re excited to build on your belief. Tell us a bit
-              more about yourself, so we can get the ball rolling.
+              Using the right technology for the right purpose is our strong
+              motto. We can develop complex solutions and tactics to solve time
+              and enhance compatibility.
             </p>
-
-            <form action="#" class="service-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="fname">First name*</label>
-                  <input type="text" id="fname" name="fname" required />
-                </div>
-                <div class="form-group">
-                  <label for="lname">Last name*</label>
-                  <input type="text" id="lname" name="lname" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">Email*</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="organization">Organization*</label>
-                  <input
-                    type="text"
-                    id="organization"
-                    name="organization"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="region">Region*</label>
-                  <select id="region" name="region" required>
-                    <option value="">Select Region</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europe">Europe</option>
-                    <option value="America">America</option>
-                    <option value="Africa">Africa</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="industry">Industry*</label>
-                  <select id="industry" name="industry" required>
-                    <option value="">Select Industry</option>
-                    <option value="IT">IT</option>
-                    <option value="Finance">Finance</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Education">Education</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group full-width">
-                <label for="help">How can we help you?*</label>
-                <textarea
-                  id="help"
-                  name="help"
-                  rows="5"
-                  maxlength="1500"
-                  placeholder="(0/1500)"
-                  required
-                ></textarea>
-              </div>
-
-              <div class="form-checkbox">
-                <label>
-                  <input type="checkbox" required />
-                  I consent to processing of my personal data entered above for
-                  IT Wings Webtech Solutions to contact me.*
-                </label>
-              </div>
-
-              <div class="form-checkbox">
-                <label>
-                  <input type="checkbox" />
-                  I would like to receive details about products, services, and
-                  events from IT Wings Webtech Solutions.
-                </label>
-              </div>
-
-              <p class="privacy-note">
-                For further details on how your personal data will be processed
-                and how your consent can be managed, refer to the
-                <a href="#">Privacy Notice</a>.
-              </p>
-
-              <p class="mandatory">*Mandatory fields</p>
-
-              <button type="submit" class="send-btn">Send</button>
-            </form>
           </div>
 
-          <div class="form-right">
-            <img src="images/request-bg.jpg" alt="Professional Man" />
+          <div class="tech-tabs">
+            <ul>
+              <li class="active">All</li>
+              <li>Frontend</li>
+              <li>Backend</li>
+              <li>Frameworks</li>
+              <li>Mobile Apps</li>
+              <li>Database</li>
+              <li>Google</li>
+              <li>Server</li>
+              <li>Hosting</li>
+              <li>DevOps</li>
+              <li>CRM</li>
+              <li>CMS</li>
+              <li>Ecommerce</li>
+              <li>Security</li>
+            </ul>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-box">
+              <img src="images/Icon/React.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/VueJS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Express.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/JS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/NodeJS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Java.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Python.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Php.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/C.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/GO.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Laravel.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Symfony.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Django.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/ExpreesJS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Spring.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/iOS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/ReactNative.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Flutter.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Kotlin.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Ionic.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/MySQL.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/SQLserver.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/MongoDB.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Redis.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Oracle.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Angular.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/Android.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/RStudio.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/PowerBI.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/DotNet.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/NextJS.jpg" alt="React" />
+            </div>
+            <div class="tech-box">
+              <img src="images/Icon/OpenCV.jpg" alt="React" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Hire Developers Section -->
+      <section class="hire-developers">
+        <div class="container">
+          <div class="hire-wrapper">
+            <div class="hire-image">
+              <img src="images/carrier-images/carrier-contactimg.jpg" alt="" />
+            </div>
+
+            <div class="hire-form">
+              <h3>Connect With Your Next Great Hire Today!</h3>
+
+              <form>
+                <div class="form-group">
+                  <input type="text" placeholder="Company" />
+                  <input type="text" placeholder="Your Name" />
+                </div>
+
+                <div class="form-group">
+                  <input type="text" placeholder="Phone Number" />
+                  <input type="email" placeholder="Email" />
+                </div>
+
+                <div class="form-group">
+                  <textarea placeholder="Project Detail"></textarea>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" />
+                  <label>
+                    By sending this form I confirm that I have read and accept
+                    the
+                    <a href="#">Privacy Policy</a>.
+                  </label>
+                </div>
+
+                <button class="btn">Get Consultation</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- main end -->
 
     <!-- footer -->
     <footer class="footer">
@@ -374,15 +444,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- owl carousel -->
+    <!-- owl crousal -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
