@@ -25,15 +25,13 @@ const contactSection = document.querySelector("#contact-nav-section");
 
 let serviceTimeout, contactTimeout;
 
-// Helper: close all open menus
 function closeAllMenus() {
   serviceSection.classList.remove("active");
   contactSection.classList.remove("active");
 }
 
-// Apply correct event listeners based on screen size
 function setupNavEvents() {
-  // Clean previous listeners
+  // Remove any existing listeners (clean re-init)
   navService.replaceWith(navService.cloneNode(true));
   navContact.replaceWith(navContact.cloneNode(true));
 
@@ -83,45 +81,16 @@ function setupNavEvents() {
 
   // Mobile (click behavior)
   else {
-    closeAllMenus();
-
     newNavService.addEventListener("click", (e) => {
-      e.preventDefault();
-      const isActive = serviceSection.classList.contains("active");
-      closeAllMenus();
-
-      if (isActive) {
-        serviceSection.classList.remove("active");
-      } else {
-        serviceSection.classList.add("active");
-      }
+      window.location.href = "service1.html";
     });
 
     newNavContact.addEventListener("click", (e) => {
-      e.preventDefault();
-      const isActive = contactSection.classList.contains("active");
-      closeAllMenus();
-
-      if (isActive) {
-        contactSection.classList.remove("active");
-      } else {
-        contactSection.classList.add("active");
-      }
+      window.location.href = "contact1.html";
     });
   }
 }
 
-// Initialize and reapply on resize
+// Initialize & reapply on resize
 setupNavEvents();
 window.addEventListener("resize", setupNavEvents);
-
-// ===============================
-// JOB PAGE BUTTONS
-// ===============================
-document.querySelector(".apply")?.addEventListener("click", function () {
-  alert("Application submitted!");
-});
-
-document.querySelector(".recommend")?.addEventListener("click", function () {
-  alert("Share with your friend!");
-});
