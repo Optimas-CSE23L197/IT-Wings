@@ -3,40 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Wings Webtech Solutions</title>
-    <!-- font awsome -->
+    <title>Service Details | IT Wings Webtech Solutions</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <!-- owl crousal -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- custom css -->
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <!-- header  -->
     <header>
       <nav class="nav-bar">
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
-            <div class="logo d-flex al-center jc-center">
+            <div class="logo d-flex al-center jc-between">
               <a href="#">
                 <figure>
                   <img src="images/Baby.png" alt="logo" />
@@ -49,17 +34,17 @@
             </div>
             <div class="nav-menu">
               <ul class="d-flex al-center">
-                <li id="nav-home"><a href="index1.html">Home</a></li>
+                <li id="nav-home">
+                  <a href="index1.html" class="active">Home</a>
+                </li>
                 <li id="nav-about">
                   <a href="about1.html">About Us</a>
                 </li>
                 <li id="nav-service">
                   <a href="service1.html">Service</a>
                 </li>
-                <li id="nav-career">
-                  <a href="career1.html" class="active">Career</a>
-                </li>
-                <li id="nav-contact"><a href="contact1.html">Contact Us</a></li>
+                <li id="nav-career"><a href="career1.html">Career</a></li>
+                <li><a href="contact1.html" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="contact-btn">
@@ -147,9 +132,9 @@
           </div>
           <div class="contact-option">
             <ul>
-              <li><a href="#">Request a Service</a></li>
-              <li><a href="#">Know About Us</a></li>
-              <li><a href="#">Join Us</a></li>
+              <li><a href="request.html">Request a Service</a></li>
+              <li><a href="about1.html">Know About Us</a></li>
+              <li><a href="jobs.html">Join Us</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -157,180 +142,109 @@
       </div>
     </section>
 
-    <!-- banner -->
+    <!-- ===== Service Banner ===== -->
     <section
-      class="global-banner"
-      style="background-image: url(images/career/career-2.jpg)"
+      class="service-banner"
+      style="background-image: url(images/career-1.jpg);"
     >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="global-wrapper">
-          <div class="global-content">
-            <!-- <h1>About Us</h1> -->
-          </div>
-        </div>
-      </div>
+      <!-- <div class="overlay"></div> -->
+      <!-- <div class="banner-content">
+        <h1>Software Development</h1>
+      </div> -->
     </section>
 
-    <!-- main -->
     <main>
-      <!-- Careers Introduction Section -->
-      <section class="careers-intro">
+      <!-- ===== Service Description ===== -->
+      <section class="service-details">
         <div class="container">
-          <h2>Please join us</h2>
+          <h2>About This Service</h2>
           <p>
-            Take a look at the open positions below.<br />
-            If none of them suits you, or you feel you could help us in another
-            way, please fill out the form below or contact us directly at
-            contact@company.com
+            Our software development service provides end-to-end solutions to
+            help businesses build robust, scalable, and high-performance
+            applications. From planning to deployment, we focus on innovation,
+            security, and quality assurance to deliver exceptional digital
+            products that drive results.
+          </p>
+          <p>
+            Whether you need a web platform, enterprise software, or
+            custom-built solution, our team ensures every line of code aligns
+            with your business goals and technical requirements.
           </p>
         </div>
       </section>
 
-      <!-- Careers Table Section -->
-      <section class="careers-list">
+      <!-- ===== Requirements Section ===== -->
+      <section class="service-requirements">
         <div class="container">
-          <h3>Developers</h3>
-
-          <div class="job-card">
-            <div class="job-row">
-              <div class="job-info">
-                <h4>Senior Web Full Stack Developer</h4>
-                <p>
-                  We are looking for experienced Full Stack developers to join
-                  our team. You will participate in all aspects of the software
-                  development lifecycle including estimating, technical design,
-                  implementation, documentation, testing, deployment, and
-                  support.
-                </p>
-              </div>
-
-              <div class="job-skills">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>API Integration</span>
-                <span>Frontend Frameworks</span>
-              </div>
-
-              <div class="job-location">
-                <p>
-                  Remote — Worldwide<br />
-                  Brno — Czech Republic<br />
-                  Prague — Czech Republic
-                </p>
-              </div>
-            </div>
-
-            <div class="job-actions">
-              <button class="btn apply-btn">Apply Now</button>
-              <button class="btn learn-btn">Learn More</button>
-            </div>
-          </div>
+          <h2>Requirements for This Service</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i> Project brief or documentation
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Design assets (if available)
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Business goals & feature list
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Technical stack preferences
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Timeline & budget estimation
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- Contact / Hire Form Section -->
-      <section class="careers-contact">
+      <!-- ===== Other Services Section ===== -->
+      <section class="other-services">
         <div class="container">
-          <div class="careers-wrapper">
-            <div class="apply">
-              <h2>Post Your Resume / Registration</h2>
-              <p class="note">(*) Asterisk denotes mandatory fields</p>
-
-              <form>
-                <div class="row">
-                  <div class="input-box">
-                    <label>First name *</label>
-                    <input type="text" placeholder="Enter your first name" />
-                  </div>
-
-                  <div class="input-box">
-                    <label>Last name *</label>
-                    <input type="text" placeholder="Enter your last name" />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-box">
-                    <label>Country *</label>
-                    <select>
-                      <option>India</option>
-                      <option>USA</option>
-                      <option>UK</option>
-                      <option>Canada</option>
-                    </select>
-                  </div>
-
-                  <div class="input-box">
-                    <label>Select Experience *</label>
-                    <select>
-                      <option>Fresher</option>
-                      <option>1-2 Years</option>
-                      <option>2-5 Years</option>
-                      <option>5+ Years</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-box">
-                    <label>Email *</label>
-                    <input type="email" placeholder="Enter your email" />
-                    <small>(Please enter email as your username)</small>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-box">
-                    <label>Select user type *</label>
-                    <select>
-                      <option>Job Seeker</option>
-                      <option>Employer</option>
-                    </select>
-                  </div>
-
-                  <div class="input-box">
-                    <label>Enter skills *</label>
-                    <input type="text" placeholder="Enter up to 5 skills" />
-                    <small>(Only 5 skills allowed)</small>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-box">
-                    <label>Select country code *</label>
-                    <select>
-                      <option>+91</option>
-                      <option>+1</option>
-                      <option>+44</option>
-                    </select>
-                  </div>
-
-                  <div class="input-box">
-                    <label>Mobile Number *</label>
-                    <input type="number" placeholder="Enter mobile number" />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-box">
-                    <label>Upload Resume *</label>
-                    <input type="file" />
-                    <small>(.doc, .docx, .rtf, .pdf only)</small>
-                  </div>
-                </div>
-
-                <button class="submit-btn">Submit</button>
-              </form>
+          <h2>Explore Other Services</h2>
+          <div class="other-services-grid">
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?cloud,server"
+                alt="Cloud Services"
+              />
+              <h3>Cloud Integration</h3>
+              <a href="#" class="view-btn">View Details</a>
             </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?cybersecurity,security"
+                alt="Cyber Security"
+              />
+              <h3>Cybersecurity Solutions</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?mobile,app"
+                alt="App Development"
+              />
+              <h3>Mobile App Development</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?digital,marketing"
+                alt="Digital Marketing"
+              />
+              <h3>Digital Marketing</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <a href="contact1.html" class="contact-btn">Contact Us</a>
           </div>
         </div>
       </section>
     </main>
-    <!-- end main -->
 
     <!-- footer -->
     <footer class="footer">
@@ -432,12 +346,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+        delay: 600,
+      });
+    </script>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
