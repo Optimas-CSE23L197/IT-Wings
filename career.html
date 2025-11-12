@@ -8,12 +8,18 @@
     <!-- Main CSS File -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <!-- header  -->
+    <!-- header -->
     <header>
       <nav class="nav-bar">
         <div class="container">
@@ -32,7 +38,7 @@
             <div class="nav-menu">
               <ul class="d-flex al-center">
                 <li id="nav-home">
-                  <a href="index.html" class="active">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li id="nav-about">
                   <a href="about.html">About Us</a>
@@ -40,7 +46,9 @@
                 <li id="nav-service">
                   <a href="#">Service</a>
                 </li>
-                <li id="nav-career"><a href="career.html">Career</a></li>
+                <li id="nav-career">
+                  <a href="career.html" class="active">Career</a>
+                </li>
                 <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
@@ -120,18 +128,18 @@
         <div class="nav-service-wrapper">
           <div class="nav-contact-content">
             <div class="text">
-              <h2>What’s on your mind?</h2>
+              <h2>Have something in mind?</h2>
               <p>
-                We’re here to help! Tell us what you’re looking for and we’ll
-                get you connected to the right people.
+                Let’s collaborate! Tell us your goals and we’ll guide you toward
+                the perfect digital solution for your business.
               </p>
             </div>
           </div>
           <div class="contact-option">
             <ul>
-              <li><a href="#">Request a Service</a></li>
-              <li><a href="#">Know About Us</a></li>
-              <li><a href="#">Join Us</a></li>
+              <li><a href="#">Request a Project</a></li>
+              <li><a href="#">Know About IT Wings</a></li>
+              <li><a href="#">Join Our Team</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -139,115 +147,135 @@
       </div>
     </section>
 
-    <!-- ===================== Hero Section ===================== -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>Choose your impact.</h1>
-        <p>
-          Become part of a global organisation that is making an impact every
-          day. A workplace where you can immerse yourself in a dynamic culture
-          of inclusion, collaboration, continuous development and high
-          performance — all while being you.
-        </p>
-        <a href="jobs.html" target="_blank" class="btn">Search IT Wings jobs</a>
-      </div>
-
-      <div class="hero-image">
-        <img src="images/carrier-images/IT_Service.jpg" alt="impact circle" />
-      </div>
-
-      <div class="floating-icons">
-        <div class="icon"><i class="fa fa-phone"></i></div>
-        <div class="icon"><i class="fa fa-envelope"></i></div>
-      </div>
-    </section>
-
-    <!-- ===================== Why Join Deloitte ===================== -->
-    <section class="why-section">
-      <h2>Why join IT Wings?</h2>
-
-      <div class="card-container">
-        <div class="card">
-          <img src="images/carrier-images/car1.png" alt="Benefits and beyond" />
-          <h3>Benefits and beyond</h3>
-          <p>
-            Around the globe, Deloitte member firms offer comprehensive rewards
-            and benefits to support the whole you.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="images/carrier-images/car2.png" alt="Initiatives" />
-          <h3>Initiatives to better the future</h3>
-          <p>
-            We are committed to making an impact that matters—not only for our
-            clients, for society and our people.
-          </p>
-        </div>
-
-        <div class="card">
-          <img src="images/carrier-images/car3.png" alt="Culture" />
-          <h3>A culture of diversity, equity and inclusion</h3>
-          <p>
-            We support and empower our people to achieve their full potential by
-            fostering diversity, equity and inclusion.
-          </p>
-        </div>
-      </div>
-
-      <div class="floating-icons">
-        <div class="icon"><i class="fa fa-phone"></i></div>
-        <div class="icon"><i class="fa fa-print"></i></div>
-      </div>
-    </section>
-
-    <!-- ===================== Our People Section ===================== -->
-    <section class="people-section">
-      <div class="people-container">
-        <div class="people-image">
-          <img src="images/carrier-images/Purpose.png" alt="Deloitte people" />
-        </div>
-
-        <div class="people-content">
-          <h2>Our people are at the core of everything we do</h2>
-          <p>
-            Our people are at the core of everything we do. Bringing a wealth of
-            experience and perspective, it is these people who help solve some
-            of our clients' and communities' greatest challenges—who make the
-            real impact that matters.
-          </p>
-
-          <div class="button-group">
-            <a href="#" class="btn">Our people</a>
-            <a href="#" class="btn">Our purpose</a>
+    <!-- home banner -->
+    <section class="home-banner">
+      <div class="banner-slider owl-carousel">
+        <!-- ===== Banner 1: Discover Careers ===== -->
+        <div
+          class="banner-slide"
+          style="background-image: url('images/landing/home-1.jpg')"
+        >
+          <div class="overlay"></div>
+          <div class="banner-content">
+            <h1>Discover Your Future With IT Wings</h1>
+            <p>
+              Be part of a culture that values creativity, collaboration, and
+              continuous learning — where every role contributes to building
+              tomorrow’s digital world.
+            </p>
+            <a href="jobs.html" class="banner-btn">Explore Opportunities</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- main -->
     <main>
-      <!-- Careers Introduction Section -->
-      <section class="careers-intro">
+      <!-- ===================== Hero Section ===================== -->
+      <section class="hero-section">
         <div class="container">
-          <h2>Please join us</h2>
-          <p>
-            Take a look at the open positions below.<br />
-            If none of them suits you, or you feel you could help us in another
-            way, please fill out the form below or contact us directly at
-            contact@company.com
-          </p>
+          <div class="hero-wrapper d-flex al-center jc-between">
+            <div class="hero-content">
+              <h1>Shape Your Future. Inspire Innovation.</h1>
+              <p>
+                At IT Wings Webtech Solutions, we believe people are the core of
+                every innovation. Work with cutting-edge technologies, grow your
+                expertise, and make a real impact on the digital world — while
+                being yourself.
+              </p>
+              <a href="jobs.html" target="_blank" class="btn"
+                >View Open Positions</a
+              >
+            </div>
+
+            <div class="hero-image">
+              <img
+                src="images/carrier-images/IT_Service.jpg"
+                alt="impact circle"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <a href="#" class="discover-link">Discover more →</a>
+      <!-- ===================== Why Join IT Wings ===================== -->
+      <section class="why-section">
+        <h2>Why Join IT Wings?</h2>
+
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="images/carrier-images/car1.png"
+              alt="Benefits and beyond"
+            />
+            <h3>Growth With Purpose</h3>
+            <p>
+              We empower our people to explore, experiment, and excel in an
+              environment that nurtures growth and innovation.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="images/carrier-images/car2.png" alt="Initiatives" />
+            <h3>Driven By Impact</h3>
+            <p>
+              Every project we undertake is fueled by a commitment to create
+              real, lasting value for our clients and their communities.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="images/carrier-images/car3.png" alt="Culture" />
+            <h3>Inclusive & Collaborative Culture</h3>
+            <p>
+              We celebrate diversity, encourage creativity, and value
+              collaboration. Together, we build ideas that change the game.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Our People Section ===================== -->
+      <section class="people-section">
+        <div class="people-container">
+          <div class="people-image">
+            <img src="images/carrier-images/Purpose.png" alt="Our people" />
+          </div>
+
+          <div class="people-content">
+            <h2>Our People Define Our Success</h2>
+            <p>
+              Behind every success story at IT Wings, there’s a passionate
+              individual making it happen. Our people bring creativity,
+              curiosity, and commitment to everything they do — and that’s what
+              drives our vision forward.
+            </p>
+
+            <div class="button-group">
+              <a href="#" class="btn">Meet Our Team</a>
+              <a href="#" class="btn">Our Mission</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section>
-        <div class="awards-container">
-          <img src="images/carrier-images/award1" alt="Award 1" />
-          <img src="images/carrier-images/award2" alt="Award 2" />
-          <img src="images/carrier-images/award3" alt="Award 3" />
-          <img src="images/carrier-images/award4" alt="Award 4" />
+        <div class="container">
+          <div class="awards-wrapper">
+            <div class="awards-content">
+              <h2>Recognized for Excellence</h2>
+              <p>
+                IT Wings has been honored for innovation, client satisfaction,
+                and excellence in digital transformation. These recognitions
+                fuel our motivation to go further every day.
+              </p>
+            </div>
+            <div class="awards-container">
+              <img src="images/carrier-images/award1" alt="Award 1" />
+              <img src="images/carrier-images/award2" alt="Award 2" />
+              <img src="images/carrier-images/award3" alt="Award 3" />
+              <img src="images/carrier-images/award4" alt="Award 4" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -256,10 +284,10 @@
     <footer class="footer">
       <div class="footer-cta">
         <div class="container">
-          <h2>Ready to work with us?</h2>
+          <h2>Join Our Journey of Innovation</h2>
           <p>
-            Join us to experience cutting-edge industrial solutions that drive
-            innovation and lasting success.
+            Be a part of IT Wings Webtech Solutions and experience how we’re
+            transforming businesses through technology, passion, and creativity.
           </p>
           <a href="contact.html" class="btn-primary">Get in Touch</a>
         </div>
@@ -271,12 +299,13 @@
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
-              alt="ProFactory Logo"
+              alt="IT Wings Logo"
               class="footer-logo"
             />
             <p>
-              We are committed to providing personalized industrial solutions
-              that transform your business.
+              IT Wings Webtech Solutions delivers tailored IT services and
+              digital transformation solutions to help businesses innovate and
+              grow in the modern age.
             </p>
             <div class="social-icons">
               <a href="#" target="_blank"
@@ -306,11 +335,11 @@
 
           <!-- Legal -->
           <div class="footer-col">
-            <h4>Security</h4>
+            <h4>Resources</h4>
             <ul>
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Help</a></li>
+              <li><a href="#">Help Center</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -321,11 +350,13 @@
             <ul class="contact-info">
               <li><a href="tel:+91123654789">+91 123654789</a></li>
               <li>
-                <a href="mailto:info@domainname.com">info@domainname.com</a>
+                <a href="mailto:info@itwingswebtech.com"
+                  >info@itwingswebtech.com</a
+                >
               </li>
               <li>
                 <a href="https://goo.gl/maps/XYZ" target="_blank"
-                  >520, West Valley, Amin and Minim</a
+                  >Stesalit Tower, Sector V, Kolkata</a
                 >
               </li>
             </ul>
@@ -334,7 +365,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
+        <p>&copy; 2025 IT Wings Webtech Solutions. All Rights Reserved.</p>
       </div>
     </footer>
 

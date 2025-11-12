@@ -46,7 +46,7 @@
             <div class="nav-menu">
               <ul class="d-flex al-center">
                 <li id="nav-home">
-                  <a href="index.html" class="active">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li id="nav-about">
                   <a href="about.html">About Us</a>
@@ -55,7 +55,9 @@
                   <a href="#">Service</a>
                 </li>
                 <li id="nav-career"><a href="career.html">Career</a></li>
-                <li><a href="#" id="nav-contact">Contact Us</a></li>
+                <li>
+                  <a href="#" id="nav-contact" class="active">Contact Us</a>
+                </li>
               </ul>
             </div>
             <div class="contact-btn">
@@ -165,118 +167,100 @@
       </div>
     </section>
 
-    <!-- main -->
-    <main class="request-section">
-      <section class="request-container">
-        <div class="back-btn">
-          <a href="#"><i class="fa-solid fa-arrow-left"></i> BACK</a>
-        </div>
-
-        <div class="request-content">
-          <div class="form-left">
-            <h4><i class="fa-solid fa-building"></i> REQUEST FOR SERVICES</h4>
-            <p>
-              We’ve driven growth and purposeful transformation across every
-              industry and we’re excited to build on your belief. Tell us a bit
-              more about yourself, so we can get the ball rolling.
-            </p>
-
-            <form action="#" class="service-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="fname">First name*</label>
-                  <input type="text" id="fname" name="fname" required />
-                </div>
-                <div class="form-group">
-                  <label for="lname">Last name*</label>
-                  <input type="text" id="lname" name="lname" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">Email*</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="organization">Organization*</label>
-                  <input
-                    type="text"
-                    id="organization"
-                    name="organization"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="region">Region*</label>
-                  <select id="region" name="region" required>
-                    <option value="">Select Region</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europe">Europe</option>
-                    <option value="America">America</option>
-                    <option value="Africa">Africa</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="industry">Industry*</label>
-                  <select id="industry" name="industry" required>
-                    <option value="">Select Industry</option>
-                    <option value="IT">IT</option>
-                    <option value="Finance">Finance</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Education">Education</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group full-width">
-                <label for="help">How can we help you?*</label>
-                <textarea
-                  id="help"
-                  name="help"
-                  rows="5"
-                  maxlength="1500"
-                  placeholder="(0/1500)"
-                  required
-                ></textarea>
-              </div>
-
-              <div class="form-checkbox">
-                <label>
-                  <input type="checkbox" required />
-                  I consent to processing of my personal data entered above for
-                  IT Wings Webtech Solutions to contact me.*
-                </label>
-              </div>
-
-              <div class="form-checkbox">
-                <label>
-                  <input type="checkbox" />
-                  I would like to receive details about products, services, and
-                  events from IT Wings Webtech Solutions.
-                </label>
-              </div>
-
-              <p class="privacy-note">
-                For further details on how your personal data will be processed
-                and how your consent can be managed, refer to the
-                <a href="#">Privacy Notice</a>.
+    <main class="contact-page">
+      <!-- ===== Contact Details & Form Section ===== -->
+      <section class="contact-details-section">
+        <div class="container">
+          <div class="contact-details-wrapper">
+            <!-- Left Side: Contact Information -->
+            <div class="contact-info">
+              <h2>Get in Touch</h2>
+              <p>
+                Whether you have a question, a business inquiry, or a
+                collaboration idea — our team is always ready to connect and
+                assist you.
               </p>
 
-              <p class="mandatory">*Mandatory fields</p>
+              <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+911234567890">+91 1234567890</a></p>
+                </div>
+              </div>
 
-              <button type="submit" class="send-btn">Send</button>
-            </form>
-          </div>
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:info@itwingswebtech.com"
+                      >info@itwingswebtech.com</a
+                    >
+                  </p>
+                </div>
+              </div>
 
-          <div class="form-right">
-            <img src="images/request-bg.jpg" alt="Professional Man" />
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Office Address</h4>
+                  <p>Stesalit Tower, Sector V, Kolkata, India</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form-box">
+              <h2>Send a Message</h2>
+              <form class="contact-form">
+                <div class="form-row">
+                  <input type="text" placeholder="Full Name*" required />
+                  <input type="email" placeholder="Email Address*" required />
+                </div>
+
+                <div class="form-row">
+                  <input type="text" placeholder="Phone Number*" required />
+                  <input type="text" placeholder="Subject*" required />
+                </div>
+
+                <textarea
+                  placeholder="Your Message*"
+                  rows="5"
+                  required
+                ></textarea>
+
+                <button type="submit" class="submit-btn">Send</button>
+              </form>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- ===== Map Section ===== -->
+      <section class="contact-map-section">
+        <div class="map-overlay">
+          <h3>Find Us Here</h3>
+          <p>
+            Drop by our office and explore how IT Wings can elevate your
+            business.
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.331059672643!2d88.43042317508791!3d22.573352579487955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027564f1b6a04f%3A0xf4a6b7b09ff25a14!2sStesalit%20Tower%2C%20Sector%20V%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </section>
     </main>
 

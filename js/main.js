@@ -17,7 +17,7 @@ humbergerBtn.addEventListener("click", function () {
 
 // ===============================
 // NAV DROPDOWN HANDLING
-// ===============================
+// ====================s===========
 const navService = document.querySelector("#nav-service");
 const serviceSection = document.querySelector("#home-menu-service-setion");
 const navContact = document.querySelector("#nav-contact");
@@ -82,11 +82,11 @@ function setupNavEvents() {
   // Mobile (click behavior)
   else {
     newNavService.addEventListener("click", (e) => {
-      window.location.href = "service1.html";
+      window.location.href = "service.html";
     });
 
     newNavContact.addEventListener("click", (e) => {
-      window.location.href = "contact1.html";
+      window.location.href = "contact.html";
     });
   }
 }
