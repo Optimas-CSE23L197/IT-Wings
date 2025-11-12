@@ -3,40 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Wings Webtech Solutions</title>
-    <!-- font awsome -->
+    <title>Service Details | IT Wings Webtech Solutions</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <!-- owl crousal -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- custom css -->
-    <link rel="stylesheet" href="request_service.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <!-- header  -->
     <header>
       <nav class="nav-bar">
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
-            <div class="logo d-flex al-center jc-center">
+            <div class="logo d-flex al-center jc-between">
               <a href="#">
                 <figure>
                   <img src="images/Baby.png" alt="logo" />
@@ -49,15 +34,17 @@
             </div>
             <div class="nav-menu">
               <ul class="d-flex al-center">
-                <li id="nav-home"><a href="index1.html">Home</a></li>
+                <li id="nav-home">
+                  <a href="index1.html" class="active">Home</a>
+                </li>
                 <li id="nav-about">
-                  <a href="about1.html" class="active">About Us</a>
+                  <a href="about1.html">About Us</a>
                 </li>
                 <li id="nav-service">
-                  <a href="service1.html">Service</a>
+                  <a href="#">Service</a>
                 </li>
                 <li id="nav-career"><a href="career1.html">Career</a></li>
-                <li id="nav-contact"><a href="contact1.html">Contact Us</a></li>
+                <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="contact-btn">
@@ -145,9 +132,9 @@
           </div>
           <div class="contact-option">
             <ul>
-              <li><a href="#">Request a Service</a></li>
-              <li><a href="#">Know About Us</a></li>
-              <li><a href="#">Join Us</a></li>
+              <li><a href="request.html">Request a Service</a></li>
+              <li><a href="about1.html">Know About Us</a></li>
+              <li><a href="jobs.html">Join Us</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -155,26 +142,109 @@
       </div>
     </section>
 
-    <!-- banner -->
+    <!-- ===== Service Banner ===== -->
     <section
-      class="global-banner"
-      style="background-image: url(images/career-banner.jpg)"
+      class="service-banner"
+      style="background-image: url(images/career-1.jpg)"
     >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="global-wrapper">
-          <div class="global-content">
-            <!-- <h1>About Us</h1> -->
-          </div>
-        </div>
-      </div>
+      <!-- <div class="overlay"></div> -->
+      <!-- <div class="banner-content">
+        <h1>Software Development</h1>
+      </div> -->
     </section>
 
-    <!-- main -->
+    <main>
+      <!-- ===== Service Description ===== -->
+      <section class="service-details">
+        <div class="container">
+          <h2>About This Service</h2>
+          <p>
+            Our software development service provides end-to-end solutions to
+            help businesses build robust, scalable, and high-performance
+            applications. From planning to deployment, we focus on innovation,
+            security, and quality assurance to deliver exceptional digital
+            products that drive results.
+          </p>
+          <p>
+            Whether you need a web platform, enterprise software, or
+            custom-built solution, our team ensures every line of code aligns
+            with your business goals and technical requirements.
+          </p>
+        </div>
+      </section>
 
-    <!-- main -->
+      <!-- ===== Requirements Section ===== -->
+      <section class="service-requirements">
+        <div class="container">
+          <h2>Requirements for This Service</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i> Project brief or documentation
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Design assets (if available)
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Business goals & feature list
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Technical stack preferences
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Timeline & budget estimation
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- main end -->
+      <!-- ===== Other Services Section ===== -->
+      <section class="other-services">
+        <div class="container">
+          <h2>Explore Other Services</h2>
+          <div class="other-services-grid">
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?cloud,server"
+                alt="Cloud Services"
+              />
+              <h3>Cloud Integration</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?cybersecurity,security"
+                alt="Cyber Security"
+              />
+              <h3>Cybersecurity Solutions</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?mobile,app"
+                alt="App Development"
+              />
+              <h3>Mobile App Development</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="https://source.unsplash.com/400x300/?digital,marketing"
+                alt="Digital Marketing"
+              />
+              <h3>Digital Marketing</h3>
+              <a href="#" class="view-btn">View Details</a>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <a href="contact1.html" class="contact-btn">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer class="footer">
@@ -182,24 +252,25 @@
         <div class="container">
           <h2>Ready to work with us?</h2>
           <p>
-            Join us to experience cutting-edge digital solutions that drive
-            innovation and business transformation.
+            Join us to experience cutting-edge industrial solutions that drive
+            innovation and lasting success.
           </p>
-          <a href="contact1.html" class="btn-primary">Get in Touch</a>
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
+
       <div class="footer-main">
         <div class="container footer-grid">
           <!-- Logo & About -->
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
-              alt="IT Wings Logo"
+              alt="ProFactory Logo"
               class="footer-logo"
             />
             <p>
-              IT Wings Webtech Solutions delivers digital innovation,
-              development, and transformation for global enterprises.
+              We are committed to providing personalized industrial solutions
+              that transform your business.
             </p>
             <div class="social-icons">
               <a href="#" target="_blank"
@@ -220,10 +291,10 @@
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about1.html">About Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="service1.html">Services</a></li>
+              <li><a href="#">Services</a></li>
             </ul>
           </div>
 
@@ -234,7 +305,7 @@
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Help</a></li>
-              <li><a href="contact1.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
 
@@ -242,15 +313,13 @@
           <div class="footer-col">
             <h4>Contact</h4>
             <ul class="contact-info">
-              <li><a href="tel:+911234567890">+91 1234567890</a></li>
+              <li><a href="tel:+91123654789">+91 123654789</a></li>
               <li>
-                <a href="mailto:info@itwingswebtech.com"
-                  >info@itwingswebtech.com</a
-                >
+                <a href="mailto:info@domainname.com">info@domainname.com</a>
               </li>
               <li>
                 <a href="https://goo.gl/maps/XYZ" target="_blank"
-                  >Stesalit Tower, Sector V, Kolkata</a
+                  >520, West Valley, Amin and Minim</a
                 >
               </li>
             </ul>
@@ -259,7 +328,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 IT Wings Webtech Solutions. All Rights Reserved.</p>
+        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
       </div>
     </footer>
 
@@ -270,19 +339,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- owl crousal -->
+    <!-- Owl Carousel JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+        delay: 600,
+      });
+    </script>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>

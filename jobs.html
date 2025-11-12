@@ -36,7 +36,7 @@
       <nav class="nav-bar">
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
-            <div class="logo d-flex al-center jc-center">
+            <div class="logo d-flex al-center jc-between">
               <a href="#">
                 <figure>
                   <img src="images/Baby.png" alt="logo" />
@@ -49,17 +49,17 @@
             </div>
             <div class="nav-menu">
               <ul class="d-flex al-center">
-                <li id="nav-home"><a href="index1.html">Home</a></li>
+                <li id="nav-home">
+                  <a href="index1.html" class="active">Home</a>
+                </li>
                 <li id="nav-about">
                   <a href="about1.html">About Us</a>
                 </li>
                 <li id="nav-service">
-                  <a href="service1.html">Service</a>
+                  <a href="#">Service</a>
                 </li>
-                <li id="nav-career">
-                  <a href="career1.html" class="active">Career</a>
-                </li>
-                <li id="nav-contact"><a href="contact1.html">Contact Us</a></li>
+                <li id="nav-career"><a href="career1.html">Career</a></li>
+                <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="contact-btn">
@@ -235,39 +235,95 @@
       <!-- Contact / Hire Form Section -->
       <section class="careers-contact">
         <div class="container">
-          <div class="contact-layout">
-            <div class="contact-image">
-              <!-- image added later -->
-            </div>
-
-            <div class="contact-form">
-              <h3>Connect With Your Next Great Hire Today!</h3>
+          <div class="careers-wrapper">
+            <div class="apply">
+              <h2>Post Your Resume / Registration</h2>
+              <p class="note">(*) Asterisk denotes mandatory fields</p>
 
               <form>
-                <div class="form-group">
-                  <input type="text" placeholder="Company" />
-                  <input type="text" placeholder="Your Name" />
+                <div class="row">
+                  <div class="input-box">
+                    <label>First name *</label>
+                    <input type="text" placeholder="Enter your first name" />
+                  </div>
+
+                  <div class="input-box">
+                    <label>Last name *</label>
+                    <input type="text" placeholder="Enter your last name" />
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <input type="text" placeholder="Phone Number" />
-                  <input type="email" placeholder="Email" />
+                <div class="row">
+                  <div class="input-box">
+                    <label>Country *</label>
+                    <select>
+                      <option>India</option>
+                      <option>USA</option>
+                      <option>UK</option>
+                      <option>Canada</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box">
+                    <label>Select Experience *</label>
+                    <select>
+                      <option>Fresher</option>
+                      <option>1-2 Years</option>
+                      <option>2-5 Years</option>
+                      <option>5+ Years</option>
+                    </select>
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <textarea placeholder="Project Detail"></textarea>
+                <div class="row">
+                  <div class="input-box">
+                    <label>Email *</label>
+                    <input type="email" placeholder="Enter your email" />
+                    <small>(Please enter email as your username)</small>
+                  </div>
                 </div>
 
-                <div class="form-check">
-                  <input type="checkbox" />
-                  <label>
-                    By sending this form I confirm that I have read and accept
-                    the
-                    <a href="#">Privacy Policy</a>.
-                  </label>
+                <div class="row">
+                  <div class="input-box">
+                    <label>Select user type *</label>
+                    <select>
+                      <option>Job Seeker</option>
+                      <option>Employer</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box">
+                    <label>Enter skills *</label>
+                    <input type="text" placeholder="Enter up to 5 skills" />
+                    <small>(Only 5 skills allowed)</small>
+                  </div>
                 </div>
 
-                <button class="btn">GET CONSULTATION</button>
+                <div class="row">
+                  <div class="input-box">
+                    <label>Select country code *</label>
+                    <select>
+                      <option>+91</option>
+                      <option>+1</option>
+                      <option>+44</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box">
+                    <label>Mobile Number *</label>
+                    <input type="number" placeholder="Enter mobile number" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-box">
+                    <label>Upload Resume *</label>
+                    <input type="file" />
+                    <small>(.doc, .docx, .rtf, .pdf only)</small>
+                  </div>
+                </div>
+
+                <button class="submit-btn">Submit</button>
               </form>
             </div>
           </div>
