@@ -1,0 +1,67 @@
+{
+  "web-development": {
+    "title": "Software Development Service",
+    "subtitle": "Building powerful, scalable, high-performance digital solutions for your business.",
+    "banner": "images/banners/software-dev.jpg",
+
+    "description": [
+      "Our software development service provides end-to-end solutions for businesses looking to create powerful and scalable digital products.",
+      "Whether you need enterprise software, a custom application, or a complete digital transformation — our team ensures every feature aligns with your business goals."
+    ],
+
+    "image": "images/career-2.jpg",
+
+    "requirements": [
+      "Project brief or documentation",
+      "Design assets (if available)",
+      "Business goals & feature list",
+      "Tech stack preferences",
+      "Timeline & budget estimation"
+    ],
+
+    "otherServices": [
+      {
+        "id": "cloud-integration",
+        "title": "Cloud Integration",
+        "image": "https://source.unsplash.com/500x400/?cloud",
+        "shortText": "Secure, scalable cloud deployment."
+      },
+      {
+        "id": "app-development",
+        "title": "App Development",
+        "image": "https://source.unsplash.com/500x400/?mobile-app",
+        "shortText": "iOS & Android high-performance apps."
+      }
+    ]
+  },
+
+  "cloud-integration": {
+    "title": "Cloud Integration",
+    "subtitle": "Fast, secure & scalable cloud migrations.",
+    "banner": "images/banners/cloud.jpg",
+
+    "description": [
+      "We help companies migrate to AWS, Azure, and Google Cloud effortlessly.",
+      "Our experts ensure zero downtime and optimal performance after migration."
+    ],
+
+    "image": "images/cloud.jpg",
+
+    "requirements": [
+      "Existing infrastructure details",
+      "Cloud platform preference",
+      "Security policies",
+      "Data size & architecture",
+      "Timeline & budget"
+    ],
+
+    "otherServices": [
+      {
+        "id": "software-development",
+        "title": "Software Development",
+        "image": "https://source.unsplash.com/500x400/?software",
+        "shortText": "Build scalable software systems."
+      }
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+[
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "category": "tech",
+    "includes": "Responsive Websites, CMS, Landing Pages",
+    "techStack": "HTML, CSS, JavaScript, React, Node.js",
+    "delivery": "Scalable, SEO-friendly & lightning fast",
+    "link": "serviceInfo.html?id=web-development"
+  },
+  {
+    "id": "app-development",
+    "title": "App Development",
+    "category": "tech",
+    "includes": "Android, iOS & Cross-Platform Apps",
+    "techStack": "Flutter, React Native, Kotlin, Swift",
+    "delivery": "Smooth UX, Fast Performance & Secure",
+    "link": "serviceInfo.html?id=app-development"
+  },
+
+  {
+    "id": "ui-ux-design",
+    "title": "UI/UX Design",
+    "category": "tech",
+    "includes": "Wireframes, Prototypes, Brand Guidelines",
+    "techStack": "Figma, Adobe XD, Sketch",
+    "delivery": "User-centered, Creative & Intuitive",
+    "link": "serviceInfo.html?id=ui-ux-design"
+  },
+
+  {
+    "id": "digital-marketing",
+    "title": "Digital Marketing",
+    "category": "promotional",
+    "includes": "SEO, Google Ads, Social Media Marketing",
+    "techStack": "Analytics, SEM Tools",
+    "delivery": "ROI-focused campaigns",
+    "link": "serviceInfo.html?id=digital-marketing"
+  },
+
+  {
+    "id": "facebook-promotion",
+    "title": "Facebook Promotion",
+    "category": "promotional",
+    "includes": "Boosting, Ad Campaigns",
+    "techStack": "Meta Ads Manager",
+    "delivery": "Increase Engagement & Reach",
+    "link": "serviceInfo.html?id=facebook-promotion"
+  },
+
+  {
+    "id": "instagram-growth",
+    "title": "Instagram Growth",
+    "category": "promotional",
+    "includes": "Reels, Ads, Organic marketing",
+    "techStack": "Meta Tools",
+    "delivery": "High visibility & branding",
+    "link": "serviceInfo.html?id=instagram-growth"
+  },
+
+  {
+    "id": "home-loan",
+    "title": "Home Loan Services",
+    "category": "govt",
+    "includes": "Document Assistance, Loan Approval Help",
+    "techStack": "Finance Portal",
+    "delivery": "Fast Approval Support",
+    "link": "serviceInfo.html?id=home-loan"
+  },
+
+  {
+    "id": "pan-card",
+    "title": "PAN Card Service",
+    "category": "govt",
+    "includes": "New PAN, Correction, Updates",
+    "techStack": "NSDL Portal",
+    "delivery": "Quick Application Support",
+    "link": "serviceInfo.html?id=pan-card"
+  },
+
+  {
+    "id": "aadhar-update",
+    "title": "Aadhar Update",
+    "category": "govt",
+    "includes": "Name, Address, Mobile Update",
+    "techStack": "UIDAI Portal",
+    "delivery": "Fast correction assistance",
+    "link": "serviceInfo.html?id=aadhar-update"
+  },
+
+  {
+    "id": "voter-id",
+    "title": "Voter ID Services",
+    "category": "govt",
+    "includes": "New Registration, Correction",
+    "techStack": "Election Portal",
+    "delivery": "Quick Documentation",
+    "link": "serviceInfo.html?id=voter-id"
+  },
+
+  {
+    "id": "business-loan",
+    "title": "Business Loan",
+    "category": "govt",
+    "includes": "MSME Loan, Startup Loan",
+    "techStack": "Government Schemes",
+    "delivery": "Consultation & Support",
+    "link": "serviceInfo.html?id=business-loan"
+  },
+
+  {
+    "id": "cloud-services",
+    "title": "Cloud Services",
+    "category": "tech",
+    "includes": "Migration, Setup, Security",
+    "techStack": "AWS, Azure, Google Cloud",
+    "delivery": "Secure & Scalable",
+    "link": "serviceInfo.html?id=cloud-services"
+  },
+  {
+    "id": "api-development",
+    "title": "API Development",
+    "category": "tech",
+    "includes": "REST & GraphQL APIs",
+    "techStack": "Node.js, Python",
+    "delivery": "Fast & Secure",
+    "link": "serviceInfo.html?id=api-development"
+  },
+  {
+    "id": "software-testing",
+    "title": "Software Testing",
+    "category": "tech",
+    "includes": "Manual & Automation Testing",
+    "techStack": "Selenium, JMeter",
+    "delivery": "Bug-free release",
+    "link": "serviceInfo.html?id=software-testing"
+  },
+
+  {
+    "id": "logo-design",
+    "title": "Logo Design",
+    "category": "others",
+    "includes": "Brand Identity & Logo",
+    "techStack": "Illustrator, Photoshop",
+    "delivery": "Professional & Clean Design",
+    "link": "serviceInfo.html?id=logo-design"
+  },
+  {
+    "id": "ui-ux",
+    "title": "UI/UX Pro Design",
+    "category": "others",
+    "includes": "Wireframes, Prototypes",
+    "techStack": "Figma",
+    "delivery": "Premium Quality",
+    "link": "serviceInfo.html?id=ui-ux"
+  },
+  {
+    "id": "graphics-design",
+    "title": "Graphics Design",
+    "category": "others",
+    "includes": "Banners, Posters, Ads",
+    "techStack": "AI, PS, Canva",
+    "delivery": "Creative & Attractive",
+    "link": "serviceInfo.html?id=graphics-design"
+  },
+
+  {
+    "id": "google-ads",
+    "title": "Google Ads",
+    "category": "promotional",
+    "includes": "Search, Display, Video Ads",
+    "techStack": "Google Ads Panel",
+    "delivery": "High ROI",
+    "link": "serviceInfo.html?id=google-ads"
+  },
+
+  {
+    "id": "youtube-marketing",
+    "title": "YouTube Marketing",
+    "category": "promotional",
+    "includes": "Channel Boosting, Ads",
+    "techStack": "YT Tools",
+    "delivery": "Channel Growth",
+    "link": "serviceInfo.html?id=youtube-marketing"
+  },
+
+  {
+    "id": "thread-marketing",
+    "title": "Thread Promotion",
+    "category": "promotional",
+    "includes": "Organic Growth",
+    "techStack": "Meta Tools",
+    "delivery": "High Engagement",
+    "link": "serviceInfo.html?id=thread-marketing"
+  },
+
+  {
+    "id": "cloud-integration",
+    "title": "Cloud Integration",
+    "category": "tech",
+    "includes": "API Sync, Multi-cloud",
+    "techStack": "AWS, Azure",
+    "delivery": "Smooth Automation",
+    "link": "serviceInfo.html?id=cloud-integration"
+  },
+
+  {
+    "id": "maintenance-support",
+    "title": "Maintenance & Support",
+    "category": "tech",
+    "includes": "Bug Fixes, Updates",
+    "techStack": "DevOps Tools",
+    "delivery": "24/7 Support",
+    "link": "serviceInfo.html?id=maintenance-support"
+  },
+
+  {
+    "id": "newsletter-design",
+    "title": "Newsletter Design",
+    "category": "others",
+    "includes": "Email Templates",
+    "techStack": "HTML, Mailchimp",
+    "delivery": "Attractive & Professional",
+    "link": "serviceInfo.html?id=newsletter-design"
+  },
+
+  {
+    "id": "resume-building",
+    "title": "Resume Building",
+    "category": "others",
+    "includes": "Professional Resume",
+    "techStack": "Canva, Docs",
+    "delivery": "Modern Resume",
+    "link": "serviceInfo.html?id=resume-building"
+  },
+
+  {
+    "id": "data-analysis",
+    "title": "Data Analysis",
+    "category": "tech",
+    "includes": "Insights, Reports",
+    "techStack": "Python, PowerBI",
+    "delivery": "Business Insights",
+    "link": "serviceInfo.html?id=data-analysis"
+  },
+
+  {
+    "id": "seo-optimization",
+    "title": "SEO Optimization",
+    "category": "promotional",
+    "includes": "On-page, Off-page",
+    "techStack": "SEO Tools",
+    "delivery": "Rank Higher",
+    "link": "serviceInfo.html?id=seo-optimization"
+  },
+
+  {
+    "id": "cyber-security",
+    "title": "Cyber Security",
+    "category": "tech",
+    "includes": "Scanning, Malware Removal",
+    "techStack": "Security Tools",
+    "delivery": "Secure System",
+    "link": "serviceInfo.html?id=cyber-security"
+  },
+
+  {
+    "id": "social-media-management",
+    "title": "Social Media Management",
+    "category": "promotional",
+    "includes": "Content Posting, Calendar",
+    "techStack": "Meta Suite",
+    "delivery": "Brand Growth",
+    "link": "serviceInfo.html?id=social-media-management"
+  },
+
+  {
+    "id": "document-verification",
+    "title": "Document Verification",
+    "category": "govt",
+    "includes": "All Govt Docs Verification",
+    "techStack": "Govt Portals",
+    "delivery": "Fast & Accurate",
+    "link": "serviceInfo.html?id=document-verification"
+  }
+]

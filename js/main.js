@@ -94,3 +94,58 @@ function setupNavEvents() {
 // Initialize & reapply on resize
 setupNavEvents();
 window.addEventListener("resize", setupNavEvents);
+
+// filter service
+let services = document.querySelectorAll(".service-card");
+
+function filterServices(category) {
+  if (category === "all") {
+    services.array.forEach((service) => {
+      service.style.display = "block";
+    });
+  } else {
+    services.forEach((service) => {
+      service.style.display = "none";
+    });
+    // to show selected services
+    let selectedService = document.querySelectorAll("." + category);
+    selectedService.forEach((service) => {
+      service.style.display = "block";
+    });
+  }
+}
+
+// sticky navbar
+let navBar = document.querySelector(".nav-bar");
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 80) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
+});
+
+// top up button
+let btn = document.getElementById("scrollBtn");
+window.addEventListener("scroll", function () {
+  // page scroll
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  // display height
+  let windowHeight = window.innerHeight;
+  // total document height
+  let docHeight = document.documentElement.scrollHeight;
+
+  if (scrollTop + windowHeight >= docHeight - 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // ✅ smooth animation
+  });
+});
