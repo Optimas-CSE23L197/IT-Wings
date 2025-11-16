@@ -6677,3 +6677,431 @@ textarea:focus {
     bottom: 100px;
   }
 }
+
+/* ================================
+   JOB PAGE BANNER
+================================ */
+
+.job-banner {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay for readability */
+.job-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+/* Content box */
+.banner-content {
+  position: relative;
+  color: #fff;
+  padding: 25px 35px;
+  max-width: 650px;
+  border-radius: 16px;
+}
+
+/* Title */
+.banner-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* Short description */
+.banner-content p {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* ===========================
+   RESPONSIVE BANNER
+=========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .job-banner {
+    height: 300px;
+  }
+  .banner-content h1 {
+    font-size: 34px;
+  }
+  .banner-content {
+    padding: 20px 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .job-banner {
+    height: 260px;
+  }
+  .banner-content {
+    max-width: 100%;
+    padding: 18px 20px;
+    margin: 0 10px;
+  }
+  .banner-content h1 {
+    font-size: 28px;
+  }
+  .banner-content p {
+    font-size: 15px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  .banner-content {
+    padding: 14px 16px;
+    border-radius: 12px;
+  }
+  .banner-content h1 {
+    font-size: 24px;
+  }
+}
+
+/* ================================
+   JOB DESCRIPTION SECTION
+================================ */
+
+.job-description-section {
+  padding: 60px 0;
+  background: #f7f9fc;
+}
+
+.job-content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* LEFT CONTENT */
+.job-details {
+  flex: 2;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+/* JOB DETAILS GRID */
+.job-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 15px;
+  column-gap: 20px;
+  margin-bottom: 25px;
+}
+
+.job-item {
+  font-size: 15px;
+  color: var(--blue-medium);
+  background: #f1f5f9;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-left: 4px solid var(--blue-medium);
+}
+
+.job-item span:first-child {
+  font-weight: 700;
+  color: var(--blue-medium);
+}
+
+/* JOB SUMMARY */
+.job-summary {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  background: #fff;
+  margin-top: 20px;
+}
+
+/* ================================
+   APPLY BOX (RIGHT COLUMN)
+================================ */
+
+.apply-box {
+  flex: 1;
+  position: sticky;
+  top: 80px;
+}
+
+.apply-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.apply-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.apply-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* APPLY BUTTON */
+.apply-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--blue-dark);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.apply-btn:hover {
+  background: #0f5ca7;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* LARGE TABLETS */
+@media (max-width: 992px) {
+  .job-content-wrapper {
+    flex-direction: column;
+  }
+
+  .apply-box {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .job-details {
+    padding: 25px;
+  }
+
+  .job-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-card {
+    padding: 25px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .job-item {
+    font-size: 14px;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 420px) {
+  .job-details {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .job-item {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .apply-card {
+    border-radius: 14px;
+  }
+}
+
+/* ===========================
+APPLY FORM — CONTAINER CARD =========================== */
+.apply {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-top: 0px;
+  /* max-width: 900px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apply h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #222;
+}
+
+.apply .note {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   FORM ROWS & INPUT BOXES
+   =========================== */
+
+#applyForm .row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+#applyForm .input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#applyForm label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+#applyForm input,
+#applyForm select {
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  font-size: 15px;
+  outline: none;
+  background: #fdfdfd;
+  transition: all 0.25s ease-in-out;
+}
+
+#applyForm input:focus,
+#applyForm select:focus {
+  border-color: #2980b9;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(41, 128, 185, 0.3);
+}
+
+#applyForm small {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* ===========================
+   SUBMIT BUTTON
+   =========================== */
+
+.submit-btn {
+  background-color: var(--blue-dark);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #145a96, #0f426d);
+  border: 2px solid var(--accent);
+}
+
+/* ===========================
+   RESPONSIVE — TABLET
+   =========================== */
+
+@media (max-width: 1024px) {
+  .apply {
+    padding: 35px 30px;
+  }
+
+  #applyForm .row {
+    gap: 20px;
+  }
+}
+
+/* ===========================
+   RESPONSIVE — MOBILE
+   =========================== */
+
+@media (max-width: 768px) {
+  .apply {
+    padding: 30px 22px;
+  }
+
+  #applyForm .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 14px 25px;
+  }
+}
+
+/* ===========================
+   RESPONSIVE — SMALL MOBILE
+   =========================== */
+
+@media (max-width: 480px) {
+  .apply {
+    padding: 25px 18px;
+    border-radius: 14px;
+  }
+
+  apply h2 {
+    font-size: 24px;
+  }
+
+  #applyForm input,
+  #applyForm select {
+    padding: 12px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
