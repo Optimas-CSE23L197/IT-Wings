@@ -313,6 +313,7 @@ global content
   font-family: "Arial", sans-serif;
   color: #f1f1f1;
   background: #1b1b1b;
+  background-repeat: no-repeat;
 }
 
 .footer a {
@@ -7229,4 +7230,387 @@ APPLY FORM — CONTAINER CARD =========================== */
 
 .contact-map-section h3 {
   font-size: 24px;
+}
+
+.service-option ul li a {
+  cursor: pointer;
+}
+
+.service-option ul li a.active {
+  background-color: red;
+}
+
+/* ============================
+   JOIN OUR TEAM SECTION
+============================ */
+
+.join-team-section {
+  background: var(--blueLight);
+  padding: 80px 0;
+}
+
+.join-team-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.join-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.join-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--blueDark);
+  margin-bottom: 15px;
+}
+
+.join-text p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Benefits List */
+.join-benefits {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.join-benefits li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.join-benefits li i {
+  color: var(--accent);
+  font-size: 18px;
+}
+
+/* CTA Button */
+.join-btn {
+  display: inline-block;
+  background: var(--accent);
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: #e39c03;
+  transform: translateY(-3px);
+}
+
+/* Right Image */
+.join-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.join-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.join-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ====================================
+   RESPONSIVE BREAKPOINTS
+==================================== */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .join-text h2 {
+    font-size: 30px;
+  }
+
+  .join-benefits li {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Landscape (768px and below) */
+@media (max-width: 768px) {
+  .join-team-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .join-text p {
+    max-width: 100%;
+  }
+
+  .join-image img {
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+}
+
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+  .join-text h2 {
+    font-size: 26px;
+  }
+
+  .join-text p {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Phones (360px and below) */
+@media (max-width: 360px) {
+  .join-text h2 {
+    font-size: 22px;
+  }
+
+  .join-benefits li {
+    font-size: 13px;
+  }
+
+  .join-image img {
+    border-radius: 15px;
+  }
+}
+
+/* education */
+/* =============================
+   EDUCATION SYSTEM SECTION
+============================= */
+
+.education-system-section {
+  background: white;
+  padding: 80px 0;
+}
+
+.edu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.edu-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.edu-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--blueDark);
+  margin-bottom: 15px;
+}
+
+.edu-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 22px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* FEATURES */
+.edu-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.edu-features li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edu-features li i {
+  color: var(--accent);
+  font-size: 18px;
+}
+
+/* CTA BUTTON */
+.edu-btn {
+  display: inline-block;
+  background: var(--accent);
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.edu-btn:hover {
+  background: #e39c03;
+  transform: translateY(-3px);
+}
+
+/* RIGHT IMAGE */
+.edu-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.edu-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.edu-image img:hover {
+  transform: scale(1.03);
+}
+
+/* =============================
+   RESPONSIVE BREAKPOINTS
+============================= */
+
+@media (max-width: 1024px) {
+  .edu-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-content p,
+  .edu-features {
+    max-width: 100%;
+  }
+
+  .edu-image img {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-content h2 {
+    font-size: 26px;
+  }
+
+  .edu-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
+  .edu-features li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .edu-content h2 {
+    font-size: 22px;
+  }
+}
+
+.social-contact-section {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+}
+
+/* Round Trigger Button */
+.contact-trigger {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ff9d28;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 157, 40, 0.7);
+  transition: 0.3s;
+  font-size: 24px;
+  animation: shake 2.5s ease-in-out infinite;
+  bottom: 130px;
+  right: 50px;
+}
+
+.contact-trigger:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 157, 40, 1);
+}
+
+/* Popup Hidden by Default */
+.contact-popup {
+  list-style: none;
+  position: absolute;
+  bottom: 180px;
+  right: 30px;
+  padding: 12px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Icons inside popup */
+.contact-popup li a {
+  color: #ff9d28;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.contact-popup li a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 157, 40, 0.8);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
 }

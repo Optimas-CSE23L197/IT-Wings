@@ -149,3 +149,11 @@ btn.addEventListener("click", function (e) {
     behavior: "smooth", // ✅ smooth animation
   });
 });
+
+// open all floating ixon
+const trigger = document.querySelector(".contact-trigger");
+const popup = document.querySelector(".contact-popup");
+
+trigger.addEventListener("click", () => {
+  popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+});
