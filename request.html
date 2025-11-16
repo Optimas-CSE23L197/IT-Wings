@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Wings Webtech Solutions</title>
+    <title>IT Wings | Request a Service</title>
 
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
-    <!-- owl carousel -->
+    <!-- Owl Carousel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
-    <!-- custom css -->
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <!-- header  -->
+    <!-- ===== Header ===== -->
     <header>
       <nav class="nav-bar">
         <div class="container">
@@ -46,7 +49,7 @@
             <div class="nav-menu">
               <ul class="d-flex al-center">
                 <li id="nav-home">
-                  <a href="index.html" class="active">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li id="nav-about">
                   <a href="about.html">About Us</a>
@@ -55,18 +58,20 @@
                   <a href="#">Service</a>
                 </li>
                 <li id="nav-career"><a href="career.html">Career</a></li>
-                <li><a href="#" id="nav-contact">Contact Us</a></li>
+                <li>
+                  <a href="#" id="nav-contact" class="active">Contact Us</a>
+                </li>
               </ul>
             </div>
             <div class="contact-btn">
-              <a href="contact.html" target="_blank">Get in touch</a>
+              <a href="request.html" target="_blank">Get in touch</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- home section -->
+    <!-- Overlay Service / Contact Menus -->
     <section class="home-menu-service-setion" id="home-menu-service-setion">
       <div class="home-menu-service-container">
         <div class="nav-service-wrapper">
@@ -81,46 +86,13 @@
               </ul>
             </div>
             <div class="list">
-              <h2>Govt</h2>
-              <ul>
-                <li>Aadher</li>
-                <li>PAN</li>
-                <li>Voter</li>
-                <li>Home Loan</li>
-                <li>Business Loan</li>
-                <li>See More...</li>
-              </ul>
-            </div>
-            <div class="list">
               <h2>Tech</h2>
               <ul>
-                <li>Web Development</li>
+                <li><a href="#">Web Development</a></li>
                 <li>App Development</li>
                 <li>API</li>
                 <li>Cloud</li>
                 <li>Course</li>
-                <li>See More...</li>
-              </ul>
-            </div>
-            <div class="list">
-              <h2>Promotional</h2>
-              <ul>
-                <li>Facebook</li>
-                <li>Youtube</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Threads</li>
-                <li>See More...</li>
-              </ul>
-            </div>
-            <div class="list">
-              <h2>Others</h2>
-              <ul>
-                <li>Graphics design</li>
-                <li>Logo design</li>
-                <li>UI/UX</li>
-                <li>Ads design</li>
-                <li>See More...</li>
               </ul>
             </div>
           </div>
@@ -143,9 +115,10 @@
           </div>
           <div class="contact-option">
             <ul>
-              <li><a href="#">Request a Service</a></li>
-              <li><a href="#">Know About Us</a></li>
-              <li><a href="#">Join Us</a></li>
+              <li><a href="request.html">Request a Service</a></li>
+              <li><a href="about.html">Know About Us</a></li>
+              <li><a href="jobs.html">Join Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -153,121 +126,100 @@
       </div>
     </section>
 
-    <!-- banner -->
-
-    <!-- main -->
+    <!-- ===== Main Request Section ===== -->
     <main class="request-section">
       <section class="request-container">
         <div class="back-btn">
-          <a href="#"><i class="fa-solid fa-arrow-left"></i> BACK</a>
+          <a href="index.html"><i class="fa-solid fa-arrow-left"></i> BACK</a>
         </div>
 
         <div class="request-content">
+          <!-- LEFT: FORM -->
           <div class="form-left">
             <h4><i class="fa-solid fa-building"></i> REQUEST FOR SERVICES</h4>
             <p>
-              We’ve driven growth and purposeful transformation across every
-              industry and we’re excited to build on your belief. Tell us a bit
-              more about yourself, so we can get the ball rolling.
+              Tell us about your requirements so we can start working with you
+              the right way.
             </p>
 
-            <form action="#" class="service-form">
+            <form id="serviceForm">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="fname">First name*</label>
-                  <input type="text" id="fname" name="fname" required />
+                  <label>First name*</label>
+                  <input type="text" name="first_name" required />
                 </div>
+
                 <div class="form-group">
-                  <label for="lname">Last name*</label>
-                  <input type="text" id="lname" name="lname" required />
+                  <label>Last name*</label>
+                  <input type="text" name="last_name" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="email">Email*</label>
-                  <input type="email" id="email" name="email" required />
+                  <label>Email*</label>
+                  <input type="email" name="email" required />
                 </div>
+
                 <div class="form-group">
-                  <label for="organization">Organization*</label>
-                  <input
-                    type="text"
-                    id="organization"
-                    name="organization"
-                    required
-                  />
+                  <label>Organization*</label>
+                  <input type="text" name="organization" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="region">Region*</label>
-                  <select id="region" name="region" required>
+                  <label>Region*</label>
+                  <select name="region" required>
                     <option value="">Select Region</option>
                     <option value="Asia">Asia</option>
                     <option value="Europe">Europe</option>
                     <option value="America">America</option>
-                    <option value="Africa">Africa</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="industry">Industry*</label>
-                  <select id="industry" name="industry" required>
+                  <label>Industry*</label>
+                  <select name="industry" required>
                     <option value="">Select Industry</option>
                     <option value="IT">IT</option>
                     <option value="Finance">Finance</option>
                     <option value="Healthcare">Healthcare</option>
-                    <option value="Education">Education</option>
                   </select>
                 </div>
               </div>
 
               <div class="form-group full-width">
-                <label for="help">How can we help you?*</label>
+                <label>How can we help you?*</label>
                 <textarea
-                  id="help"
-                  name="help"
+                  name="message"
                   rows="5"
                   maxlength="1500"
-                  placeholder="(0/1500)"
                   required
                 ></textarea>
               </div>
 
               <div class="form-checkbox">
                 <label>
-                  <input type="checkbox" required />
-                  I consent to processing of my personal data entered above for
-                  IT Wings Webtech Solutions to contact me.*
+                  <input type="checkbox" name="consent_contact" required />
+                  I consent to being contacted by IT Wings Webtech Solutions.*
                 </label>
               </div>
 
               <div class="form-checkbox">
                 <label>
-                  <input type="checkbox" />
-                  I would like to receive details about products, services, and
-                  events from IT Wings Webtech Solutions.
+                  <input type="checkbox" name="consent_marketing" />
+                  I want to receive marketing communication.
                 </label>
               </div>
-
-              <p class="privacy-note">
-                For further details on how your personal data will be processed
-                and how your consent can be managed, refer to the
-                <a href="#">Privacy Notice</a>.
-              </p>
-
-              <p class="mandatory">*Mandatory fields</p>
 
               <button type="submit" class="send-btn">Send</button>
             </form>
           </div>
 
+          <!-- RIGHT IMAGE -->
           <div class="form-right">
-            <img
-              src="images/our-story-header-img-1.jpg.png"
-              alt="Professional Man"
-            />
+            <img src="images/our-story-header-img-1.jpg.png" alt="" />
           </div>
         </div>
       </section>
@@ -279,24 +231,25 @@
         <div class="container">
           <h2>Ready to work with us?</h2>
           <p>
-            Join us to experience cutting-edge digital solutions that drive
-            innovation and business transformation.
+            Join us to experience cutting-edge industrial solutions that drive
+            innovation and lasting success.
           </p>
-          <a href="contact1.html" class="btn-primary">Get in Touch</a>
+          <a href="request.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
+
       <div class="footer-main">
         <div class="container footer-grid">
           <!-- Logo & About -->
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
-              alt="IT Wings Logo"
+              alt="ProFactory Logo"
               class="footer-logo"
             />
             <p>
-              IT Wings Webtech Solutions delivers digital innovation,
-              development, and transformation for global enterprises.
+              We are committed to providing personalized industrial solutions
+              that transform your business.
             </p>
             <div class="social-icons">
               <a href="#" target="_blank"
@@ -317,10 +270,10 @@
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="index1.html">Home</a></li>
-              <li><a href="about1.html">About Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="service1.html">Services</a></li>
+              <li><a href="#">Services</a></li>
             </ul>
           </div>
 
@@ -331,7 +284,7 @@
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Help</a></li>
-              <li><a href="contact1.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
 
@@ -339,15 +292,13 @@
           <div class="footer-col">
             <h4>Contact</h4>
             <ul class="contact-info">
-              <li><a href="tel:+911234567890">+91 1234567890</a></li>
+              <li><a href="tel:+91123654789">+91 123654789</a></li>
               <li>
-                <a href="mailto:info@itwingswebtech.com"
-                  >info@itwingswebtech.com</a
-                >
+                <a href="mailto:info@domainname.com">info@domainname.com</a>
               </li>
               <li>
                 <a href="https://goo.gl/maps/XYZ" target="_blank"
-                  >Stesalit Tower, Sector V, Kolkata</a
+                  >520, West Valley, Amin and Minim</a
                 >
               </li>
             </ul>
@@ -356,27 +307,86 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 IT Wings Webtech Solutions. All Rights Reserved.</p>
+        <p>&copy; 2025 IT-Wings Webtech Solutions. All Rights Reserved.</p>
       </div>
     </footer>
 
-    <!-- jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- owl carousel -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- custom js -->
+    <!-- Toastify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Your main.js -->
     <script src="js/main.js"></script>
+
+    <!-- ========================= -->
+    <!-- ⭐ FORM VALIDATION + TOAST -->
+    <!-- ========================= -->
+    <script>
+      const form = document.getElementById("serviceForm");
+
+      function showToast(message, color = "#e63946") {
+        Toastify({
+          text: message,
+          duration: 3000,
+          close: true,
+          gravity: "top",
+          position: "right",
+          backgroundColor: color,
+        }).showToast();
+      }
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const data = {
+          first_name: form.first_name.value.trim(),
+          last_name: form.last_name.value.trim(),
+          email: form.email.value.trim(),
+          organization: form.organization.value.trim(),
+          region: form.region.value,
+          industry: form.industry.value,
+          message: form.message.value.trim(),
+          consent_contact: form.consent_contact.checked,
+          consent_marketing: form.consent_marketing.checked,
+        };
+
+        // validation
+        if (!data.first_name) return showToast("First name is required");
+        if (!data.last_name) return showToast("Last name is required");
+        if (!data.email) return showToast("Email is required");
+        if (!/^\S+@\S+\.\S+$/.test(data.email))
+          return showToast("Invalid email format");
+        if (!data.organization) return showToast("Organization is required");
+        if (!data.region) return showToast("Select a region");
+        if (!data.industry) return showToast("Select an industry");
+        if (!data.message) return showToast("Message is required");
+        if (!data.consent_contact)
+          return showToast("You must agree to be contacted");
+
+        showToast("Submitting...", "#0277bd");
+
+        // You can replace URL later
+        const API_URL = "http://127.0.0.1:8085/api/contact/submit";
+
+        try {
+          await fetch(API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+
+          showToast("Submitted successfully!", "#2ecc71");
+          form.reset();
+        } catch (error) {
+          console.error(error);
+          showToast("Submission failed. Try again.");
+        }
+      });
+    </script>
   </body>
 </html>

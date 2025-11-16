@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Wings Webtech Solutions</title>
+    <title>IT Wings jobs portal</title>
 
     <!-- Font Awesome -->
     <link
@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- header  -->
     <header>
       <nav class="nav-bar">
         <div class="container">
@@ -45,19 +45,25 @@
                 <i class="fa-solid fa-bars"></i>
               </div>
             </div>
-
             <div class="nav-menu">
               <ul class="d-flex al-center">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="career.html" class="active">Career</a></li>
+                <li id="nav-home">
+                  <a href="index.html">Home</a>
+                </li>
+                <li id="nav-about">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li id="nav-service">
+                  <a href="#">Service</a>
+                </li>
+                <li id="nav-career">
+                  <a href="career.html" class="active">Career</a>
+                </li>
                 <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
-
             <div class="contact-btn">
-              <a href="contact.html" target="_blank">Get in touch</a>
+              <a href="request.html" target="_blank">Get in touch</a>
             </div>
           </div>
         </div>
@@ -148,6 +154,7 @@
               <li><a href="request.html">Request a Service</a></li>
               <li><a href="about.html">Know About Us</a></li>
               <li><a href="jobs.html">Join Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -202,7 +209,7 @@
             Join us to experience cutting-edge industrial solutions that drive
             innovation and lasting success.
           </p>
-          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <a href="request.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
 
@@ -279,11 +286,29 @@
       </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Carousel JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: false,
+        once: true,
+        delay: 600,
+      });
+    </script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>

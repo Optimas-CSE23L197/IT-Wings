@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Wings Webtech Solutions</title>
+    <title>Our service</title>
 
     <!-- FIXED FONT AWESOME -->
     <link
@@ -27,7 +27,7 @@
       <nav class="nav-bar">
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
-            <div class="logo d-flex al-center">
+            <div class="logo d-flex al-center jc-between">
               <a href="#">
                 <figure>
                   <img src="images/Baby.png" alt="logo" />
@@ -38,19 +38,23 @@
                 <i class="fa-solid fa-bars"></i>
               </div>
             </div>
-
             <div class="nav-menu">
               <ul class="d-flex al-center">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#" class="active">Service</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li id="nav-home">
+                  <a href="index.html" class="active">Home</a>
+                </li>
+                <li id="nav-about">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li id="nav-service">
+                  <a href="#">Service</a>
+                </li>
+                <li id="nav-career"><a href="career.html">Career</a></li>
+                <li><a href="#" id="nav-contact">Contact Us</a></li>
               </ul>
             </div>
-
             <div class="contact-btn">
-              <a href="contact.html" target="_blank">Get in touch</a>
+              <a href="request.html" target="_blank">Get in touch</a>
             </div>
           </div>
         </div>
@@ -141,6 +145,7 @@
               <li><a href="request.html">Request a Service</a></li>
               <li><a href="about.html">Know About Us</a></li>
               <li><a href="jobs.html">Join Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="#">Learn With Us</a></li>
             </ul>
           </div>
@@ -202,35 +207,48 @@
       <div class="pagination"></div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer class="footer">
       <div class="footer-cta">
         <div class="container">
           <h2>Ready to work with us?</h2>
-          <p>Experience the best industrial digital solutions.</p>
-          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <p>
+            Join us to experience cutting-edge industrial solutions that drive
+            innovation and lasting success.
+          </p>
+          <a href="request.html" class="btn-primary">Get in Touch</a>
         </div>
       </div>
 
       <div class="footer-main">
         <div class="container footer-grid">
+          <!-- Logo & About -->
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
-              alt="Logo"
+              alt="ProFactory Logo"
               class="footer-logo"
             />
-            <p>Your trusted partner for digital transformation.</p>
-
+            <p>
+              We are committed to providing personalized industrial solutions
+              that transform your business.
+            </p>
             <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
             </div>
           </div>
 
+          <!-- Quick Links -->
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
@@ -241,6 +259,7 @@
             </ul>
           </div>
 
+          <!-- Legal -->
           <div class="footer-col">
             <h4>Security</h4>
             <ul>
@@ -251,11 +270,14 @@
             </ul>
           </div>
 
+          <!-- Contact Info -->
           <div class="footer-col">
             <h4>Contact</h4>
             <ul class="contact-info">
               <li><a href="tel:+91123654789">+91 123654789</a></li>
-              <li><a href="mailto:info@domain.com">info@domain.com</a></li>
+              <li>
+                <a href="mailto:info@domainname.com">info@domainname.com</a>
+              </li>
               <li>
                 <a href="https://goo.gl/maps/XYZ" target="_blank"
                   >520, West Valley, Amin and Minim</a
