@@ -320,6 +320,14 @@
                       placeholder="Enter your email"
                     />
                   </div>
+                  <div class="input-box">
+                    <label>State *</label>
+                    <input
+                      type="state"
+                      name="state"
+                      placeholder="Enter your state"
+                    />
+                  </div>
                 </div>
 
                 <div class="row">
@@ -640,18 +648,65 @@
         return true;
       }
 
-      form.addEventListener("submit", function (e) {
-        if (!validateForm()) {
-          e.preventDefault();
-        } else {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        if (!validateForm()) return;
+
+        // Build FormData for upload
+        const formData = new FormData();
+        formData.append("firstName", fields.firstName.value.trim());
+        formData.append("lastName", fields.lastName.value.trim());
+        formData.append("country", fields.country.value);
+        formData.append("experience", fields.experience.value);
+        formData.append("email", fields.email.value.trim());
+        formData.append("applicationType", fields.applicationType.value);
+        formData.append("skills", fields.skills.value.trim());
+        formData.append("countryCode", fields.countryCode.value);
+        formData.append("mobileNumber", fields.mobileNumber.value.trim());
+        formData.append("resumeFile", fields.resumeFile.files[0]);
+        formData.append("referenceNumber", referenceNumber);
+
+        try {
+          const response = await fetch(
+            "http://127.0.0.1:8085/main/api/v1/application/submit",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
+
+          const result = await response.json();
+
+          if (response.ok) {
+            Toastify({
+              text: "Application submitted successfully!",
+              duration: 3000,
+              gravity: "top",
+              position: "right",
+              backgroundColor: "#27ae60",
+            }).showToast();
+
+            form.reset(); // Clear the form
+          } else {
+            Toastify({
+              text: result.message || "Failed to submit application.",
+              duration: 3000,
+              gravity: "top",
+              position: "right",
+              backgroundColor: "#E63946",
+            }).showToast();
+          }
+        } catch (error) {
           Toastify({
-            text: "Form submitted successfully!",
+            text: "Server error. Please try again later.",
             duration: 3000,
             gravity: "top",
             position: "right",
-            backgroundColor: "#27ae60",
-            close: true,
+            backgroundColor: "#E63946",
           }).showToast();
+
+          console.error("POST Error:", error);
         }
       });
     </script>
