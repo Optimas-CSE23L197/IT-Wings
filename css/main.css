@@ -4146,6 +4146,7 @@ h2 {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: white;
 }
 
 .people-content p {
@@ -4184,9 +4185,10 @@ h2 {
   .people-content {
     width: 100%;
   }
-
+    
   .people-content {
     padding: 40px 25px;
+    
   }
 }
 
@@ -4235,6 +4237,21 @@ h2 {
 }
 
 /* Responsive */
+@media screen and (max-width: 900px) {
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 17px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .awards-container {
     gap: 30px;
