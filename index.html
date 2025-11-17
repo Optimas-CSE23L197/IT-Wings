@@ -292,6 +292,30 @@
         </div>
       </section>
 
+      <!-- Floating Contact Widget -->
+      <section class="social-contact-section">
+        <!-- Main Message Icon (Trigger) -->
+        <div class="contact-trigger">
+          <i class="fa-solid fa-message"></i>
+        </div>
+
+        <!-- Hidden Popup -->
+        <ul class="contact-popup">
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          </li>
+        </ul>
+      </section>
+
       <!-- how to start-->
       <section class="home-start">
         <div class="container">
@@ -560,6 +584,92 @@
         </div>
       </section>
 
+      <!-- ================================
+     JOIN OUR TEAM SECTION
+================================ -->
+      <section class="join-team-section">
+        <div class="container join-team-wrapper">
+          <!-- LEFT CONTENT -->
+          <div class="join-text">
+            <h2>Join Our Growing Team</h2>
+            <p>
+              Be a part of an innovative company where creativity meets
+              technology. At <strong>IT Wings WebTech</strong>, we build digital
+              solutions that make an impact.
+            </p>
+
+            <ul class="join-benefits">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Work with talented
+                professionals
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Growth-focused
+                environment
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Real-world projects &
+                mentorship
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Friendly & supportive
+                workspace
+              </li>
+            </ul>
+
+            <a href="career.html" class="join-btn">Explore Careers</a>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="join-image">
+            <img src="images/career/career-1.jpg" alt="Join Our Team" />
+          </div>
+        </div>
+      </section>
+
+      <!-- education -->
+      <section class="education-system-section">
+        <div class="container edu-wrapper">
+          <!-- LEFT CONTENT -->
+          <div class="edu-image">
+            <img src="images/career/career-2.jpg" alt="Education System" />
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="edu-content">
+            <h2>IT Wings Education System</h2>
+            <p>
+              Learn modern technologies from industry experts through our
+              structured, high-quality online courses. Join thousands of
+              students upgrading their skills every day.
+            </p>
+
+            <ul class="edu-features">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Structured skill-based
+                courses
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Learn with real-world
+                projects
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Track your progress &
+                achievements
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Instructor-led video
+                content
+              </li>
+            </ul>
+
+            <a href="https://yourdomain.com/learn" class="edu-btn">
+              Start Learning Now
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- Technologies Section -->
       <section class="technologies">
         <div class="container">
@@ -819,8 +929,7 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="service.html">Services</a></li>
             </ul>
           </div>
 
@@ -863,21 +972,18 @@
       <a href="#" id="scrollBtn"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <!-- jquery -->
+    <!-- jQuery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Owl Carousel JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- aos animation -->
+
+    <!-- FIXED: Owl Carousel JS (Working CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -886,10 +992,10 @@
         delay: 600,
       });
     </script>
-    <!-- custom js -->
-    <script src="js/main.js"></script>
+
+    <!-- FIXED: Owl sliders initialize AFTER Owl JS loads -->
     <script>
-      $(document).ready(function () {
+      $(window).on("load", function () {
         $(".banner-slider").owlCarousel({
           items: 1,
           loop: true,
@@ -900,13 +1006,9 @@
           nav: false,
           smartSpeed: 800,
         });
-      });
 
-      $(document).ready(function () {
         if (window.innerWidth <= 480) {
-          $(".home-start-card-list").addClass("owl-carousel");
-
-          $(".home-start-card-list").owlCarousel({
+          $(".home-start-card-list").addClass("owl-carousel").owlCarousel({
             loop: true,
             margin: 20,
             autoplay: true,
@@ -918,13 +1020,9 @@
             smartSpeed: 700,
           });
         }
-      });
 
-      $(document).ready(function () {
         if (window.innerWidth <= 480) {
-          $(".home-choose-grid").addClass("owl-carousel");
-
-          $(".home-choose-grid").owlCarousel({
+          $(".home-choose-grid").addClass("owl-carousel").owlCarousel({
             loop: true,
             margin: 20,
             autoplay: true,
@@ -936,9 +1034,7 @@
             smartSpeed: 700,
           });
         }
-      });
 
-      $(document).ready(function () {
         $(".testimonial-slider").owlCarousel({
           loop: true,
           margin: 30,
@@ -956,5 +1052,8 @@
         });
       });
     </script>
+
+    <!-- Your custom JS (must come last) -->
+    <script src="js/main.js"></script>
   </body>
 </html>

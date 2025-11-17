@@ -149,3 +149,11 @@ btn.addEventListener("click", function (e) {
     behavior: "smooth", // ✅ smooth animation
   });
 });
+
+// trigger message icon
+const trigger = document.querySelector(".contact-trigger");
+const popup = document.querySelector(".contact-popup");
+
+trigger.addEventListener("click", () => {
+  popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+});
