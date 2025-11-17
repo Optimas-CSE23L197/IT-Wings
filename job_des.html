@@ -487,13 +487,19 @@
     <!-- Main Validation Script -->
     <script>
       /* ------------------------------------------------------
-      Fetch Job Details from API
-    ------------------------------------------------------- */
+  Fetch Job Details
+------------------------------------------------------- */
       const urlParams = new URLSearchParams(window.location.search);
       const referenceNumber = urlParams.get("ref");
 
       if (!referenceNumber) {
-        showError("Invalid job reference number!");
+        Toastify({
+          text: "Invalid job reference number!",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          backgroundColor: "#E63946",
+        }).showToast();
       }
 
       async function fetchJobDetails() {
@@ -530,15 +536,14 @@
             .map((s) => `<span>${s}</span>`)
             .join(", ");
         } catch (error) {
-          console.error("Error:", error);
+          console.error("Error fetching job:", error);
         }
       }
-
       fetchJobDetails();
 
       /* ------------------------------------------------------
-       🔥 Form Validation + Toastify Alerts
-    ------------------------------------------------------- */
+   Form Validation + Submission
+------------------------------------------------------- */
       const form = document.getElementById("applyForm");
 
       const fields = {
@@ -547,6 +552,7 @@
         country: form.querySelector("[name='country']"),
         experience: form.querySelector("[name='experience']"),
         email: form.querySelector("[name='email']"),
+        state: form.querySelector("[name='state']"),
         applicationType: form.querySelector("[name='applicationType']"),
         skills: form.querySelector("[name='skills']"),
         countryCode: form.querySelector("[name='countryCode']"),
@@ -558,18 +564,16 @@
         Toastify({
           text: message,
           duration: 3000,
-          close: true,
           gravity: "top",
           position: "right",
           backgroundColor: "#E63946",
         }).showToast();
 
         if (field) {
+          field.style.border = "1px solid red";
           field.focus();
-          field.style.border = "1px solid #E63946";
-          setTimeout(() => (field.style.border = ""), 2500);
+          setTimeout(() => (field.style.border = ""), 2000);
         }
-
         return false;
       }
 
@@ -592,58 +596,49 @@
       }
 
       function validateForm() {
-        const {
-          firstName,
-          lastName,
-          country,
-          experience,
-          email,
-          applicationType,
-          skills,
-          countryCode,
-          mobileNumber,
-          resumeFile,
-        } = fields;
+        const f = fields;
 
-        if (!firstName.value.trim())
-          return showError("First Name is required", firstName);
-        if (!lastName.value.trim())
-          return showError("Last Name is required", lastName);
-        if (!country.value)
-          return showError("Please select a country", country);
-        if (!experience.value)
-          return showError("Please select experience", experience);
+        if (!f.firstName.value.trim())
+          return showError("First Name required", f.firstName);
+        if (!f.lastName.value.trim())
+          return showError("Last Name required", f.lastName);
+        if (!f.country.value) return showError("Select country", f.country);
+        if (!f.experience.value)
+          return showError("Select experience", f.experience);
 
-        if (!email.value.trim()) return showError("Email is required", email);
-        if (!validateEmail(email.value.trim()))
-          return showError("Invalid email format", email);
+        if (!f.email.value.trim()) return showError("Email required", f.email);
+        if (!validateEmail(f.email.value.trim()))
+          return showError("Invalid email format", f.email);
 
-        if (!applicationType.value)
-          return showError("Please select application type", applicationType);
+        if (!f.state.value.trim()) return showError("State required", f.state);
 
-        if (!skills.value.trim())
-          return showError("Skills are required", skills);
+        if (!f.applicationType.value)
+          return showError("Select application type", f.applicationType);
 
-        const skillList = skills.value
+        if (!f.skills.value.trim())
+          return showError("Skills required", f.skills);
+
+        const skillList = f.skills.value
           .split(",")
           .map((s) => s.trim())
           .filter(Boolean);
         if (skillList.length > 5)
-          return showError("Maximum 5 skills allowed", skills);
+          return showError("Max 5 skills allowed", f.skills);
 
-        if (!countryCode.value)
-          return showError("Please select country code", countryCode);
-        if (!validatePhone(mobileNumber.value.trim()))
-          return showError("Enter valid 10-digit mobile number", mobileNumber);
+        if (!f.countryCode.value)
+          return showError("Select country code", f.countryCode);
 
-        if (resumeFile.files.length === 0)
-          return showError("Please upload your resume", resumeFile);
+        if (!validatePhone(f.mobileNumber.value.trim()))
+          return showError("Invalid mobile number", f.mobileNumber);
 
-        const file = resumeFile.files[0];
+        if (f.resumeFile.files.length === 0)
+          return showError("Upload resume", f.resumeFile);
+
+        const file = f.resumeFile.files[0];
         if (!validateFileType(file))
-          return showError("Only PDF, DOC, DOCX, RTF allowed", resumeFile);
+          return showError("Only PDF, DOC, DOCX, RTF allowed", f.resumeFile);
         if (file.size > 5 * 1024 * 1024)
-          return showError("File must be under 5MB", resumeFile);
+          return showError("File must be under 5MB", f.resumeFile);
 
         return true;
       }
@@ -653,27 +648,26 @@
 
         if (!validateForm()) return;
 
-        // Build FormData for upload
+        const f = fields;
         const formData = new FormData();
-        formData.append("firstName", fields.firstName.value.trim());
-        formData.append("lastName", fields.lastName.value.trim());
-        formData.append("country", fields.country.value);
-        formData.append("experience", fields.experience.value);
-        formData.append("email", fields.email.value.trim());
-        formData.append("applicationType", fields.applicationType.value);
-        formData.append("skills", fields.skills.value.trim());
-        formData.append("countryCode", fields.countryCode.value);
-        formData.append("mobileNumber", fields.mobileNumber.value.trim());
-        formData.append("resumeFile", fields.resumeFile.files[0]);
+
+        formData.append("firstName", f.firstName.value.trim());
+        formData.append("lastName", f.lastName.value.trim());
+        formData.append("country", f.country.value);
+        formData.append("experience", f.experience.value);
+        formData.append("email", f.email.value.trim());
+        formData.append("state", f.state.value.trim());
+        formData.append("applicationType", f.applicationType.value);
+        formData.append("skills", f.skills.value.trim());
+        formData.append("countryCode", f.countryCode.value);
+        formData.append("mobileNumber", f.mobileNumber.value.trim());
         formData.append("referenceNumber", referenceNumber);
+        formData.append("resumeFile", f.resumeFile.files[0]);
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:8085/main/api/v1/application/submit",
-            {
-              method: "POST",
-              body: formData,
-            }
+            "http://127.0.0.1:8081/main/api/v1/application/submit",
+            { method: "POST", body: formData }
           );
 
           const result = await response.json();
@@ -687,26 +681,25 @@
               backgroundColor: "#27ae60",
             }).showToast();
 
-            form.reset(); // Clear the form
+            form.reset();
           } else {
             Toastify({
-              text: result.message || "Failed to submit application.",
+              text: result.message || "Submission failed",
               duration: 3000,
               gravity: "top",
               position: "right",
               backgroundColor: "#E63946",
             }).showToast();
           }
-        } catch (error) {
+        } catch (err) {
           Toastify({
-            text: "Server error. Please try again later.",
+            text: "Server error. Try again later.",
             duration: 3000,
             gravity: "top",
             position: "right",
             backgroundColor: "#E63946",
           }).showToast();
-
-          console.error("POST Error:", error);
+          console.error("POST ERROR:", err);
         }
       });
     </script>
