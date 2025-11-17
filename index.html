@@ -972,21 +972,18 @@
       <a href="#" id="scrollBtn"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <!-- jquery -->
+    <!-- jQuery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Owl Carousel JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- aos animation -->
+
+    <!-- FIXED: Owl Carousel JS (Working CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -995,8 +992,10 @@
         delay: 600,
       });
     </script>
+
+    <!-- FIXED: Owl sliders initialize AFTER Owl JS loads -->
     <script>
-      $(document).ready(function () {
+      $(window).on("load", function () {
         $(".banner-slider").owlCarousel({
           items: 1,
           loop: true,
@@ -1007,13 +1006,9 @@
           nav: false,
           smartSpeed: 800,
         });
-      });
 
-      $(document).ready(function () {
         if (window.innerWidth <= 480) {
-          $(".home-start-card-list").addClass("owl-carousel");
-
-          $(".home-start-card-list").owlCarousel({
+          $(".home-start-card-list").addClass("owl-carousel").owlCarousel({
             loop: true,
             margin: 20,
             autoplay: true,
@@ -1025,13 +1020,9 @@
             smartSpeed: 700,
           });
         }
-      });
 
-      $(document).ready(function () {
         if (window.innerWidth <= 480) {
-          $(".home-choose-grid").addClass("owl-carousel");
-
-          $(".home-choose-grid").owlCarousel({
+          $(".home-choose-grid").addClass("owl-carousel").owlCarousel({
             loop: true,
             margin: 20,
             autoplay: true,
@@ -1043,9 +1034,7 @@
             smartSpeed: 700,
           });
         }
-      });
 
-      $(document).ready(function () {
         $(".testimonial-slider").owlCarousel({
           loop: true,
           margin: 30,
@@ -1063,7 +1052,8 @@
         });
       });
     </script>
-    <!-- custom js -->
+
+    <!-- Your custom JS (must come last) -->
     <script src="js/main.js"></script>
   </body>
 </html>

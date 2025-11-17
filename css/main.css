@@ -5229,25 +5229,6 @@ service card info
 /* =========================================================
    GLOBAL / RESET
 ========================================================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: var(--white);
-  color: var(--gray-dark);
-  line-height: 1.6;
-}
-
-img {
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-}
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -7370,74 +7351,123 @@ APPLY FORM — CONTAINER CARD =========================== */
   z-index: 9999;
 }
 
-/* Round Trigger Button */
+/* ================================
+   Floating Contact Button (Fixed)
+================================ */
+
+/* Main round trigger */
 .contact-trigger {
   position: fixed;
-  width: 55px;
-  height: 55px;
+  bottom: 90px; /* stays above scroll-to-top button */
+  right: 20px;
+
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background: #ff9d28;
   color: #000;
+
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 15px rgba(255, 157, 40, 0.7);
-  transition: 0.3s;
-  font-size: 24px;
-  animation: shake 2.5s ease-in-out infinite;
-  top: 50%;
-  right: 10px;
-  transform: translate(-50%, 0);
+
+  box-shadow: 0 8px 18px rgba(255, 157, 40, 0.5);
+  transition: 0.3s ease;
+  font-size: 26px;
+
+  z-index: 9999;
+  animation: shake 2.3s ease-in-out infinite;
 }
 
 .contact-trigger:hover {
-  transform: scale(1.07);
-  box-shadow: 0 0 20px rgba(255, 157, 40, 1);
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 157, 40, 0.9);
 }
 
-/* Popup Hidden by Default */
+/* ================================
+   Popup
+================================ */
 .contact-popup {
   list-style: none;
-  position: absolute;
-  bottom: 200px;
-  right: 65px;
-  padding: 12px 10px;
-  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+
+  bottom: 160px; /* Appears above trigger */
+  right: 25px;
+
+  padding: 12px 14px;
+  background: rgba(20, 20, 20, 0.85);
   backdrop-filter: blur(4px);
   border-radius: 12px;
+
   display: none;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+
+  z-index: 9998;
+  animation: fadeUp 0.35s ease forwards;
 }
 
-/* Icons inside popup */
+/* Popup icons */
 .contact-popup li a {
   color: #ff9d28;
-  font-size: 22px;
-  transition: 0.3s;
+  font-size: 24px;
+  transition: 0.3s ease;
 }
 
 .contact-popup li a:hover {
-  transform: scale(1.2);
-  text-shadow: 0 0 10px rgba(255, 157, 40, 0.8);
+  transform: scale(1.25);
+  text-shadow: 0 0 12px rgba(255, 157, 40, 0.9);
 }
 
+/* ================================
+   Animations
+================================ */
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
-  20% {
-    transform: translateX(-2px);
+  25% {
+    transform: translateY(-2px);
   }
-  40% {
-    transform: translateX(2px);
+  50% {
+    transform: translateY(2px);
   }
-  60% {
-    transform: translateX(-2px);
+  75% {
+    transform: translateY(-2px);
   }
-  80% {
-    transform: translateX(2px);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Mobile Adjustments
+================================ */
+@media (max-width: 480px) {
+  .contact-trigger {
+    bottom: 80px;
+    right: 15px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .contact-popup {
+    right: 18px;
+    bottom: 145px;
+    padding: 10px 12px;
+  }
+
+  .contact-popup li a {
+    font-size: 22px;
   }
 }
