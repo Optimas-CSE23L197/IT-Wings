@@ -157,3 +157,30 @@ const popup = document.querySelector(".contact-popup");
 trigger.addEventListener("click", () => {
   popup.style.display = popup.style.display === "flex" ? "none" : "flex";
 });
+
+// floating icon
+let floatingIcon = document.querySelector(".contact-trigger");
+
+window.addEventListener("scroll", () => {
+  let scrollDown = window.scrollY || document.documentElement.scrollTop;
+  let windowHeight = window.innerHeight;
+  let docHeight = document.documentElement.scrollHeight;
+
+  if (window.innerWidth > 480) {
+    if (scrollDown + windowHeight >= docHeight - 90) {
+      floatingIcon.style.bottom = "140px";
+      popup.style.bottom = "220px";
+    } else {
+      floatingIcon.style.bottom = "";
+      popup.style.bottom = "";
+    }
+  } else {
+    if (scrollDown + windowHeight >= docHeight - 200) {
+      floatingIcon.style.bottom = "200px";
+      popup.style.bottom = "280px";
+    } else {
+      floatingIcon.style.bottom = "";
+      popup.style.bottom = "";
+    }
+  }
+});

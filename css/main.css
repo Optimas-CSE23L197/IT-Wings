@@ -161,7 +161,7 @@ banner
   position: relative;
   height: var(--banner-height);
   width: 100%;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4181,10 +4181,9 @@ h2 {
   .people-content {
     width: 100%;
   }
-    
+
   .people-content {
     padding: 40px 25px;
-    
   }
 }
 
@@ -7312,9 +7311,8 @@ APPLY FORM — CONTAINER CARD =========================== */
 /* Main round trigger */
 .contact-trigger {
   position: fixed;
-  bottom: 90px; /* stays above scroll-to-top button */
+  bottom: 90px;
   right: 20px;
-
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -7345,10 +7343,8 @@ APPLY FORM — CONTAINER CARD =========================== */
 .contact-popup {
   list-style: none;
   position: fixed;
-
   bottom: 160px; /* Appears above trigger */
   right: 25px;
-
   padding: 12px 14px;
   background: rgba(20, 20, 20, 0.85);
   backdrop-filter: blur(4px);

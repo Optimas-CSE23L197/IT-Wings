@@ -183,12 +183,12 @@
               <div class="form-row">
                 <div class="form-group">
                   <label>First name*</label>
-                  <input type="text" name="first_name" required />
+                  <input type="text" name="firstName" required />
                 </div>
 
                 <div class="form-group">
                   <label>Last name*</label>
-                  <input type="text" name="last_name" required />
+                  <input type="text" name="lastName" required />
                 </div>
               </div>
 
@@ -238,14 +238,14 @@
 
               <div class="form-checkbox">
                 <label>
-                  <input type="checkbox" name="consent_contact" required />
+                  <input type="checkbox" name="consentContact" required />
                   I consent to being contacted by IT Wings Webtech Solutions.*
                 </label>
               </div>
 
               <div class="form-checkbox">
                 <label>
-                  <input type="checkbox" name="consent_marketing" />
+                  <input type="checkbox" name="consentMarketing" />
                   I want to receive marketing communication.
                 </label>
               </div>
@@ -263,12 +263,10 @@
 
       <!-- Floating Contact Widget -->
       <section class="social-contact-section">
-        <!-- Main Message Icon (Trigger) -->
         <div class="contact-trigger">
           <i class="fa-solid fa-message"></i>
         </div>
 
-        <!-- Hidden Popup -->
         <ul class="contact-popup">
           <li>
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
@@ -301,7 +299,6 @@
 
       <div class="footer-main">
         <div class="container footer-grid">
-          <!-- Logo & About -->
           <div class="footer-col about">
             <img
               src="images/service-banner.jpg"
@@ -327,7 +324,6 @@
             </div>
           </div>
 
-          <!-- Quick Links -->
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
@@ -337,7 +333,6 @@
             </ul>
           </div>
 
-          <!-- Legal -->
           <div class="footer-col">
             <h4>Security</h4>
             <ul>
@@ -348,7 +343,6 @@
             </ul>
           </div>
 
-          <!-- Contact Info -->
           <div class="footer-col">
             <h4>Contact</h4>
             <ul class="contact-info">
@@ -404,20 +398,20 @@
         e.preventDefault();
 
         const data = {
-          first_name: form.first_name.value.trim(),
-          last_name: form.last_name.value.trim(),
+          firstName: form.firstName.value.trim(),
+          lastName: form.lastName.value.trim(),
           email: form.email.value.trim(),
           organization: form.organization.value.trim(),
           region: form.region.value,
           industry: form.industry.value,
           message: form.message.value.trim(),
-          consent_contact: form.consent_contact.checked,
-          consent_marketing: form.consent_marketing.checked,
+          consentContact: form.consentContact.checked,
+          consentMarketing: form.consentMarketing.checked,
         };
 
         // validation
-        if (!data.first_name) return showToast("First name is required");
-        if (!data.last_name) return showToast("Last name is required");
+        if (!data.firstName) return showToast("First name is required");
+        if (!data.lastName) return showToast("Last name is required");
         if (!data.email) return showToast("Email is required");
         if (!/^\S+@\S+\.\S+$/.test(data.email))
           return showToast("Invalid email format");
@@ -425,13 +419,12 @@
         if (!data.region) return showToast("Select a region");
         if (!data.industry) return showToast("Select an industry");
         if (!data.message) return showToast("Message is required");
-        if (!data.consent_contact)
+        if (!data.consentContact)
           return showToast("You must agree to be contacted");
 
         showToast("Submitting...", "#0277bd");
 
-        // You can replace URL later
-        const API_URL = "http://127.0.0.1:8085/api/contact/submit";
+        const API_URL = "http://127.0.0.1:8081/main/api/v1/contact-form/submit";
 
         try {
           await fetch(API_URL, {
