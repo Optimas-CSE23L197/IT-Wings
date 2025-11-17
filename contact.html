@@ -464,6 +464,21 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script>
+      if (window.innerWidth <= 480) {
+        $(".home-choose-grid").addClass("owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          dots: true,
+          nav: false,
+          items: 1,
+          smartSpeed: 700,
+        });
+      }
+    </script>
     <!-- custom js -->
     <script src="js/main.js"></script>
   </body>
