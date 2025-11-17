@@ -1,159 +1,164 @@
 // ===============================
+// SAFE ELEMENT GETTER
+// ===============================
+const $ = (selector) => document.querySelector(selector);
+
+// ===============================
 // TOGGLE HAMBURGER ICON
 // ===============================
-const humbergerBtn = document.querySelector("#humberger i");
-const navMenu = document.querySelector(".nav-menu");
+const humbergerBtn = $("#humberger i");
+const navMenu = $(".nav-menu");
 
-humbergerBtn.addEventListener("click", function () {
-  navMenu.classList.toggle("show-menu");
-  humbergerBtn.classList.toggle("active");
+if (humbergerBtn && navMenu) {
+  humbergerBtn.addEventListener("click", function () {
+    navMenu.classList.toggle("show-menu");
+    humbergerBtn.classList.toggle("active");
 
-  if (humbergerBtn.classList.contains("active")) {
-    humbergerBtn.classList.replace("fa-bars", "fa-xmark");
-  } else {
-    humbergerBtn.classList.replace("fa-xmark", "fa-bars");
-  }
-});
+    if (humbergerBtn.classList.contains("active")) {
+      humbergerBtn.classList.replace("fa-bars", "fa-xmark");
+    } else {
+      humbergerBtn.classList.replace("fa-xmark", "fa-bars");
+    }
+  });
+}
 
 // ===============================
 // NAV DROPDOWN HANDLING
-// ====================s===========
-const navService = document.querySelector("#nav-service");
-const serviceSection = document.querySelector("#home-menu-service-setion");
-const navContact = document.querySelector("#nav-contact");
-const contactSection = document.querySelector("#contact-nav-section");
+// ===============================
+const navService = $("#nav-service");
+const serviceSection = $("#home-menu-service-setion");
+const navContact = $("#nav-contact");
+const contactSection = $("#contact-nav-section");
 
 let serviceTimeout, contactTimeout;
 
 function closeAllMenus() {
-  serviceSection.classList.remove("active");
-  contactSection.classList.remove("active");
+  if (serviceSection) serviceSection.classList.remove("active");
+  if (contactSection) contactSection.classList.remove("active");
 }
 
 function setupNavEvents() {
-  // Remove any existing listeners (clean re-init)
-  navService.replaceWith(navService.cloneNode(true));
-  navContact.replaceWith(navContact.cloneNode(true));
+  if (!navService || !navContact) return; // page does not contain nav
 
-  const newNavService = document.querySelector("#nav-service");
-  const newNavContact = document.querySelector("#nav-contact");
+  // Clone nodes only if needed
+  const newNavService = $("#nav-service");
+  const newNavContact = $("#nav-contact");
 
-  // Desktop (hover behavior)
   if (window.innerWidth > 992) {
+    // DESKTOP
     newNavService.addEventListener("mouseenter", () => {
-      clearTimeout(serviceTimeout);
       closeAllMenus();
-      serviceSection.classList.add("active");
+      if (serviceSection) serviceSection.classList.add("active");
     });
 
     newNavService.addEventListener("mouseleave", () => {
       serviceTimeout = setTimeout(() => {
-        serviceSection.classList.remove("active");
+        if (serviceSection) serviceSection.classList.remove("active");
       }, 200);
     });
 
-    serviceSection.addEventListener("mouseenter", () => {
-      clearTimeout(serviceTimeout);
-    });
-    serviceSection.addEventListener("mouseleave", () => {
-      serviceSection.classList.remove("active");
-    });
+    if (serviceSection) {
+      serviceSection.addEventListener("mouseenter", () =>
+        clearTimeout(serviceTimeout)
+      );
+      serviceSection.addEventListener("mouseleave", () =>
+        serviceSection.classList.remove("active")
+      );
+    }
 
     newNavContact.addEventListener("mouseenter", () => {
-      clearTimeout(contactTimeout);
       closeAllMenus();
-      contactSection.classList.add("active");
+      if (contactSection) contactSection.classList.add("active");
     });
 
     newNavContact.addEventListener("mouseleave", () => {
       contactTimeout = setTimeout(() => {
-        contactSection.classList.remove("active");
+        if (contactSection) contactSection.classList.remove("active");
       }, 200);
     });
 
-    contactSection.addEventListener("mouseenter", () => {
-      clearTimeout(contactTimeout);
-    });
-    contactSection.addEventListener("mouseleave", () => {
-      contactSection.classList.remove("active");
-    });
-  }
-
-  // Mobile (click behavior)
-  else {
-    newNavService.addEventListener("click", (e) => {
-      window.location.href = "service.html";
-    });
-
-    newNavContact.addEventListener("click", (e) => {
-      window.location.href = "contact.html";
-    });
+    if (contactSection) {
+      contactSection.addEventListener("mouseenter", () =>
+        clearTimeout(contactTimeout)
+      );
+      contactSection.addEventListener("mouseleave", () =>
+        contactSection.classList.remove("active")
+      );
+    }
+  } else {
+    // MOBILE
+    newNavService.addEventListener(
+      "click",
+      () => (window.location.href = "service.html")
+    );
+    newNavContact.addEventListener(
+      "click",
+      () => (window.location.href = "contact.html")
+    );
   }
 }
 
-// Initialize & reapply on resize
+// Init safely
 setupNavEvents();
 window.addEventListener("resize", setupNavEvents);
 
-// filter service
+// ===============================
+// FILTER SERVICES
+// ===============================
 let services = document.querySelectorAll(".service-card");
 
 function filterServices(category) {
+  if (!services || services.length === 0) return;
+
   if (category === "all") {
-    services.array.forEach((service) => {
-      service.style.display = "block";
-    });
+    services.forEach((s) => (s.style.display = "block"));
   } else {
-    services.forEach((service) => {
-      service.style.display = "none";
-    });
-    // to show selected services
-    let selectedService = document.querySelectorAll("." + category);
-    selectedService.forEach((service) => {
-      service.style.display = "block";
-    });
+    services.forEach((s) => (s.style.display = "none"));
+    document
+      .querySelectorAll("." + category)
+      .forEach((s) => (s.style.display = "block"));
   }
 }
 
-// sticky navbar
-let navBar = document.querySelector(".nav-bar");
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 80) {
-    navBar.classList.add("sticky");
-  } else {
-    navBar.classList.remove("sticky");
-  }
-});
-
-// top up button
-let btn = document.getElementById("scrollBtn");
-window.addEventListener("scroll", function () {
-  // page scroll
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  // display height
-  let windowHeight = window.innerHeight;
-  // total document height
-  let docHeight = document.documentElement.scrollHeight;
-
-  if (scrollTop + windowHeight >= docHeight - 100) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-});
-
-btn.addEventListener("click", function (e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // ✅ smooth animation
+// ===============================
+// STICKY NAVBAR
+// ===============================
+const navBar = $(".nav-bar");
+if (navBar) {
+  window.addEventListener("scroll", () => {
+    navBar.classList.toggle("sticky", window.pageYOffset > 80);
   });
-});
+}
 
-// open all floating ixon
-const trigger = document.querySelector(".contact-trigger");
-const popup = document.querySelector(".contact-popup");
+// ===============================
+// SCROLL TO TOP BUTTON
+// ===============================
+const scrollBtn = $("#scrollBtn");
 
-trigger.addEventListener("click", () => {
-  popup.style.display = popup.style.display === "flex" ? "none" : "flex";
-});
+if (scrollBtn) {
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+
+    scrollBtn.style.display =
+      scrollTop + windowHeight >= docHeight - 100 ? "block" : "none";
+  });
+
+  scrollBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// ===============================
+// FLOATING ICON POPUP
+// ===============================
+const trigger = $(".contact-trigger");
+const popup = $(".contact-popup");
+
+if (trigger && popup) {
+  trigger.addEventListener("click", () => {
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+  });
+}
