@@ -932,9 +932,24 @@
               <p>Take our professional IT services and grow faster.</p>
 
               <form class="popup-form">
-                <input type="text" placeholder="Full Name*" required />
-                <input type="email" placeholder="Email Address*" required />
-                <input type="text" placeholder="Phone Number*" required />
+                <input
+                  type="text"
+                  id="popupInput"
+                  placeholder="Full Name*"
+                  required
+                />
+                <input
+                  type="email"
+                  id="popupInput"
+                  placeholder="Email Address*"
+                  required
+                />
+                <input
+                  type="text"
+                  id="popupInput"
+                  placeholder="Phone Number*"
+                  required
+                />
 
                 <button type="submit">Subscribe Now</button>
               </form>
@@ -957,13 +972,6 @@
 
               <a href="career.html" class="popup-btn"> Apply Now → </a>
             </div>
-          </div>
-
-          <!-- SLIDER DOTS -->
-          <div class="popup-dots">
-            <span class="dot active" onclick="showSlide(0)"></span>
-            <span class="dot" onclick="showSlide(1)"></span>
-            <span class="dot" onclick="showSlide(2)"></span>
           </div>
         </div>
       </div>
@@ -1153,15 +1161,25 @@
       }
 
       // pop up slider
-      $(".popup-slider").addClass("owl-carousel").owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        nav: false,
-        items: 1,
-        smartSpeed: 700,
+      setTimeout(() => {
+        let slider = $(".popup-slider").addClass("owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: false,
+          items: 1,
+          smartSpeed: 700,
+        });
+      }, 350);
+
+      $("#popupInput").on("input", function () {
+        if ($(this).val().trim().length > 0) {
+          slider.trigger("stop.owl.autoplay");
+        } else {
+          slider.trigger("play.owl.autoplay");
+        }
       });
     </script>
 
