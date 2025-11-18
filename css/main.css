@@ -7421,3 +7421,134 @@ APPLY FORM — CONTAINER CARD =========================== */
     font-size: 22px;
   }
 }
+
+/* POPUP OVERLAY */
+.popup-overlay {
+  position: fixed;
+  top: 20px; /* FIX: remove the 20px */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  padding: 20px;
+  overflow-y: hidden; /* FIX: allow scroll on small screens */
+}
+
+/* POPUP BOX */
+.popup-container {
+  background: #ffffff;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  animation: popupFade 0.4s ease;
+  overflow: visible; /* FIX: allow inside content to render normally */
+  overflow-y: hidden;
+  background: linear-gradient(135deg, #fff7e6, #ffe0b2, #ffcc80, #ffb74d);
+}
+
+/* CLOSE BUTTON */
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SLIDER */
+.popup-slider {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.popup-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+
+  /* FIX: Remove incorrect positioning */
+  position: relative;
+  top: 0;
+}
+
+.popup-slide h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blueDark);
+}
+
+.popup-slide p {
+  color: #444;
+  margin: 10px 0 20px;
+}
+
+/* FORM FIELDS */
+.popup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.popup-form button,
+.popup-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-btn:hover,
+.popup-form button:hover {
+  background: #e39a00;
+}
+
+/* DOTS */
+.popup-dots {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .popup-container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .popup-slide h2 {
+    font-size: 20px;
+  }
+}

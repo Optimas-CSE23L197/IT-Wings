@@ -11,6 +11,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -250,7 +260,7 @@
                   “We don’t just build solutions — we build digital foundations
                   for long-term success.”
                 </p>
-                <a href="contact1.html" class="cta-btn">Request a Quote</a>
+                <a href="request.html" class="cta-btn">Request a Quote</a>
               </div>
             </div>
           </div>
@@ -645,6 +655,48 @@
               )
               .join("");
         });
+
+      if (window.innerWidth <= 480) {
+        $(".home-choose-grid").addClass("owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          dots: true,
+          nav: false,
+          items: 1,
+          smartSpeed: 700,
+        });
+
+        $(".other-services-grid").addClass("owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          dots: true,
+          nav: false,
+          items: 1,
+          smartSpeed: 700,
+        });
+      }
+
+      $(".testimonial-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        smartSpeed: 700,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 1 },
+          1200: { items: 1 },
+        },
+      });
     </script>
   </body>
 </html>

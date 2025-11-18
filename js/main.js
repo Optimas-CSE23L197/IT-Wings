@@ -102,6 +102,7 @@ function filterServices(category) {
   if (category === "all") {
     services.array.forEach((service) => {
       service.style.display = "block";
+      service.style.backgroundColor = "red";
     });
   } else {
     services.forEach((service) => {

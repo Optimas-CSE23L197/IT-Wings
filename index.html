@@ -74,23 +74,33 @@
             <div class="list">
               <h2>All</h2>
               <ul>
-                <li>Govt.</li>
-                <li>Tech</li>
-                <li>Promotional</li>
-                <li>Others</li>
+                <li><a href="./serviceInfo.html?id=govt">Govt.</a></li>
+                <li><a href="./serviceInfo.html?id=tech">Tech</a></li>
+                <li>
+                  <a href="./serviceInfo.html?id=promotional">Promotional</a>
+                </li>
+                <li><a href="./serviceInfo.html?id=others">Others</a></li>
               </ul>
             </div>
+
             <div class="list">
               <h2>Govt</h2>
               <ul>
-                <li>Aadher</li>
-                <li>PAN</li>
-                <li>Voter</li>
-                <li>Home Loan</li>
-                <li>Business Loan</li>
-                <li>See More...</li>
+                <li><a href="./serviceInfo.html?id=aadher">Aadher</a></li>
+                <li><a href="./serviceInfo.html?id=pan">PAN</a></li>
+                <li><a href="./serviceInfo.html?id=voter">Voter</a></li>
+                <li><a href="./serviceInfo.html?id=home-loan">Home Loan</a></li>
+                <li>
+                  <a href="./serviceInfo.html?id=business-loan"
+                    >Business Loan</a
+                  >
+                </li>
+                <li>
+                  <a href="./serviceInfo.html?id=govt-more">See More...</a>
+                </li>
               </ul>
             </div>
+
             <div class="list">
               <h2>Tech</h2>
               <ul>
@@ -99,32 +109,54 @@
                     >Web development</a
                   >
                 </li>
-                <li>App Development</li>
-                <li>API</li>
-                <li>Cloud</li>
-                <li>Course</li>
-                <li>See More...</li>
+                <li>
+                  <a href="./serviceInfo.html?id=app-development"
+                    >App Development</a
+                  >
+                </li>
+                <li><a href="./serviceInfo.html?id=api">API</a></li>
+                <li><a href="./serviceInfo.html?id=cloud">Cloud</a></li>
+                <li><a href="./serviceInfo.html?id=course">Course</a></li>
+                <li>
+                  <a href="./serviceInfo.html?id=tech-more">See More...</a>
+                </li>
               </ul>
             </div>
+
             <div class="list">
               <h2>Promotional</h2>
               <ul>
-                <li>Facebook</li>
-                <li>Youtube</li>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Threads</li>
-                <li>See More...</li>
+                <li><a href="./serviceInfo.html?id=facebook">Facebook</a></li>
+                <li><a href="./serviceInfo.html?id=youtube">Youtube</a></li>
+                <li><a href="./serviceInfo.html?id=instagram">Instagram</a></li>
+                <li><a href="./serviceInfo.html?id=twitter">Twitter</a></li>
+                <li><a href="./serviceInfo.html?id=threads">Threads</a></li>
+                <li>
+                  <a href="./serviceInfo.html?id=promotional-more"
+                    >See More...</a
+                  >
+                </li>
               </ul>
             </div>
+
             <div class="list">
               <h2>Others</h2>
               <ul>
-                <li>Graphics design</li>
-                <li>Logo design</li>
-                <li>UI/UX</li>
-                <li>Ads design</li>
-                <li>See More...</li>
+                <li>
+                  <a href="./serviceInfo.html?id=graphics-design"
+                    >Graphics design</a
+                  >
+                </li>
+                <li>
+                  <a href="./serviceInfo.html?id=logo-design">Logo design</a>
+                </li>
+                <li><a href="./serviceInfo.html?id=ui-ux">UI/UX</a></li>
+                <li>
+                  <a href="./serviceInfo.html?id=ads-design">Ads design</a>
+                </li>
+                <li>
+                  <a href="./serviceInfo.html?id=others-more">See More...</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -637,7 +669,7 @@
 
           <!-- RIGHT IMAGE -->
           <div class="edu-content">
-            <h2>IT Wings Education System</h2>
+            <h2>IT-Wings Education System</h2>
             <p>
               Learn modern technologies from industry experts through our
               structured, high-quality online courses. Join thousands of
@@ -882,6 +914,61 @@
       </section>
     </main>
 
+    <!-- popup section -->
+    <!-- ===========================
+   POPUP OVERLAY + MODAL
+=========================== -->
+    <section>
+      <div id="promoPopup" class="popup-overlay">
+        <div class="popup-container">
+          <!-- CLOSE BUTTON -->
+          <span class="popup-close" onclick="closePopup()">×</span>
+
+          <!-- SLIDER WRAPPER -->
+          <div class="popup-slider">
+            <!-- ========== SLIDE 1 : SERVICES ========== -->
+            <div class="popup-slide">
+              <h2>Boost Your Business with Us</h2>
+              <p>Take our professional IT services and grow faster.</p>
+
+              <form class="popup-form">
+                <input type="text" placeholder="Full Name*" required />
+                <input type="email" placeholder="Email Address*" required />
+                <input type="text" placeholder="Phone Number*" required />
+
+                <button type="submit">Subscribe Now</button>
+              </form>
+            </div>
+
+            <!-- ========== SLIDE 2 : EDUCATION SYSTEM ========== -->
+            <div class="popup-slide">
+              <h2>Grow Your Career</h2>
+              <p>Learn high-demand skills with our free and paid courses.</p>
+
+              <a href="https://yourdomain.com/learn" class="popup-btn">
+                Explore Courses →
+              </a>
+            </div>
+
+            <!-- ========== SLIDE 3 : JOIN COMPANY ========== -->
+            <div class="popup-slide">
+              <h2>Join IT Wings</h2>
+              <p>Work with our company or become a freelancer with us.</p>
+
+              <a href="career.html" class="popup-btn"> Apply Now → </a>
+            </div>
+          </div>
+
+          <!-- SLIDER DOTS -->
+          <div class="popup-dots">
+            <span class="dot active" onclick="showSlide(0)"></span>
+            <span class="dot" onclick="showSlide(1)"></span>
+            <span class="dot" onclick="showSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer-cta">
@@ -1050,6 +1137,31 @@
             1200: { items: 1 },
           },
         });
+      });
+
+      window.onload = () => {
+        if (!sessionStorage.getItem("promoSeen")) {
+          setTimeout(() => {
+            document.getElementById("promoPopup").style.display = "flex";
+          }, 2000);
+        }
+      };
+
+      function closePopup() {
+        document.getElementById("promoPopup").style.display = "none";
+        sessionStorage.setItem("promoSeen", "true");
+      }
+
+      // pop up slider
+      $(".popup-slider").addClass("owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false,
+        items: 1,
+        smartSpeed: 700,
       });
     </script>
 
