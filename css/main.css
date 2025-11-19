@@ -7365,6 +7365,11 @@ APPLY FORM — CONTAINER CARD =========================== */
   transition: 0.3s ease;
 }
 
+.contact-popup li a figure {
+  height: 30px;
+  width: 30px;
+}
+
 .contact-popup li a:hover {
   transform: scale(1.25);
   text-shadow: 0 0 12px rgba(255, 157, 40, 0.9);
