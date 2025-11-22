@@ -364,10 +364,12 @@
       const fetchJob = async () => {
         try {
           const response = await fetch(
-            "http://127.0.0.1:8081/main/api/v1/job/all"
+            "http://localhost/OfficialWebsite_Backend/api/jobs/get_jobs.php"
           );
 
           const result = await response.json();
+          console.log(result);
+
           const jobContainer = document.getElementById("job-container");
 
           if (!result.data || result.data.length === 0) {
@@ -376,17 +378,17 @@
           }
 
           result.data.forEach((job) => {
-            const skills = job.skillSet
-              .map((s) => `<span>${s}</span>`)
-              .join("");
+            // FIX: PostgreSQL returns snake_case
+            const skills =
+              job.skillset?.map((s) => `<span>${s}</span>`).join("") || "";
 
             const card = `
           <div class="job-card">
             <div class="job-row">
 
               <div class="job-info">
-                <h4>${job.jobTitle}</h4>
-                <p>${job.shortDescription}</p>
+                <h4>${job.job_title}</h4>
+                <p>${job.short_description}</p>
               </div>
 
               <div class="job-skills">
@@ -400,8 +402,7 @@
             </div>
 
             <div class="job-actions">
-              <button class="btn apply-btn">Apply Now</button>
-              <button class="btn learn-btn" onclick="handleJobDes('${job.referenceNumber}')">
+              <button class="btn learn-btn" onclick="handleJobDes('${job.reference_number}')">
                 Learn More
               </button>
             </div>
