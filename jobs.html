@@ -364,11 +364,10 @@
       const fetchJob = async () => {
         try {
           const response = await fetch(
-            "http://localhost/OfficialWebsite_Backend/api/jobs/get_jobs.php"
+            "https://official-it-wings-backend.onrender.com/api/jobs/get_jobs.php"
           );
 
           const result = await response.json();
-          console.log(result);
 
           const jobContainer = document.getElementById("job-container");
 
@@ -419,7 +418,8 @@
       fetchJob();
 
       const handleJobDes = (referenceNumber) => {
-        window.location.href = "job_des.html?ref=" + referenceNumber;
+        window.location.href =
+          "job_des.html?reference_number=" + referenceNumber;
       };
     </script>
   </body>
