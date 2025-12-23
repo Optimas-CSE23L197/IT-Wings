@@ -6997,7 +6997,8 @@ APPLY FORM — CONTAINER CARD =========================== */
 }
 
 .service-option ul li a.active {
-  background-color: red;
+  background-color: var(--purple-medium);
+  color: var(--white);
 }
 
 /* ============================

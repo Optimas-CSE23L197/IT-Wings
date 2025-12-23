@@ -98,19 +98,19 @@ window.addEventListener("resize", setupNavEvents);
 // filter service
 let services = document.querySelectorAll(".service-card");
 
-function filterServices(category) {
+function filterCategory(category) {
   if (category === "all") {
-    services.array.forEach((service) => {
+    services.forEach((service) => {
       service.style.display = "block";
-      service.style.backgroundColor = "red";
     });
   } else {
     services.forEach((service) => {
       service.style.display = "none";
     });
-    // to show selected services
-    let selectedService = document.querySelectorAll("." + category);
-    selectedService.forEach((service) => {
+
+    // show selected services
+    let selectedServices = document.querySelectorAll("." + category);
+    selectedServices.forEach((service) => {
       service.style.display = "block";
     });
   }
