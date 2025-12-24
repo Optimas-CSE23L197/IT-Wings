@@ -3,9 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>We'll Be Back Soon!</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1d2671, #c33764);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.15);
+        padding: clamp(25px, 5vw, 45px);
+        border-radius: 18px;
+        max-width: 520px;
+        width: 100%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .emoji {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 5vw, 2.6rem);
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: clamp(1rem, 3.5vw, 1.15rem);
+        line-height: 1.6;
+        margin-bottom: 20px;
+        opacity: 0.95;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 12px 22px;
+        background: #fff;
+        color: #c33764;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Extra fine-tuning for very small devices */
+      @media (max-width: 360px) {
+        .container {
+          padding: 22px;
+        }
+
+        .tag {
+          padding: 10px 18px;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    Currently we are working on this website
+    <div class="container">
+      <div class="emoji">🚧🛠️</div>
+      <h1>Oops! Site Under Construction</h1>
+      <p>
+        We’re currently busy making this website smarter, faster, and way better
+        looking.
+      </p>
+      <p>
+        It’s not broken it’s just evolving 🐛➡️🦋 Please check back in a bit!
+      </p>
+      <div class="tag">Back soon. Promise! 🚀</div>
+    </div>
   </body>
 </html>
