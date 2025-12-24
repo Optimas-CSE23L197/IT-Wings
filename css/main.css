@@ -7558,3 +7558,282 @@ APPLY FORM — CONTAINER CARD =========================== */
     font-size: 20px;
   }
 }
+/* ===============================
+   PRIVACY / POLICY PAGE STYLES
+   =============================== */
+
+.policy-page {
+  padding-top: 120px; /* desktop header offset */
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.policy-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+.policy-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.policy-page .updated {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.policy-page h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.policy-page h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.policy-page h4 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.policy-page p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.policy-page ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.policy-page li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* ===============================
+   TABLET RESPONSIVE (≤ 1024px)
+   =============================== */
+
+@media (max-width: 1024px) {
+  .policy-page {
+    padding-top: 100px;
+  }
+
+  .policy-page h1 {
+    font-size: 32px;
+  }
+
+  .policy-page h2 {
+    font-size: 26px;
+  }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE (≤ 768px)
+   =============================== */
+
+@media (max-width: 768px) {
+  .policy-page {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .policy-container {
+    padding: 0 16px;
+  }
+
+  .policy-page h1 {
+    font-size: 28px;
+  }
+
+  .policy-page h2 {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  .policy-page h3 {
+    font-size: 18px;
+  }
+
+  .policy-page h4 {
+    font-size: 16px;
+  }
+
+  .policy-page p,
+  .policy-page li {
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (≤ 480px)
+   =============================== */
+
+@media (max-width: 480px) {
+  .policy-page {
+    padding-top: 80px;
+  }
+
+  .policy-page h1 {
+    font-size: 24px;
+  }
+
+  .policy-page h2 {
+    font-size: 20px;
+  }
+
+  .policy-page p,
+  .policy-page li {
+    font-size: 14px;
+  }
+}
+
+
+
+/* ===============================
+   LEGAL PAGES (TERMS / PRIVACY)
+   CONFLICT-FREE & RESPONSIVE
+   =============================== */
+
+.legal-page {
+  padding-top: 120px;       /* desktop header offset */
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.legal-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -------------------------------
+   Typography
+-------------------------------- */
+
+.legal-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.legal-updated {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.legal-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.legal-subheading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.legal-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.legal-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.legal-list li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ===============================
+   TABLET (≤ 1024px)
+   =============================== */
+
+@media (max-width: 1024px) {
+  .legal-page {
+    padding-top: 100px;
+  }
+
+  .legal-title {
+    font-size: 32px;
+  }
+
+  .legal-heading {
+    font-size: 26px;
+  }
+}
+
+/* ===============================
+   MOBILE (≤ 768px)
+   =============================== */
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .legal-wrapper {
+    padding: 0 16px;
+  }
+
+  .legal-title {
+    font-size: 28px;
+  }
+
+  .legal-heading {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  .legal-subheading {
+    font-size: 18px;
+  }
+
+  .legal-text,
+  .legal-list li {
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (≤ 480px)
+   =============================== */
+
+@media (max-width: 480px) {
+  .legal-page {
+    padding-top: 80px;
+  }
+
+  .legal-title {
+    font-size: 24px;
+  }
+
+  .legal-heading {
+    font-size: 20px;
+  }
+
+  .legal-text,
+  .legal-list li {
+    font-size: 14px;
+  }
+}
