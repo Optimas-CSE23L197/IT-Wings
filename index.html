@@ -4,6 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Wings Webtech Solutions</title>
+
+    <!-- ================= FAVICONS ================= -->
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_io/apple-touch-icon.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="images/favicon_io/android-chrome-512x512.png"
+    />
+
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -33,9 +71,9 @@
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
             <div class="logo d-flex al-center jc-between">
-              <a href="#">
+              <a href="index.html">
                 <figure>
-                  <img src="images/Baby.png" alt="logo" />
+                  <img src="./images/Icon/logo.png" alt="logo" />
                 </figure>
               </a>
 
@@ -53,6 +91,9 @@
                 </li>
                 <li id="nav-service">
                   <a href="#">Service</a>
+                </li>
+                <li id="nav-service">
+                  <a href="error.html">E-learning</a>
                 </li>
                 <li id="nav-career"><a href="career.html">Career</a></li>
                 <li><a href="#" id="nav-contact">Contact Us</a></li>
@@ -948,15 +989,15 @@
     <!-- ===========================
    POPUP OVERLAY + MODAL
 =========================== -->
-    <section>
+    <!-- <section>
       <div id="promoPopup" class="popup-overlay">
         <div class="popup-container">
-          <!-- CLOSE BUTTON -->
+          CLOSE BUTTON
           <span class="popup-close" onclick="closePopup()">×</span>
 
-          <!-- SLIDER WRAPPER -->
+          SLIDER WRAPPER
           <div class="popup-slider">
-            <!-- ========== SLIDE 1 : SERVICES ========== -->
+            ========== SLIDE 1 : SERVICES ==========
             <div class="popup-slide">
               <h2>Boost Your Business with Us</h2>
               <p>Take our professional IT services and grow faster.</p>
@@ -985,7 +1026,7 @@
               </form>
             </div>
 
-            <!-- ========== SLIDE 2 : EDUCATION SYSTEM ========== -->
+            ========== SLIDE 2 : EDUCATION SYSTEM ==========
             <div class="popup-slide">
               <h2>Grow Your Career</h2>
               <p>Learn high-demand skills with our free and paid courses.</p>
@@ -999,7 +1040,7 @@
               </a>
             </div>
 
-            <!-- ========== SLIDE 3 : JOIN COMPANY ========== -->
+            ========== SLIDE 3 : JOIN COMPANY ==========
             <div class="popup-slide">
               <h2>Join IT Wings</h2>
               <p>Work with our company or become a freelancer with us.</p>
@@ -1009,7 +1050,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
     <footer class="footer">
@@ -1066,9 +1107,8 @@
           <div class="footer-col">
             <h4>Security</h4>
             <ul>
-              <li><a href="terms.html">Terms & Conditions</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="#">Help</a></li>
+              <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -1181,7 +1221,7 @@
         });
       });
 
-      window.onload = () => {
+      /*window.onload = () => {
         if (!sessionStorage.getItem("promoSeen")) {
           setTimeout(() => {
             document.getElementById("promoPopup").style.display = "flex";
@@ -1193,6 +1233,7 @@
         document.getElementById("promoPopup").style.display = "none";
         sessionStorage.setItem("promoSeen", "true");
       }
+        */
 
       // pop up slider
       setTimeout(() => {
