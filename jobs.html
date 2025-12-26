@@ -266,7 +266,9 @@
       <!-- Dynamic Careers List -->
       <section class="careers-list">
         <div class="container">
-          <h3>Open Positions</h3>
+          <div class="job-filter">
+            <h3>Open Positions</h3>
+          </div>
 
           <!-- Dynamic List Container -->
           <div id="job-container"></div>
@@ -432,9 +434,7 @@
     <script>
       const fetchJob = async () => {
         try {
-          const response = await fetch(
-            "https://official-it-wings-backend.onrender.com/api/jobs/get_jobs.php"
-          );
+          const response = await fetch("data/jobs.json");
 
           const result = await response.json();
 

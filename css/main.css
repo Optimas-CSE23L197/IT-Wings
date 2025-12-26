@@ -4620,6 +4620,11 @@ h2 {
   border-radius: 0;
   box-shadow: none;
   text-align: left;
+  background-color: red;
+}
+
+.job-card {
+  margin-top: 10px;
 }
 
 /* Titles */
@@ -7697,15 +7702,13 @@ APPLY FORM — CONTAINER CARD =========================== */
   }
 }
 
-
-
 /* ===============================
    LEGAL PAGES (TERMS / PRIVACY)
    CONFLICT-FREE & RESPONSIVE
    =============================== */
 
 .legal-page {
-  padding-top: 120px;       /* desktop header offset */
+  padding-top: 120px; /* desktop header offset */
   padding-bottom: 60px;
   background-color: #ffffff;
 }
