@@ -290,7 +290,10 @@
     <!-- Banner -->
     <section
       class="job-banner"
-      style="background-image: url('images/career/career-5.jpg')"
+      style="
+        background-image: url('images/career/career-5.jpg');
+        background-attachment: scroll;
+      "
     >
       <div class="container">
         <div class="banner-content">
@@ -596,20 +599,25 @@
 
       async function fetchJobDetails() {
         try {
-          const response = await fetch(
-            `https://official-it-wings-backend.onrender.com/api/jobs/get_job.php?reference_number=${referenceNumber}`
-          );
+          const response = await fetch("data/jobs.json");
           const result = await response.json();
 
-          if (!result.data) {
+          if (!result.data || !Array.isArray(result.data)) {
+            throw new Error("Invalid jobs data");
+          }
+
+          // ✅ FIND job by reference number
+          const job = result.data.find(
+            (item) => item.reference_number === referenceNumber
+          );
+
+          if (!job) {
             document.querySelector(".job-details").innerHTML =
               "<p>Job not found.</p>";
             return;
           }
 
-          const job = result.data;
-          console.log(job);
-
+          // ✅ Populate UI
           document.getElementById("jobTitle").textContent = job.job_title;
           document.getElementById("shortDescription").textContent =
             job.short_description;
@@ -619,19 +627,16 @@
           document.getElementById("openings").textContent = job.openings;
           document.getElementById("postedDate").textContent = job.posted_date;
           document.getElementById("expiryDate").textContent = job.expiry_date;
-          document.getElementById(
-            "experience"
-          ).textContent = `${job.experience_min} - ${job.experience_max} Years`;
           document.getElementById("referenceNumber").textContent =
             job.reference_number;
 
-          // ensure skillset is array
-          const skills =
-            typeof job.skillset === "string"
-              ? JSON.parse(job.skillset)
-              : job.skillset;
+          document.getElementById("experience").textContent =
+            job.experience_min !== undefined
+              ? `${job.experience_min} - ${job.experience_max} Years`
+              : "N/A";
 
-          document.getElementById("skills").innerHTML = skills
+          // ✅ Skills
+          document.getElementById("skills").innerHTML = job.skillset
             ?.map((s) => `<span>${s}</span>`)
             .join(" ");
         } catch (error) {

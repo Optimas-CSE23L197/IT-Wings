@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "reference_number": "WFH-HR-001",
+      "job_title": "HR Executive",
+      "short_description": "Support recruitment operations, candidate coordination, and daily HR activities in a remote setup.",
+      "full_description": "As an HR Executive, you will support the recruitment lifecycle by coordinating interviews, maintaining candidate records, and assisting with onboarding documentation. You will work closely with senior HR professionals to ensure smooth hiring operations and employee engagement initiatives. This role is ideal for freshers or early-career professionals looking to build a strong foundation in human resources.",
+      "location": "Work From Home",
+      "openings": 5,
+      "posted_date": "2025-01-15",
+      "expiry_date": "2025-04-15",
+      "experience_min": 0,
+      "experience_max": 2,
+      "skillset": [
+        "Recruitment Basics",
+        "Communication Skills",
+        "MS Excel",
+        "Email Handling",
+        "Documentation"
+      ]
+    },
+    {
+      "reference_number": "WFH-DEO-002",
+      "job_title": "Data Entry Operator",
+      "short_description": "Accurately enter and manage business data using company tools and spreadsheets.",
+      "full_description": "The Data Entry Operator role involves entering, updating, and maintaining accurate records in company databases and spreadsheets. You will be responsible for reviewing data for errors, organizing information, and meeting daily productivity targets. Attention to detail and consistency are critical for success in this role.",
+      "location": "Work From Home",
+      "openings": 10,
+      "posted_date": "2025-01-18",
+      "expiry_date": "2025-05-01",
+      "experience_min": 0,
+      "experience_max": 1,
+      "skillset": [
+        "Fast Typing",
+        "MS Excel",
+        "Attention to Detail",
+        "Basic Computer Knowledge"
+      ]
+    },
+    {
+      "reference_number": "WFH-VE-003",
+      "job_title": "Video Editor",
+      "short_description": "Edit engaging videos for social media, marketing campaigns, and brand promotions.",
+      "full_description": "As a Video Editor, you will create visually appealing video content for social media platforms, advertisements, and promotional campaigns. You will collaborate with the marketing team to understand content requirements, edit raw footage, add effects, and ensure high-quality output aligned with brand guidelines.",
+      "location": "Work From Home",
+      "openings": 3,
+      "posted_date": "2025-01-20",
+      "expiry_date": "2025-04-30",
+      "experience_min": 1,
+      "experience_max": 4,
+      "skillset": [
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Video Editing",
+        "Creativity",
+        "Storytelling"
+      ]
+    },
+    {
+      "reference_number": "WFH-GM-004",
+      "job_title": "Google Mapping Executive",
+      "short_description": "Manage and update business listings on Google Maps to ensure accuracy and visibility.",
+      "full_description": "The Google Mapping Executive will be responsible for creating, updating, and verifying business listings on Google Maps. This includes correcting location details, uploading images, responding to updates, and ensuring accurate business information to improve local search visibility.",
+      "location": "Work From Home",
+      "openings": 8,
+      "posted_date": "2025-01-22",
+      "expiry_date": "2025-05-10",
+      "experience_min": 0,
+      "experience_max": 2,
+      "skillset": [
+        "Google Maps",
+        "Internet Research",
+        "Business Listings",
+        "Accuracy",
+        "Basic SEO Knowledge"
+      ]
+    },
+    {
+      "reference_number": "WFH-AT-005",
+      "job_title": "Audio Transcription Executive",
+      "short_description": "Convert audio recordings into accurate and well-formatted written documents.",
+      "full_description": "In this role, you will listen to audio recordings and transcribe them into clear, accurate written content. You must follow formatting guidelines, ensure grammatical correctness, and meet turnaround deadlines. This position requires strong listening skills and a high level of concentration.",
+      "location": "Work From Home",
+      "openings": 6,
+      "posted_date": "2025-01-25",
+      "expiry_date": "2025-05-15",
+      "experience_min": 0,
+      "experience_max": 3,
+      "skillset": [
+        "Fast Typing",
+        "Listening Skills",
+        "English Grammar",
+        "Time Management",
+        "Attention to Detail"
+      ]
+    },
+    {
+      "reference_number": "WFH-SHR-006",
+      "job_title": "Senior HR Manager",
+      "short_description": "Lead recruitment strategy, HR operations, and employee engagement initiatives remotely.",
+      "full_description": "The Senior HR Manager will oversee recruitment planning, policy implementation, employee relations, and performance management. You will guide junior HR staff, ensure compliance with HR policies, and support leadership in building a strong organizational culture.",
+      "location": "Work From Home",
+      "openings": 2,
+      "posted_date": "2025-01-28",
+      "expiry_date": "2025-06-01",
+      "experience_min": 5,
+      "experience_max": 10,
+      "skillset": [
+        "HR Strategy",
+        "Leadership",
+        "Recruitment Planning",
+        "Policy Development",
+        "Team Management"
+      ]
+    },
+    {
+      "reference_number": "WFH-CW-007",
+      "job_title": "Content Writer",
+      "short_description": "Create engaging and SEO-friendly content for blogs, websites, and marketing campaigns.",
+      "full_description": "As a Content Writer, you will research industry topics, write blogs, website pages, and marketing copy that aligns with brand tone and SEO best practices. You will collaborate with designers and marketers to produce content that drives engagement and traffic.",
+      "location": "Work From Home",
+      "openings": 4,
+      "posted_date": "2025-02-01",
+      "expiry_date": "2025-05-31",
+      "experience_min": 1,
+      "experience_max": 4,
+      "skillset": [
+        "Content Writing",
+        "SEO Basics",
+        "Research Skills",
+        "Grammar",
+        "Creativity"
+      ]
+    },
+    {
+      "reference_number": "WFH-DM-008",
+      "job_title": "Digital Marketing Executive (SEO)",
+      "short_description": "Optimize online presence through SEO strategies and digital marketing campaigns.",
+      "full_description": "The Digital Marketing Executive will plan and execute SEO strategies, analyze website performance, manage keyword research, and support social media marketing initiatives. You will work closely with content and design teams to improve online visibility and lead generation.",
+      "location": "Work From Home",
+      "openings": 3,
+      "posted_date": "2025-02-03",
+      "expiry_date": "2025-06-15",
+      "experience_min": 1,
+      "experience_max": 5,
+      "skillset": [
+        "SEO",
+        "Keyword Research",
+        "Google Analytics",
+        "Digital Marketing",
+        "Social Media Marketing"
+      ]
+    },
+    {
+      "reference_number": "WFH-PL-009",
+      "job_title": "Product Listing Executive",
+      "short_description": "Manage product uploads, descriptions, and updates on e-commerce platforms.",
+      "full_description": "This role involves creating and maintaining product listings across e-commerce platforms. You will upload product details, images, pricing, and ensure accurate categorization. Coordination with inventory and marketing teams is essential to maintain up-to-date listings.",
+      "location": "Work From Home",
+      "openings": 7,
+      "posted_date": "2025-02-05",
+      "expiry_date": "2025-06-30",
+      "experience_min": 0,
+      "experience_max": 3,
+      "skillset": [
+        "E-commerce Platforms",
+        "Product Upload",
+        "MS Excel",
+        "Attention to Detail",
+        "Content Formatting"
+      ]
+    },
+    {
+      "reference_number": "WFH-FB-010",
+      "job_title": "Feedback & Survey Executive",
+      "short_description": "Collect, analyze, and report customer feedback to support business improvements.",
+      "full_description": "As a Feedback & Survey Executive, you will collect customer feedback through surveys, calls, and online forms. You will analyze responses, prepare summary reports, and share insights with relevant teams to improve services and customer satisfaction.",
+      "location": "Work From Home",
+      "openings": 5,
+      "posted_date": "2025-02-07",
+      "expiry_date": "2025-06-20",
+      "experience_min": 0,
+      "experience_max": 2,
+      "skillset": [
+        "Communication Skills",
+        "Survey Handling",
+        "Basic Reporting",
+        "Data Interpretation",
+        "Time Management"
+      ]
+    }
+  ]
+}
