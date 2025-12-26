@@ -95,27 +95,6 @@ function setupNavEvents() {
 setupNavEvents();
 window.addEventListener("resize", setupNavEvents);
 
-// filter service
-let services = document.querySelectorAll(".service-card");
-
-function filterCategory(category) {
-  if (category === "all") {
-    services.forEach((service) => {
-      service.style.display = "block";
-    });
-  } else {
-    services.forEach((service) => {
-      service.style.display = "none";
-    });
-
-    // show selected services
-    let selectedServices = document.querySelectorAll("." + category);
-    selectedServices.forEach((service) => {
-      service.style.display = "block";
-    });
-  }
-}
-
 // sticky navbar
 let navBar = document.querySelector(".nav-bar");
 window.addEventListener("scroll", function () {

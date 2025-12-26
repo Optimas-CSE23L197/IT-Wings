@@ -226,10 +226,11 @@
         </div>
       </div>
     </section>
+
     <!-- GLOBAL BANNER -->
     <section
       class="global-banner"
-      style="background-image: url(images/career/career-1.jpg)"
+      style="background-image: url(images/service-banner.jpg)"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -247,29 +248,24 @@
           <div class="service-container-wrapper">
             <div class="service-content">
               <h2>Our Services</h2>
-
-              <div class="service-input">
-                <input
-                  type="search"
-                  id="service"
-                  placeholder="Enter keyword like (Service Title)"
-                />
-                <button>Search</button>
-              </div>
             </div>
 
             <!-- FILTER BUTTONS -->
             <div class="service-option">
               <ul class="d-flex al-center jc-between">
                 <li>
-                  <a class="active" onclick="filterCategory('all')">All</a>
+                  <a class="active" onclick="filterCategory('all', this)"
+                    >All</a
+                  >
                 </li>
-                <li><a onclick="filterCategory('govt')">Govt</a></li>
-                <li><a onclick="filterCategory('tech')">Tech</a></li>
+                <li><a onclick="filterCategory('govt', this)">Govt</a></li>
+                <li><a onclick="filterCategory('tech', this)">Tech</a></li>
                 <li>
-                  <a onclick="filterCategory('promotional')">Promotional</a>
+                  <a onclick="filterCategory('promotional', this)"
+                    >Promotional</a
+                  >
                 </li>
-                <li><a onclick="filterCategory('others')">Others</a></li>
+                <li><a onclick="filterCategory('others', this)">Others</a></li>
               </ul>
             </div>
 
@@ -493,7 +489,16 @@
           .classList.add("active");
       }
 
-      function filterCategory(cat) {
+      let serviceOptions = document.querySelectorAll(".service-option ul li a");
+
+      function filterCategory(cat, el) {
+        // remove active from all
+        serviceOptions.forEach((a) => a.classList.remove("active"));
+
+        // activate clicked option
+        el.classList.add("active");
+
+        // filter logic
         if (cat === "all") {
           servicesData = [...originalData];
         } else {

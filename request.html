@@ -459,6 +459,15 @@
       </div>
     </footer>
 
+    <!-- email js -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("fcVMLufiDuAJCzNbz"); // 🔑 from EmailJS dashboard
+      })();
+    </script>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -476,6 +485,7 @@
     <!-- ========================= -->
     <script>
       const form = document.getElementById("serviceForm");
+      const submitBtn = form.querySelector("button[type='submit']");
 
       function showToast(message, color = "#e63946") {
         Toastify({
@@ -488,7 +498,7 @@
         }).showToast();
       }
 
-      form.addEventListener("submit", async function (e) {
+      form.addEventListener("submit", function (e) {
         e.preventDefault();
 
         const data = {
@@ -499,11 +509,12 @@
           region: form.region.value,
           industry: form.industry.value,
           message: form.message.value.trim(),
-          consentContact: form.consentContact.checked,
-          consentMarketing: form.consentMarketing.checked,
+          consentContact: form.consentContact.checked ? "Agreed" : "Not Agreed",
+          consentMarketing: form.consentMarketing.checked ? "Yes" : "No",
+          submittedAt: new Date().toLocaleString(), // ✅ Timestamp
         };
 
-        // validation
+        // ✅ Validation
         if (!data.firstName) return showToast("First name is required");
         if (!data.lastName) return showToast("Last name is required");
         if (!data.email) return showToast("Email is required");
@@ -513,26 +524,30 @@
         if (!data.region) return showToast("Select a region");
         if (!data.industry) return showToast("Select an industry");
         if (!data.message) return showToast("Message is required");
-        if (!data.consentContact)
+        if (!form.consentContact.checked)
           return showToast("You must agree to be contacted");
 
-        showToast("Submitting...", "#0277bd");
+        // ✅ UX: Disable button
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Sending...";
 
-        const API_URL = "http://127.0.0.1:8081/main/api/v1/contact-form/submit";
+        showToast("Sending message...", "#0277bd");
 
-        try {
-          await fetch(API_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
+        emailjs
+          .send("service_sl6c0o6", "template_itak5h3", data)
+          .then(function () {
+            showToast("Message sent successfully!", "#2ecc71");
+            form.reset();
+          })
+          .catch(function (error) {
+            console.error("EmailJS Error:", error);
+            showToast("Message failed. Please try again later.");
+          })
+          .finally(function () {
+            // ✅ Re-enable button
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Send";
           });
-
-          showToast("Submitted successfully!", "#2ecc71");
-          form.reset();
-        } catch (error) {
-          console.error(error);
-          showToast("Submission failed. Try again.");
-        }
       });
     </script>
   </body>
