@@ -660,11 +660,8 @@ global content
 .banner-content {
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 800px;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-content h1 {
@@ -935,7 +932,7 @@ global content
 /* ===== Content Text ===== */
 .home-start-content span {
   color: var(--accent);
-  font-size: 16px;
+  font-size: 26px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1503,7 +1500,7 @@ global content
 
 .heading-content .title {
   color: var(--accent);
-  font-size: 16px;
+  font-size: 26px;
   letter-spacing: 2px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2812,10 +2809,25 @@ Job Card
 }
 
 /* Job Location */
+/* Job Location – same style as skills */
+.job-location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .job-location p {
+  margin: 0;
+  padding: 6px 14px;
   font-size: 14px;
-  line-height: 26px;
-  color: var(--blue-teal);
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--blue-light), #eef5fa);
+  color: var(--blue-dark);
+  border: 1px solid var(--blue-teal);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 /* Buttons */
@@ -5729,46 +5741,28 @@ service card info
   }
 }
 
-:root {
-  --blue-dark: #0c2b4e;
-  --blue-medium: #1a3d64;
-  --blue-teal: #1d546c;
-  --blue-light: #f4f4f4;
-  --white: #ffffff;
-  --gray-dark: #222222;
-  --accent: #ffb703;
-}
-
 /* ===== Job Banner ===== */
 .job-banner {
   position: relative;
-  height: 25vh;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
 }
 
-.job-banner .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(12, 43, 78, 0.6);
-}
-
 .job-banner .banner-content {
-  position: relative;
-  text-align: center;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.job-banner h1 {
+.job-banner .banner-content h1 {
   font-size: 40px;
   font-weight: 700;
 }
 
-.job-banner p {
+.job-banner .banner-content p {
   font-size: 18px;
   margin-top: 8px;
   color: var(--blue-light);
@@ -5981,6 +5975,24 @@ service card info
 
 @media (max-width: 768px) {
   .job-banner h1 {
+    font-size: 28px;
+  }
+
+  .job-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-banner .banner-content {
+    margin-top: 50px;
+  }
+
+  .job-banner .banner-content h1 {
     font-size: 28px;
   }
 
@@ -7194,11 +7206,12 @@ APPLY FORM — CONTAINER CARD =========================== */
 
 .edu-features li {
   margin-bottom: 12px;
-  font-size: 15px;
+  font-size: 16px;
   color: #333;
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 700;
 }
 
 .edu-features li i {
@@ -7822,7 +7835,6 @@ APPLY FORM — CONTAINER CARD =========================== */
   }
 }
 
-
 /* ================================
    WHO IS BEHIND IT-WINGS
 ================================ */
@@ -8046,5 +8058,114 @@ APPLY FORM — CONTAINER CARD =========================== */
 
   .team .section-title {
     font-size: 26px;
+  }
+}
+
+.banner-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.banner-slider .owl-prev,
+.banner-slider .owl-next {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: var(--accent) !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px !important;
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.banner-slider .owl-prev {
+  left: 20px;
+}
+.banner-slider .owl-next {
+  right: 20px;
+}
+
+.banner-slider .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+}
+
+.banner-slider .owl-dot {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+  .banner-slider .owl-prev,
+  .banner-slider .owl-next {
+    display: none;
+  }
+
+  .banner-slider .owl-dots {
+    bottom: 10px;
+    gap: 15px;
+  }
+
+  .banner-slider .owl-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-slider .owl-nav {
+    top: 70% !important;
+  }
+
+  .banner-slider .owl-prev,
+  .banner-slider .owl-next {
+    width: 44px;
+    height: 44px;
+    font-size: 28px !important;
+  }
+
+  .banner-slider .owl-prev {
+    left: 12px;
+  }
+  .banner-slider .owl-next {
+    right: 12px;
+  }
+
+  .banner-slider .owl-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner-slider .owl-nav {
+    top: 55%;
+  }
+
+  .banner-slider .owl-prev,
+  .banner-slider .owl-next {
+    width: 50px;
+    height: 50px;
+    font-size: 34px !important;
+  }
+
+  .banner-slider .owl-prev {
+    left: 16px;
+  }
+  .banner-slider .owl-next {
+    right: 16px;
   }
 }

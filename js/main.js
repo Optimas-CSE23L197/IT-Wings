@@ -4,16 +4,18 @@
 const humbergerBtn = document.querySelector("#humberger i");
 const navMenu = document.querySelector(".nav-menu");
 
-humbergerBtn.addEventListener("click", function () {
-  navMenu.classList.toggle("show-menu");
-  humbergerBtn.classList.toggle("active");
+if (humbergerBtn) {
+  humbergerBtn.addEventListener("click", function () {
+    navMenu.classList.toggle("show-menu");
+    humbergerBtn.classList.toggle("active");
 
-  if (humbergerBtn.classList.contains("active")) {
-    humbergerBtn.classList.replace("fa-bars", "fa-xmark");
-  } else {
-    humbergerBtn.classList.replace("fa-xmark", "fa-bars");
-  }
-});
+    if (humbergerBtn.classList.contains("active")) {
+      humbergerBtn.classList.replace("fa-bars", "fa-xmark");
+    } else {
+      humbergerBtn.classList.replace("fa-xmark", "fa-bars");
+    }
+  });
+}
 
 // ===============================
 // NAV DROPDOWN HANDLING
@@ -107,28 +109,22 @@ window.addEventListener("scroll", function () {
 
 // top up button
 let btn = document.getElementById("scrollBtn");
-window.addEventListener("scroll", function () {
-  // page scroll
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  // display height
-  let windowHeight = window.innerHeight;
-  // total document height
-  let docHeight = document.documentElement.scrollHeight;
 
-  if (scrollTop + windowHeight >= docHeight - 100) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-});
+if (btn) {
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let windowHeight = window.innerHeight;
+    let docHeight = document.documentElement.scrollHeight;
 
-btn.addEventListener("click", function (e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // ✅ smooth animation
+    btn.style.display =
+      scrollTop + windowHeight >= docHeight - 100 ? "block" : "none";
   });
-});
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
 
 // trigger message icon
 const trigger = document.querySelector(".contact-trigger");
