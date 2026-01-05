@@ -7285,7 +7285,7 @@ APPLY FORM — CONTAINER CARD =========================== */
 }
 
 /* RESPONSIVE */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .popup-container {
     padding: 20px;
     border-radius: 15px;
@@ -7360,7 +7360,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    TABLET RESPONSIVE (≤ 1024px)
    =============================== */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .policy-page {
     padding-top: 100px;
   }
@@ -7378,7 +7378,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    MOBILE RESPONSIVE (≤ 768px)
    =============================== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .policy-page {
     padding-top: 90px;
     padding-bottom: 50px;
@@ -7415,7 +7415,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    SMALL MOBILE (≤ 480px)
    =============================== */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .policy-page {
     padding-top: 80px;
   }
@@ -7503,7 +7503,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    TABLET (≤ 1024px)
    =============================== */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .legal-page {
     padding-top: 100px;
   }
@@ -7521,7 +7521,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    MOBILE (≤ 768px)
    =============================== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .legal-page {
     padding-top: 90px;
     padding-bottom: 50px;
@@ -7554,7 +7554,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    SMALL MOBILE (≤ 480px)
    =============================== */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .legal-page {
     padding-top: 80px;
   }
@@ -7769,7 +7769,7 @@ APPLY FORM — CONTAINER CARD =========================== */
    RESPONSIVE
 ================================ */
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .team-layout {
     grid-template-columns: 1fr;
   }
@@ -7785,7 +7785,7 @@ APPLY FORM — CONTAINER CARD =========================== */
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .pillars-grid {
     grid-template-columns: 1fr;
   }
@@ -7846,7 +7846,7 @@ APPLY FORM — CONTAINER CARD =========================== */
   border-radius: 50%;
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .banner-slider .owl-prev,
   .banner-slider .owl-next {
     display: none;
