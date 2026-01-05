@@ -662,6 +662,7 @@ global content
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .banner-content h1 {
@@ -3507,6 +3508,7 @@ responsive
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .content-box {
@@ -4529,23 +4531,6 @@ h2 {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* === BACK BUTTON === */
-.back-btn a {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #000000;
-  transition: all 0.3s ease;
-}
-
-.back-btn a:hover {
-  color: #000000;
-  transform: translateX(-3px);
-}
-
 /* === CONTENT WRAPPER === */
 .request-content {
   display: flex;
@@ -4563,7 +4548,6 @@ h2 {
   flex: 1;
   padding: 70px 60px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
   border-radius: 16px;
 }
 
@@ -4602,6 +4586,7 @@ h2 {
 .form-group {
   flex: 1;
 }
+
 /*............Job Description Page..............*/
 /* Job Description Container */
 .job-container {
@@ -5741,270 +5726,6 @@ service card info
   }
 }
 
-/* ===== Job Banner ===== */
-.job-banner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-}
-
-.job-banner .banner-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.job-banner .banner-content h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.job-banner .banner-content p {
-  font-size: 18px;
-  margin-top: 8px;
-  color: var(--blue-light);
-}
-
-/* ===== Job Description Section ===== */
-.job-description-section {
-  background-color: var(--white);
-  padding: 100px 20px;
-}
-
-.job-content-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-/* Left Column */
-.job-details {
-  flex: 1.5;
-  min-width: 320px;
-}
-
-.section-title {
-  font-size: 28px;
-  color: var(--blue-dark);
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.job-details-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  background-color: var(--blue-light);
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 30px;
-}
-
-.job-item {
-  font-size: 16px;
-  color: var(--blue-teal);
-}
-
-.job-item span {
-  font-weight: 600;
-  color: var(--blue-dark);
-}
-
-.job-summary {
-  font-size: 16px;
-  color: var(--blue-teal);
-  line-height: 28px;
-  margin-bottom: 20px;
-}
-
-.job-responsibilities {
-  list-style: none;
-  padding: 0;
-}
-
-.job-responsibilities li {
-  font-size: 16px;
-  color: var(--blue-teal);
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
-}
-
-.job-responsibilities li::before {
-  content: "•";
-  color: var(--accent);
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* ===== Apply Box ===== */
-.apply-box {
-  flex: 1;
-  min-width: 280px;
-  position: relative;
-}
-
-.apply-card {
-  background-color: var(--blue-medium);
-  color: var(--white);
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  position: sticky;
-  top: 120px;
-  text-align: center;
-}
-
-.apply-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.apply-card p {
-  font-size: 16px;
-  color: var(--blue-light);
-  margin-bottom: 20px;
-}
-
-.apply-btn {
-  display: inline-block;
-  background-color: var(--accent);
-  color: var(--blue-dark);
-  padding: 12px 30px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.apply-btn:hover {
-  background-color: var(--white);
-  color: var(--purple-dark);
-}
-
-/* ===== Recommend Section ===== */
-.recommend-section {
-  background-color: var(--blue-light);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.recommend-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.recommend-wrapper h2 {
-  font-size: 32px;
-  color: var(--blue-dark);
-  margin-bottom: 10px;
-}
-
-.recommend-wrapper p {
-  color: var(--blue-teal);
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.form-group label {
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  color: var(--blue-dark);
-  margin-bottom: 6px;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  background-color: var(--white);
-  color: var(--gray-dark);
-  transition: all 0.3s ease;
-}
-
-.form-group input:focus {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.submit-btn {
-  margin-top: 30px;
-  background-color: var(--accent);
-  color: var(--blue-dark);
-  border: none;
-  padding: 14px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: var(--blue-dark);
-  color: var(--white);
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 992px) {
-  .job-content-wrapper {
-    flex-direction: column;
-  }
-
-  .apply-card {
-    position: relative;
-    top: 0;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .job-banner h1 {
-    font-size: 28px;
-  }
-
-  .job-details-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .job-banner .banner-content {
-    margin-top: 50px;
-  }
-
-  .job-banner .banner-content h1 {
-    font-size: 28px;
-  }
-
-  .job-details-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ===== Contact Page ===== */
 .contact-details-section {
   padding: 100px 20px;
@@ -6523,7 +6244,13 @@ textarea:focus {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(2px);
+}
+
+.job-banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ===========================
@@ -6534,6 +6261,17 @@ textarea:focus {
 @media (max-width: 992px) {
   .job-banner {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .job-banner {
+    background-image: none !important;
+    background-position: center;
+  }
+
+  .job-banner .banner-content {
+    margin-top: 40px;
   }
 }
 
